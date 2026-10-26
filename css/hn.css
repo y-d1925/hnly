@@ -1,0 +1,236 @@
+:root {
+    --primary-color: #333;
+    --secondary-color: #3498db;
+    --dark-color: #2c3e50;
+    --light-color: #ecf0f1;
+    --natural-color: #27ae60;
+    --cultural-color: #f39c12;
+    --red-color: #e74c3c;
+    --ethnic-color: #9b59b6;
+    --background-color: #f9f9f9;
+    --text-color: #333;
+    --text-light: #777;
+}
+* {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Microsoft YaHei', '微软雅黑', Arial, sans-serif;
+        }
+/* 表单元素样式 */
+input[type="text"],
+input[type="tel"],
+input[type="email"],
+input[type="date"],
+select {
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+input[type="email"]{
+	color:#000000;
+}
+input[type="checkbox"] {
+    transition: background-color 0.3s ease;
+}
+
+input[type="checkbox"]:checked {
+    background-color: var(--primary);
+    border-color: var(--primary);
+}
+
+/* 全局样式 */
+body {
+    scroll-behavior: smooth;
+}
+
+/* 导航栏样式 */
+#navbar {
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+/* 地图标记点动画 */
+.pulse-animation {
+    position: relative;
+}
+
+.pulse-animation::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(239, 68, 68, 0.6);
+    border-radius: 50%;
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(3);
+        opacity: 0;
+    }
+}
+
+/* 美食滑块样式 */
+#food-slider {
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+#food-slider::-webkit-scrollbar {
+    display: none;
+}
+
+/* 平滑滚动 */
+html {
+    scroll-behavior: smooth;
+}
+
+/* 卡片悬停效果 */
+.city-card, .restaurant-card {
+    transition: all 0.3s ease;
+}
+
+.city-card:hover, .restaurant-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+}
+
+/* 按钮动画 */
+button {
+    transition: all 0.2s ease;
+}
+
+button:hover {
+    transform: translateY(-2px);
+}
+
+/* 导航链接样式 */
+.nav-link, .mobile-nav-link {
+    position: relative;
+}
+
+.nav-link::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: -2px;
+    left: 0;
+    background-color: #ef4444;
+    transition: width 0.3s ease;
+}
+
+.nav-link:hover::after {
+    width: 100%;
+}
+  .navbar {
+      background-color: rgba(255, 255, 255, 0.95);
+      box-shadow: var(--shadow);
+      position: fixed;
+      width: 100%;
+      top: 0;
+      z-index: 1000;
+      transition: all 0.3s ease;
+  }
+  
+  .navbar.scrolled {
+      background-color: rgba(255, 255, 255, 0.98);
+      padding: 10px 0;
+  }
+  
+  .navbar .container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 20px;
+  }
+  
+  .logo {
+      display: flex;
+      align-items: center;
+      font-size: 1.8rem;
+      font-weight: bold;
+  }
+  
+  .logo i {
+      color: var(--primary-color);
+      margin-right: 10px;
+  }
+  
+  .logo span {
+      color:#FF8C42;
+  }
+  
+  .nav-links {
+      display: flex;
+  }
+  
+  .nav-links li {
+      margin-left: 30px;
+      position: relative;
+  }
+  
+  .nav-links a {
+      font-weight: 500;
+      transition: color 0.3s ease;
+  }
+  
+  .nav-links a:hover {
+      color: #FF8C42;
+  }
+  
+  .nav-links a::after {
+      content: '';
+      position: absolute;
+      bottom: -5px;
+      left: 0;
+      width: 0;
+      height: 2px;
+      background: #FF8C42;
+      transition: width 0.3s ease;
+  }
+  
+  .nav-links a:hover::after {
+      width: 100%;
+  }
+  
+  .dropdown {
+      position: relative;
+  }
+  
+  .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #fff;
+      min-width: 200px;
+      box-shadow: var(--shadow);
+      border-radius: 5px;
+      z-index: 1;
+      padding: 10px 0;
+  }
+  
+  .dropdown:hover .dropdown-content {
+      display: block;
+      animation: fadeIn 0.3s;
+  }
+  
+  .dropdown-content li {
+      padding: 10px 20px;
+      margin: 0;
+  }
+  
+  .dropdown-content li:hover {
+      background-color: #f5f5f5;
+  }
+  
+  .mobile-menu {
+      display: none;
+      font-size: 1.5rem;
+      cursor: pointer;
+  }
+    
