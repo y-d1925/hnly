@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>锦绣湖南 - 发现湖南之美</title>
+		<link rel="stylesheet" href="css/hnjq.css">
+		<link href="css/hunan.css" rel="stylesheet" type="text/css">
+		<script src="js/hnjq.js"></script>
+	</head>
+	<body>
+		<header>
+			<nav class="navbar">
+			    <div class="container">
+			        <a href="#" class="logo">
+			            <i class="fas fa-mountain"></i>
+			            锦绣<span>湖南</span>
+			        </a>
+			        
+			       <ul class="nav-links">
+			           <li><a href="index.html">首页</a></li>
+			           <li class="dropdown">
+			               <a href="#">探索湖南</a>
+			               <ul class="dropdown-content">
+			                   <li><a href="cs.html">长沙</a></li>
+			                   <li><a href="zjj.html">张家界</a></li>
+			                   <li><a href="xx.html">湘西</a></li>
+			                   <li><a href="yy.html">岳阳</a></li>
+			                   <li><a href="ss.html">韶山</a></li>
+			               </ul>
+			           </li>
+			           <li><a href="jqdq.html">景区大全</a></li>
+			           <li><a href="xcgh.html">行程规划</a></li>
+			           <li><a href="whty.html">文化体验</a></li>
+			           <li><a href="meishi.html">美食地图</a></li>
+			       </ul>
+			        
+			        <div class="mobile-menu">
+			            <i class="fas fa-bars"></i>
+			        </div>
+			    </div>
+			</nav>
+		</header>
+		 <main>
+		     <section id="home" class="hero">
+		         <div class="container">
+		            <h2>探索湖南 · 发现美景</h2>
+		            <p>从世界自然遗产到历史文化名城，湖南拥有丰富的旅游资源</p>
+		            <a href="#jq" class="btn">开始探索</a>
+		        </div>
+		    </section>
+		    <section id="scenic-spots" class="spots-section">
+		        <div class="container">
+		            <h2 id="jq" class="section-title">湖南热门景区</h2>
+		            <div class="filter-options">
+		                <div class="search-box">
+		                    <input type="text" placeholder="搜索景区..." id="search-input">
+		                    <button id="search-btn"><i class="fas fa-search"></i></button>
+		                </div>
+		                <div class="filter-buttons">
+		                    <button class="filter-btn active" data-filter="all">全部</button>
+		                    <button class="filter-btn" data-filter="5a">5A级</button>
+		                    <button class="filter-btn" data-filter="4a">4A级</button>
+		                    <button class="filter-btn" data-filter="natural">自然风光</button>
+		                    <button class="filter-btn" data-filter="cultural">人文历史</button>
+		                    <button class="filter-btn" data-filter="red">红色旅游</button>
+		                </div>
+		            </div>
+		
+		            <div class="spots-grid">
+		                <div class="spot-card" data-grade="5a" data-feature="natural">
+		                    <div class="card-image">
+		                        <img src="img/imgjqdq/zhangjiajie.jpg" alt="张家界武陵源">
+		                        <span class="grade-badge">5A</span>
+		                    </div>
+		                    <div class="card-content">
+		                        <h3>张家界武陵源</h3>
+		                        <p class="location"><i class="fas fa-map-marker-alt"></i> 张家界市</p>
+		                        <p class="description">世界自然遗产，以奇特的石英砂岩峰林地貌闻名，被誉为"扩大的盆景，缩小的仙境"。</p>
+		                        <div class="features">
+		                            <span class="feature-tag natural">自然风光</span>
+		                        </div>
+		                    </div>
+		                </div>
+		
+		                <div class="spot-card" data-grade="5a" data-feature="cultural">
+		                    <div class="card-image">
+		                        <img src="img/imgjqdq/yueyanglou.jpg" alt="岳阳楼">
+		                        <span class="grade-badge">5A</span>
+		                    </div>
+		                    <div class="card-content">
+		                        <h3>岳阳楼</h3>
+		                        <p class="location"><i class="fas fa-map-marker-alt"></i> 岳阳市</p>
+		                        <p class="description">江南三大名楼之一，因范仲淹《岳阳楼记》而闻名天下，素有"洞庭天下水，岳阳天下楼"之美誉。</p>
+		                        <div class="features">
+		                            <span class="feature-tag cultural">人文历史</span>
+		                        </div>
+		                    </div>
+		                </div>
+		
+		                <div class="spot-card" data-grade="4a" data-feature="cultural">
+		                    <div class="card-image">
+		                        <img src="img/imgjqdq/fenghuanggucheng.jpg" alt="凤凰古城">
+		                        <span class="grade-badge">4A</span>
+		                    </div>
+		                    <div class="card-content">
+		                        <h3>凤凰古城</h3>
+		                        <p class="location"><i class="fas fa-map-marker-alt"></i> 湘西州</p>
+		                        <p class="description">国家历史文化名城，被誉为"中国最美的小城"，沱江穿城而过，吊脚楼群保存完好。</p>
+		                        <div class="features">
+		                            <span class="feature-tag cultural">人文历史</span>
+		                        </div>
+		                    </div>
+		                </div>
+		
+		                <div class="spot-card" data-grade="5a" data-feature="red">
+		                    <div class="card-image">
+		                        <img src="img/imgjqdq/shaoshan.jpg" alt="韶山">
+		                        <span class="grade-badge">5A</span>
+		                    </div>
+		                    <div class="card-content">
+		                        <h3>韶山</h3>
+		                        <p class="location"><i class="fas fa-map-marker-alt"></i> 湘潭市</p>
+		                        <p class="description">伟大领袖毛泽东的故乡，全国著名革命纪念地，红色旅游经典景区。</p>
+		                        <div class="features">
+		                            <span class="feature-tag red">红色旅游</span>
+		                            <span class="feature-tag cultural">人文历史</span>
+		                        </div>
+		                    </div>
+		                </div>
+		
+		                <div class="spot-card" data-grade="5a" data-feature="natural">
+		                    <div class="card-image">
+		                        <img src="img/imgjqdq/hengshan.jpg" alt="南岳衡山">
+		                        <span class="grade-badge">5A</span>
+		                    </div>
+		                    <div class="card-content">
+		                        <h3>南岳衡山</h3>
+		                        <p class="location"><i class="fas fa-map-marker-alt"></i> 衡阳市</p>
+		                        <p class="description">五岳之一，以"五岳独秀"著称，是著名的佛教、道教圣地，自然景观与人文景观并胜。</p>
+		                        <div class="features">
+		                            <span class="feature-tag natural">自然风光</span>
+		                            <span class="feature-tag cultural">人文历史</span>
+		                        </div>
+		                    </div>
+		                </div>
+		
+		                <div class="spot-card" data-grade="4a" data-feature="cultural">
+		                    <div class="card-image">
+		                        <img src="img/imgjqdq/jvzizhou.jpg" alt="岳麓山橘子洲">
+		                        <span class="grade-badge">4A</span>
+		                    </div>
+		                    <div class="card-content">
+		                        <h3>岳麓山·橘子洲</h3>
+		                        <p class="location"><i class="fas fa-map-marker-alt"></i> 长沙市</p>
+		                        <p class="description">岳麓山是湖湘文化发源地，橘子洲是湘江中的名洲，青年毛泽东曾在此"指点江山，激扬文字"。</p>
+		                        <div class="features">
+		                            <span class="feature-tag cultural">人文历史</span>
+		                            <span class="feature-tag red">红色旅游</span>
+		                        </div>
+		                    </div>
+		                </div>
+		            </div>
+		        </div>
+		    </section>
+		
+		    <section id="by-grade" class="grade-section">
+		        <div class="container">
+		            <h2 class="section-title">按景区等级分类</h2>
+		            <div class="grade-tabs">
+		                <button class="grade-tab active" data-grade="all">全部等级</button>
+		                <button class="grade-tab" data-grade="5a">5A级景区</button>
+		                <button class="grade-tab" data-grade="4a">4A级景区</button>
+		                <button class="grade-tab" data-grade="3a">3A级景区</button>
+		            </div>
+		
+		            <div class="grade-content">
+		                <div class="grade-info active" id="all-grade">
+		                    <h3>湖南所有等级景区</h3>
+		                    <p>湖南省拥有各类旅游景区数百家，其中国家5A级旅游景区11家，4A级旅游景区超过100家，3A级及以下旅游景区遍布全省各地。</p>
+		                    <div class="grade-spots">
+		                        <div class="spot-item">
+		                            <h4>张家界武陵源－天门山旅游区</h4>
+		                            <p><span class="grade-label">等级：</span>5A级</p>
+		                            <p><span class="grade-label">位置：</span>张家界市</p>
+		                        </div>
+		                        <div class="spot-item">
+		                            <h4>岳阳楼－君山岛景区</h4>
+		                            <p><span class="grade-label">等级：</span>5A级</p>
+		                            <p><span class="grade-label">位置：</span>岳阳市</p>
+		                        </div>
+		                        <div class="spot-item">
+		                            <h4>凤凰古城旅游区</h4>
+		                            <p><span class="grade-label">等级：</span>4A级</p>
+		                            <p><span class="grade-label">位置：</span>湘西州</p>
+		                        </div>
+		                        <div class="spot-item">
+		                            <h4>长沙世界之窗</h4>
+		                            <p><span class="grade-label">等级：</span>4A级</p>
+		                            <p><span class="grade-label">位置：</span>长沙市</p>
+		                        </div>
+		                    </div>
+		                </div>
+		
+		                <div class="grade-info" id="5a-grade">
+		                    <h3>湖南5A级旅游景区</h3>
+		                    <p>湖南省目前有11家国家5A级旅游景区，代表湖南旅游的最高水准。</p>
+		                    <div class="grade-spots">
+		                        <div class="spot-item">
+		                            <h4>张家界武陵源－天门山旅游区</h4>
+		                            <p><span class="grade-label">特色：</span>世界自然遗产，石英砂岩峰林地貌</p>
+		                            <p><span class="grade-label">位置：</span>张家界市</p>
+		                        </div>
+		                        <div class="spot-item">
+		                            <h4>岳阳楼－君山岛景区</h4>
+		                            <p><span class="grade-label">特色：</span>江南三大名楼之一，洞庭湖风光</p>
+		                            <p><span class="grade-label">位置：</span>岳阳市</p>
+		                        </div>
+		                        <div class="spot-item">
+		                            <h4>韶山旅游区</h4>
+		                            <p><span class="grade-label">特色：</span>毛泽东故乡，红色旅游经典</p>
+		                            <p><span class="grade-label">位置：</span>湘潭市</p>
+		                        </div>
+		                        <div class="spot-item">
+		                            <h4>南岳衡山旅游区</h4>
+		                            <p><span class="grade-label">特色：</span>五岳之一，宗教文化名山</p>
+		                            <p><span class="grade-label">位置：</span>衡阳市</p>
+		                        </div>
+		                    </div>
+		                </div>
+		
+		                <div class="grade-info" id="4a-grade">
+		                    <h3>湖南4A级旅游景区</h3>
+		                    <p>湖南省4A级旅游景区数量众多，涵盖自然风光、人文历史、红色旅游等多种类型。</p>
+		                    <div class="grade-spots">
+		                        <div class="spot-item">
+		                            <h4>凤凰古城旅游区</h4>
+		                            <p><span class="grade-label">特色：</span>中国最美小城，苗族风情</p>
+		                            <p><span class="grade-label">位置：</span>湘西州</p>
+		                        </div>
+		                        <div class="spot-item">
+		                            <h4>岳麓山·橘子洲旅游区</h4>
+		                            <p><span class="grade-label">特色：</span>湖湘文化发源地，毛泽东青年艺术雕塑</p>
+		                            <p><span class="grade-label">位置：</span>长沙市</p>
+		                        </div>
+		                        <div class="spot-item">
+		                            <h4>崀山风景名胜区</h4>
+		                            <p><span class="grade-label">特色：</span>丹霞地貌，世界自然遗产</p>
+		                            <p><span class="grade-label">位置：</span>邵阳市</p>
+		                        </div>
+		                        <div class="spot-item">
+		                            <h4>东江湖旅游区</h4>
+		                            <p><span class="grade-label">特色：</span>湖光山色，雾漫小东江奇观</p>
+		                            <p><span class="grade-label">位置：</span>郴州市</p>
+		                        </div>
+		                    </div>
+		                </div>
+		
+		                <div class="grade-info" id="3a-grade">
+		                    <h3>湖南3A级旅游景区</h3>
+		                    <p>湖南省3A级旅游景区遍布全省各地，是深度体验湖南风情的好去处。</p>
+		                    <div class="grade-spots">
+		                        <div class="spot-item">
+		                            <h4>洪江古商城</h4>
+		                            <p><span class="grade-label">特色：</span>明清商业古镇，保存完好的窨子屋建筑群</p>
+		                            <p><span class="grade-label">位置：</span>怀化市</p>
+		                        </div>
+		                        <div class="spot-item">
+		                            <h4>柳叶湖旅游度假区</h4>
+		                            <p><span class="grade-label">特色：</span>城市湖泊，休闲度假胜地</p>
+		                            <p><span class="grade-label">位置：</span>常德市</p>
+		                        </div>
+		                        <div class="spot-item">
+		                            <h4>大围山国家森林公园</h4>
+		                            <p><span class="grade-label">特色：</span>原始次生林，避暑胜地</p>
+		                            <p><span class="grade-label">位置：</span>长沙市</p>
+		                        </div>
+		                        <div class="spot-item">
+		                            <h4>酒仙湖景区</h4>
+		                            <p><span class="grade-label">特色：</span>山水风光，酒文化主题</p>
+		                            <p><span class="grade-label">位置：</span>株洲市</p>
+		                        </div>
+		                    </div>
+		                </div>
+		            </div>
+		        </div>
+		    </section>
+		
+		    <section id="by-feature" class="feature-section">
+		        <div class="container">
+		            <h2 class="section-title">按景区特色分类</h2>
+		            <div class="feature-categories">
+		                <div class="category-card natural">
+		                    <h3>自然风光</h3>
+		                    <p>湖南拥有张家界、崀山等世界自然遗产，以及衡山、东江湖等著名自然景观。</p>
+		                </div>
+		                <div class="category-card cultural">
+		                    <h3>人文历史</h3>
+		                    <p>湖南历史悠久，有岳阳楼、凤凰古城、岳麓书院等众多人文景观。</p>
+		                </div>
+		                <div class="category-card red">
+		                    <h3>红色旅游</h3>
+		                    <p>湖南是革命圣地，有韶山、刘少奇故居、橘子洲头等红色景点。</p>
+		                </div>
+		                <div class="category-card ethnic">
+		                    <h3>民族风情</h3>
+		                    <p>湘西、湘南少数民族聚居区，有独特的苗族、土家族等民族文化。</p>
+		                </div>
+		            </div>
+		        </div>
+		    </section>
+		
+		    <section id="travel-guide" class="guide-section">
+		        <div class="container">
+		            <h2 class="section-title">湖南旅游攻略</h2>
+		            <div class="guide-tabs">
+		                <button class="guide-tab active" data-guide="route">经典路线</button>
+		                <button class="guide-tab" data-guide="season">最佳季节</button>
+		                <button class="guide-tab" data-guide="food">特色美食</button>
+		                <button class="guide-tab" data-guide="tips">实用贴士</button>
+		            </div>
+		
+		            <div class="guide-content">
+		                <div class="guide-info active" id="route-guide">
+		                    <h3>湖南经典旅游路线推荐</h3>
+		                    <div class="route-item">
+		                        <h4>湘西风情三日游</h4>
+		                        <p>第一天：张家界国家森林公园（黄石寨、金鞭溪）</p>
+		                        <p>第二天：天子山、袁家界、杨家界</p>
+		                        <p>第三天：凤凰古城一日游</p>
+		                    </div>
+		                    <div class="route-item">
+		                        <h4>长沙-韶山-衡山四日游</h4>
+								<p>第一天：岳麓山、橘子洲头、湖南省博物馆</p>
+		                        <p>第二天：韶山毛泽东故居、铜像广场</p>
+		                        <p>第三、四天：南岳衡山（祝融峰、南岳大庙）</p>
+		                    </div>
+		                    <div class="route-item">
+		                        <h4>湘南山水五日游</h4>
+		                        <p>第一天：东江湖、雾漫小东江</p>
+		                        <p>第二天：莽山国家森林公园</p>
+		                        <p>第三、四天：崀山风景名胜区</p>
+		                        <p>第五天：岳阳楼、君山岛</p>
+		                    </div>
+		                </div>
+		
+		                <div class="guide-info" id="season-guide">
+		                    <h3>湖南旅游最佳季节</h3>
+		                    <div class="season-item">
+		                        <h4>春季（3月-5月）</h4>
+		                        <p>春暖花开，适合游览岳阳楼、君山岛、桃花源等景区，湘西山区杜鹃花盛开。</p>
+		                    </div>
+		                    <div class="season-item">
+		                        <h4>夏季（6月-8月）</h4>
+		                        <p>山区避暑胜地，张家界、衡山、莽山等地气候凉爽，东江湖雾漫小东江景观最佳。</p>
+		                    </div>
+		                    <div class="season-item">
+		                        <h4>秋季（9月-11月）</h4>
+		                        <p>秋高气爽，适合游览岳麓山、橘子洲头，湘西秋色迷人，是摄影好时节。</p>
+		                    </div>
+		                    <div class="season-item">
+		                        <h4>冬季（12月-2月）</h4>
+		                        <p>南岳衡山雪景优美，张家界冬季人少景美，凤凰古城年味浓厚。</p>
+		                    </div>
+		                </div>
+		
+		                <div class="guide-info" id="food-guide">
+		                    <h3>湖南特色美食推荐</h3>
+		                    <div class="food-grid">
+		                        <div class="food-item">
+		                            <h4>长沙臭豆腐</h4>
+		                            <p>外焦里嫩，闻着臭吃着香，是长沙街头最具代表性的小吃。</p>
+		                        </div>
+		                        <div class="food-item">
+		                            <h4>剁椒鱼头</h4>
+		                            <p>以鳙鱼头为主料，配以剁椒蒸制，鲜辣可口，是湘菜代表。</p>
+		                        </div>
+		                        <div class="food-item">
+		                            <h4>湘西腊肉</h4>
+		                            <p>土家族传统美食，烟熏制成，风味独特，可炒可蒸。</p>
+		                        </div>
+		                        <div class="food-item">
+		                            <h4>糖油粑粑</h4>
+		                            <p>长沙传统小吃，糯米制成，外脆内软，甜而不腻。</p>
+		                        </div>
+		                        <div class="food-item">
+		                            <h4>岳阳姜辣蛇</h4>
+		                            <p>洞庭湖区特色菜，蛇肉鲜嫩，姜辣味浓，滋补强身。</p>
+		                        </div>
+		                        <div class="food-item">
+		                            <h4>衡阳鱼粉</h4>
+		                            <p>以鲜鱼熬汤，配以米粉，汤鲜味美，是衡阳早餐首选。</p>
+		                        </div>
+		                    </div>
+		                </div>
+		
+		                <div class="guide-info" id="tips-guide">
+		                    <h3>湖南旅游实用贴士</h3>
+		                    <div class="tips-grid">
+		                        <div class="tip-item">
+		                            <i class="fas fa-train"></i>
+		                            <h4>交通</h4>
+		                            <p>湖南高铁发达，长沙、衡阳、岳阳等地均可高铁到达；湘西地区建议自驾或包车。</p>
+		                        </div>
+		                        <div class="tip-item">
+		                            <i class="fas fa-hotel"></i>
+		                            <h4>住宿</h4>
+		                            <p>长沙、张家界等旅游城市酒店选择多；凤凰古城建议住沱江边客栈体验风情。</p>
+		                        </div>
+		                        <div class="tip-item">
+		                            <i class="fas fa-utensils"></i>
+		                            <h4>饮食</h4>
+		                            <p>湘菜偏辣，点餐时可要求少辣；品尝街头小吃注意卫生。</p>
+		                        </div>
+		                        <div class="tip-item">
+		                            <i class="fas fa-shopping-bag"></i>
+		                            <h4>购物</h4>
+		                            <p>湖南特产有君山银针茶、湘绣、腊肉、剁椒等，景区购物注意比价。</p>
+		                        </div>
+		                        <div class="tip-item">
+		                            <i class="fas fa-user-shield"></i>
+		                            <h4>安全</h4>
+		                            <p>山区游览注意防滑；夏季防暑防晒；保管好个人财物。</p>
+		                        </div>
+		                        <div class="tip-item">
+		                            <i class="fas fa-language"></i>
+		                            <h4>语言</h4>
+		                            <p>湖南方言复杂，但旅游区普通话通行；学几句当地方言更添乐趣。</p>
+		                        </div>
+		                    </div>
+		                </div>
+		            </div>
+		        </div>
+		    </section>
+		</main>
+		<!-- 新闻通讯 -->
+		<section class="newsletter">
+		    <div class="container">
+		        <h2>订阅我们的通讯</h2>
+		        <p>获取湖南旅游最新资讯和特别优惠</p>
+		        
+		        <form class="newsletter-form">
+		            <input type="email" placeholder="输入您的电子邮箱">
+		            <button type="submit">订阅</button>
+		        </form>
+		    </div>
+		</section>
+		<!-- 页脚 -->
+		<footer class="footer">
+		    <div class="container">
+		        <div class="footer-grid">
+		            <div class="footer-col">
+		                <h3>锦绣湖南</h3>
+		                <p>湖南旅游官方指南网站，为您提供最全面、最权威的湖南旅游信息。</p>
+		            </div>
+		            
+		            <div class="footer-col">
+		                <h3>快速链接</h3>
+		                <ul class="nav-links">
+		                    <li><a href="index.html">首页</a></li>
+		                    <li class="dropdown">
+		                        <a href="#">探索湖南</a>
+		                        <ul class="dropdown-content">
+		                            <li><a href="cs.html">长沙</a></li>
+		                            <li><a href="zjj.html">张家界</a></li>
+		                            <li><a href="xx.html">湘西</a></li>
+		                            <li><a href="yy.html">岳阳</a></li>
+		                            <li><a href="ss.html">韶山</a></li>
+		                        </ul>
+		                    </li>
+		                    <li><a href="jqdq.html">景区大全</a></li>
+		                    <li><a href="xcgh.html">行程规划</a></li>
+		                    <li><a href="whty.html">文化体验</a></li>
+		                    <li><a href="meishi.html">美食地图</a></li>
+		                </ul>
+		            </div>
+		            
+		            <div class="footer-col">
+		                <h3>实用信息</h3>
+		                <ul>
+		                    <li><a href="https://www.msn.cn/zh-cn/weather/forecast/in-%E6%B9%96%E5%8D%97%E7%9C%81?loc=eyJsIjoi5rmW5Y2X55yBIiwiYyI6IuS4reWNjuS6uuawkeWFseWSjOWbvSIsImkiOiJDTiIsIngiOiIxMTIuOTM4OTIiLCJ5IjoiMjguMjI4MDYifQ%3D%3D&weadegreetype=C&ocid=ansmsnweather" target="_blank">天气预报</a></li>
+		                    <li><a href="#">交通指南</a></li>
+		                    <li><a href="#">紧急电话</a></li>
+		                    <li><a href="#">旅游贴士</a></li>
+		                    <li><a href="#">无障碍旅游</a></li>
+		                </ul>
+		            </div>
+		            
+		            <div class="footer-col">
+		                <h3>联系我们</h3>
+		                <ul>
+		                    <li><i class="fas fa-map-marker-alt"></i> 湖南省长沙市长沙县</li>
+		                    <li><i class="fas fa-phone"></i> +86 731 8888 8888</li>
+		                    <li><i class="fas fa-envelope"></i> info@hunan-travel.com</li>
+		                </ul>
+		            </div>
+		        </div>
+		        
+		        <div class="footer-bottom">
+		            <p>&copy; 2025 锦绣湖南旅游网. 保留所有权利.</p>
+		        </div>
+		    </div>
+		</footer>
+	</body>
+</html>

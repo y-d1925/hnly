@@ -1,0 +1,821 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>锦绣湖南 - 发现湖南之美</title>
+		<link href="css/xcgh.css"xcgh rel="stylesheet" type="text/css">
+		<link href="css/hunan.css" rel="stylesheet" type="text/css">
+		<script src="https://cdn.tailwindcss.com"></script>
+		    <!-- Font Awesome -->
+		<link href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css" rel="stylesheet">
+		    <!-- Google Fonts - Inter -->
+		<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+	</head>
+	<body >
+		   <header id="navbar" class="fixed w-full z-50 transition-all duration-300">
+		           <nav class="navbar">
+		               <div class="container">
+		                   <a href="#" class="logo">
+		                       <i class="fas fa-mountain"></i>
+		                       锦绣<span>湖南</span>
+		                   </a>
+		                   
+		                   <ul class="nav-links">
+		                       <li><a href="index.html">首页</a></li>
+		                       <li class="dropdown">
+		                           <a href="#">探索湖南</a>
+		                           <ul class="dropdown-content">
+		                               <li><a href="cs.html">长沙</a></li>
+		                               <li><a href="zjj.html">张家界</a></li>
+		                               <li><a href="xx.html">湘西</a></li>
+		                               <li><a href="yy.html">岳阳</a></li>
+		                               <li><a href="ss.html">韶山</a></li>
+		                           </ul>
+		                       </li>
+		                       <li><a href="jqdq.html">景区大全</a></li>
+		                       <li><a href="xcgh.html">行程规划</a></li>
+		                       <li><a href="whty.html">文化体验</a></li>
+		                       <li><a href="meishi.html">美食地图</a></li>
+		                   </ul>
+		                   
+		                   <div class="mobile-menu">
+		                       <i class="fas fa-bars"></i>
+		                   </div>
+		               </div>
+		           </nav>
+		           
+		           <!-- 移动端导航菜单 -->
+		           
+		       </header>
+		   
+		       <!-- 英雄区域 -->
+		       <section id="home" class="relative h-screen flex items-center justify-center overflow-hidden hero">
+		           <div class="absolute inset-0 z-0">
+		               <img src="img/imgxcgh/zjjie.jpg" alt="湖南张家界风景" class="w-full h-full object-cover">
+		               <div class="absolute inset-0 bg-dark/50"></div>
+		           </div>
+		           
+		           <div class="container mx-auto px-4 z-10 text-center hero-content">
+		               <h1 class="text-[clamp(2.5rem,5vw,4rem)] font-bold text-white mb-4 tracking-tight">
+		                 探索魅力湖南
+		               </h1>
+		               <p class="text-[clamp(1rem,2vw,1.25rem)] text-gray-200 max-w-3xl mx-auto mb-8">
+		                 规划您的完美湖南之旅，从自由路线到经典行程，我们为您提供全方位的旅行解决方案
+		               </p>
+		               <div class="flex flex-col sm:flex-row justify-center gap-4 hero-content">
+		                 <a href="#xcgh" class="px-8 py-3 bg-orange-500  text-white font-medium rounded-md transition-all transform hover:scale-105 shadow-lg">
+		                   开始探索
+		                 </a>
+		               </div>
+		           </div>
+		           
+		           <div class="absolute bottom-10  text-white animate-bounce">
+	
+		               <a href="#route-generator" class="flex flex-col items-center">
+		                   
+		                   <i class="fa fa-chevron-down"></i>
+		               </a>
+		           </div>
+		       </section>
+		   
+		       <!-- 自由路线生成器 -->
+		       <section id="route-generator" class="py-20 bg-pattern">
+		           <div class="container mx-auto px-4">
+		               <div class="text-center mb-16">
+		                   <h2 id="xcgh" class="text-[clamp(1.75rem,3vw,2.5rem)] font-bold text-dark mb-4">自由路线生成器</h2>
+		                   <p class="text-gray-600 max-w-2xl mx-auto">根据您的兴趣和时间，自定义您的湖南之旅路线。选择景点、天数和预算，我们将为您生成完美行程。</p>
+		               </div>
+		               
+		               <div class="bg-white rounded-2xl shadow-xl overflow-hidden">
+		                   <div class="grid md:grid-cols-5">
+		                       <!-- 左侧筛选面板 -->
+		                       <div class="md:col-span-2 bg-light p-6 custom-scrollbar" style="max-height: 800px; overflow-y: auto;">
+		                           <div class="mb-6">
+		                               <h3 class="text-xl font-semibold mb-4">选择您的旅行偏好</h3>
+		                               
+		                               <div class="mb-6">
+		                                   <label class="block text-gray-700 mb-2 font-medium">旅行天数</label>
+		                                   <div class="flex items-center space-x-2">
+		                                       <input type="range" id="trip-days" min="1" max="10" value="5" class="w-full h-2 bg-gray-200 rounded-lg appearance-none cursor-pointer accent-primary">
+		                                       <span id="days-value" class="text-sm font-medium text-primary">5天</span>
+		                                   </div>
+		                               </div>
+		                               
+		                               <div class="mb-6">
+		                                   <label class="block text-gray-700 mb-2 font-medium">人均预算 (元)</label>
+		                                   <div class="flex items-center space-x-2">
+		                                       <input type="range" id="trip-budget" min="500" max="10000" step="500" value="3000" class="w-full h-2 bg-gray-200 rounded-lg appearance-none cursor-pointer accent-primary">
+		                                       <span id="budget-value" class="text-sm font-medium text-primary">3000元</span>
+		                                   </div>
+		                               </div>
+		                               
+		                               <div class="mb-6">
+		                                   <label class="block text-gray-700 mb-2 font-medium">旅行主题</label>
+		                                   <div class="grid grid-cols-2 gap-2">
+		                                       <label class="flex items-center p-2 bg-white rounded-lg shadow-sm cursor-pointer hover:shadow-md transition-shadow">
+		                                           <input type="checkbox" class="form-checkbox h-4 w-4 text-primary rounded" checked>
+		                                           <span class="ml-2 text-sm">自然风光</span>
+		                                       </label>
+		                                       <label class="flex items-center p-2 bg-white rounded-lg shadow-sm cursor-pointer hover:shadow-md transition-shadow">
+		                                           <input type="checkbox" class="form-checkbox h-4 w-4 text-primary rounded" checked>
+		                                           <span class="ml-2 text-sm">历史文化</span>
+		                                       </label>
+		                                       <label class="flex items-center p-2 bg-white rounded-lg shadow-sm cursor-pointer hover:shadow-md transition-shadow">
+		                                           <input type="checkbox" class="form-checkbox h-4 w-4 text-primary rounded">
+		                                           <span class="ml-2 text-sm">美食探索</span>
+		                                       </label>
+		                                       <label class="flex items-center p-2 bg-white rounded-lg shadow-sm cursor-pointer hover:shadow-md transition-shadow">
+		                                           <input type="checkbox" class="form-checkbox h-4 w-4 text-primary rounded">
+		                                           <span class="ml-2 text-sm">休闲度假</span>
+		                                       </label>
+		                                   </div>
+		                               </div>
+		                               
+		                               <div>
+		                                   <label class="block text-gray-700 mb-2 font-medium">必去景点</label>
+		                                   <div class="space-y-2">
+		                                       <label class="flex items-center p-2 bg-white rounded-lg shadow-sm cursor-pointer hover:shadow-md transition-shadow">
+		                                           <input type="checkbox" class="form-checkbox h-4 w-4 text-primary rounded" checked>
+		                                           <span class="ml-2 text-sm">张家界国家森林公园</span>
+		                                       </label>
+		                                       <label class="flex items-center p-2 bg-white rounded-lg shadow-sm cursor-pointer hover:shadow-md transition-shadow">
+		                                           <input type="checkbox" class="form-checkbox h-4 w-4 text-primary rounded" checked>
+		                                           <span class="ml-2 text-sm">凤凰古城</span>
+		                                       </label>
+		                                       <label class="flex items-center p-2 bg-white rounded-lg shadow-sm cursor-pointer hover:shadow-md transition-shadow">
+		                                           <input type="checkbox" class="form-checkbox h-4 w-4 text-primary rounded">
+		                                           <span class="ml-2 text-sm">岳麓山</span>
+		                                       </label>
+		                                       <label class="flex items-center p-2 bg-white rounded-lg shadow-sm cursor-pointer hover:shadow-md transition-shadow">
+		                                           <input type="checkbox" class="form-checkbox h-4 w-4 text-primary rounded">
+		                                           <span class="ml-2 text-sm">橘子洲头</span>
+		                                       </label>
+		                                       <label class="flex items-center p-2 bg-white rounded-lg shadow-sm cursor-pointer hover:shadow-md transition-shadow">
+		                                           <input type="checkbox" class="form-checkbox h-4 w-4 text-primary rounded">
+		                                           <span class="ml-2 text-sm">韶山毛泽东故居</span>
+		                                       </label>
+		                                       <label class="flex items-center p-2 bg-white rounded-lg shadow-sm cursor-pointer hover:shadow-md transition-shadow">
+		                                           <input type="checkbox" class="form-checkbox h-4 w-4 text-primary rounded">
+		                                           <span class="ml-2 text-sm">衡山</span>
+		                                       </label>
+		                                   </div>
+		                               </div>
+		                           </div>
+		                           
+		                           <button id="generate-route" class="w-full py-3 bg-primary hover:bg-primary/90 text-white font-medium rounded-lg transition-all transform hover:scale-[1.02] shadow-md hover:shadow-lg">
+		                               生成我的路线
+		                           </button>
+		                       </div>
+		                       
+		                       <!-- 右侧路线预览 -->
+		                       <div class="md:col-span-3 p-6">
+		                           <div class="mb-6 flex justify-between items-center">
+		                               <h3 class="text-xl font-semibold">您的旅行路线</h3>
+		                               <span class="bg-primary/10 text-primary text-sm px-3 py-1 rounded-full">
+		                                   <i class="fa fa-clock-o mr-1"></i> 5天4晚
+		                               </span>
+		                           </div>
+		                           
+		                           <div class="space-y-6">
+		                               <!-- 行程日1 -->
+		                               <div class="border-l-4 border-primary pl-4 pb-4 relative">
+		                                   <div class="absolute -left-2.5 w-5 h-5 rounded-full bg-primary flex items-center justify-center">
+		                                       <span class="text-white text-xs font-bold">1</span>
+		                                   </div>
+		                                   <h4 class="text-lg font-medium mb-2">第一天：抵达长沙，探索城市魅力</h4>
+		                                   <div class="space-y-4">
+		                                       <div class="bg-light rounded-lg p-4 shadow-sm hover:shadow-md transition-shadow">
+		                                           <div class="flex items-start">
+		                                               <div class="mr-4">
+		                                                   <i class="fa fa-map-marker text-primary text-xl"></i>
+		                                               </div>
+		                                               <div>
+		                                                   <h5 class="font-medium">橘子洲头</h5>
+		                                                   <p class="text-sm text-gray-600">上午 | 约3小时</p>
+		                                                   <p class="text-xs text-gray-500 mt-1">欣赏湘江风光，参观毛泽东青年艺术雕塑</p>
+		                                               </div>
+		                                           </div>
+		                                       </div>
+		                                       
+		                                       <div class="bg-light rounded-lg p-4 shadow-sm hover:shadow-md transition-shadow">
+		                                           <div class="flex items-start">
+		                                               <div class="mr-4">
+		                                                   <i class="fa fa-cutlery text-primary text-xl"></i>
+		                                               </div>
+		                                               <div>
+		                                                   <h5 class="font-medium">火宫殿</h5>
+		                                                   <p class="text-sm text-gray-600">中午 | 约1.5小时</p>
+		                                                   <p class="text-xs text-gray-500 mt-1">品尝正宗湘菜和长沙小吃</p>
+		                                               </div>
+		                                           </div>
+		                                       </div>
+		                                       
+		                                       <div class="bg-light rounded-lg p-4 shadow-sm hover:shadow-md transition-shadow">
+		                                           <div class="flex items-start">
+		                                               <div class="mr-4">
+		                                                   <i class="fa fa-university text-primary text-xl"></i>
+		                                               </div>
+		                                               <div>
+		                                                   <h5 class="font-medium">岳麓山</h5>
+		                                                   <p class="text-sm text-gray-600">下午 | 约4小时</p>
+		                                                   <p class="text-xs text-gray-500 mt-1">游览爱晚亭、岳麓书院，欣赏自然风光</p>
+		                                               </div>
+		                                           </div>
+		                                       </div>
+		                                   </div>
+		                               </div>
+		                               
+		                               <!-- 行程日2 -->
+		                               <div class="border-l-4 border-primary pl-4 pb-4 relative">
+		                                   <div class="absolute -left-2.5 w-5 h-5 rounded-full bg-primary flex items-center justify-center">
+		                                       <span class="text-white text-xs font-bold">2</span>
+		                                   </div>
+		                                   <h4 class="text-lg font-medium mb-2">第二天：长沙 - 韶山 - 张家界</h4>
+		                                   <div class="space-y-4">
+		                                       <div class="bg-light rounded-lg p-4 shadow-sm hover:shadow-md transition-shadow">
+		                                           <div class="flex items-start">
+		                                               <div class="mr-4">
+		                                                   <i class="fa fa-train text-primary text-xl"></i>
+		                                               </div>
+		                                               <div>
+		                                                   <h5 class="font-medium">高铁前往韶山</h5>
+		                                                   <p class="text-sm text-gray-600">上午 | 约1.5小时</p>
+		                                                   <p class="text-xs text-gray-500 mt-1">长沙南站 → 韶山南站</p>
+		                                               </div>
+		                                           </div>
+		                                       </div>
+		                                       
+		                                       <div class="bg-light rounded-lg p-4 shadow-sm hover:shadow-md transition-shadow">
+		                                           <div class="flex items-start">
+		                                               <div class="mr-4">
+		                                                   <i class="fa fa-map-marker text-primary text-xl"></i>
+		                                               </div>
+		                                               <div>
+		                                                   <h5 class="font-medium">韶山毛泽东故居</h5>
+		                                                   <p class="text-sm text-gray-600">中午 | 约2小时</p>
+		                                                   <p class="text-xs text-gray-500 mt-1">参观伟人故里，了解毛泽东生平</p>
+		                                               </div>
+		                                           </div>
+		                                       </div>
+		                                       
+		                                       <div class="bg-light rounded-lg p-4 shadow-sm hover:shadow-md transition-shadow">
+		                                           <div class="flex items-start">
+		                                               <div class="mr-4">
+		                                                   <i class="fa fa-plane text-primary text-xl"></i>
+		                                               </div>
+		                                               <div>
+		                                                   <h5 class="font-medium">飞机前往张家界</h5>
+		                                                   <p class="text-sm text-gray-600">下午 | 约1小时</p>
+		                                                   <p class="text-xs text-gray-500 mt-1">长沙黄花机场 → 张家界荷花机场</p>
+		                                               </div>
+		                                           </div>
+		                                       </div>
+		                                   </div>
+		                               </div>
+		                               
+		                               <!-- 行程日3 -->
+		                               <div class="border-l-4 border-primary pl-4 pb-4 relative">
+		                                   <div class="absolute -left-2.5 w-5 h-5 rounded-full bg-primary flex items-center justify-center">
+		                                       <span class="text-white text-xs font-bold">3</span>
+		                                   </div>
+		                                   <h4 class="text-lg font-medium mb-2">第三天：张家界国家森林公园</h4>
+		                                   <div class="space-y-4">
+		                                       <div class="bg-light rounded-lg p-4 shadow-sm hover:shadow-md transition-shadow">
+		                                           <div class="flex items-start">
+		                                               <div class="mr-4">
+		                                                   <i class="fa fa-tree text-primary text-xl"></i>
+		                                               </div>
+		                                               <div>
+		                                                   <h5 class="font-medium">袁家界景区</h5>
+		                                                   <p class="text-sm text-gray-600">全天 | 约6小时</p>
+		                                                   <p class="text-xs text-gray-500 mt-1">游览《阿凡达》悬浮山取景地，欣赏奇峰异石</p>
+		                                               </div>
+		                                           </div>
+		                                       </div>
+		                                   </div>
+		                               </div>
+		                               
+		                               <!-- 行程日4 -->
+		                               <div class="border-l-4 border-primary pl-4 pb-4 relative">
+		                                   <div class="absolute -left-2.5 w-5 h-5 rounded-full bg-primary flex items-center justify-center">
+		                                       <span class="text-white text-xs font-bold">4</span>
+		                                   </div>
+		                                   <h4 class="text-lg font-medium mb-2">第四天：张家界 - 凤凰古城</h4>
+		                                   <div class="space-y-4">
+		                                       <div class="bg-light rounded-lg p-4 shadow-sm hover:shadow-md transition-shadow">
+		                                           <div class="flex items-start">
+		                                               <div class="mr-4">
+		                                                   <i class="fa fa-tree text-primary text-xl"></i>
+		                                               </div>
+		                                               <div>
+		                                                   <h5 class="font-medium">金鞭溪景区</h5>
+		                                                   <p class="text-sm text-gray-600">上午 | 约3小时</p>
+		                                                   <p class="text-xs text-gray-500 mt-1">漫步峡谷，欣赏溪流和原始森林风光</p>
+		                                               </div>
+		                                           </div>
+		                                       </div>
+		                                       
+		                                       <div class="bg-light rounded-lg p-4 shadow-sm hover:shadow-md transition-shadow">
+		                                           <div class="flex items-start">
+		                                               <div class="mr-4">
+		                                                   <i class="fa fa-bus text-primary text-xl"></i>
+		                                               </div>
+		                                               <div>
+		                                                   <h5 class="font-medium">乘车前往凤凰古城</h5>
+		                                                   <p class="text-sm text-gray-600">下午 | 约4小时</p>
+		                                                   <p class="text-xs text-gray-500 mt-1">欣赏沿途湘西风光</p>
+		                                               </div>
+		                                           </div>
+		                                       </div>
+		                                       
+		                                       <div class="bg-light rounded-lg p-4 shadow-sm hover:shadow-md transition-shadow">
+		                                           <div class="flex items-start">
+		                                               <div class="mr-4">
+		                                                   <i class="fa fa-camera text-primary text-xl"></i>
+		                                               </div>
+		                                               <div>
+		                                                   <h5 class="font-medium">夜游凤凰古城</h5>
+		                                                   <p class="text-sm text-gray-600">晚上 | 约3小时</p>
+		                                                   <p class="text-xs text-gray-500 mt-1">欣赏沱江两岸灯火辉煌的夜景</p>
+		                                               </div>
+		                                           </div>
+		                                       </div>
+		                                   </div>
+		                               </div>
+		                               
+		                               <!-- 行程日5 -->
+		                               <div class="border-l-4 border-primary pl-4 relative">
+		                                   <div class="absolute -left-2.5 w-5 h-5 rounded-full bg-primary flex items-center justify-center">
+		                                       <span class="text-white text-xs font-bold">5</span>
+		                                   </div>
+		                                   <h4 class="text-lg font-medium mb-2">第五天：凤凰古城 - 返程</h4>
+		                                   <div class="space-y-4">
+		                                       <div class="bg-light rounded-lg p-4 shadow-sm hover:shadow-md transition-shadow">
+		                                           <div class="flex items-start">
+		                                               <div class="mr-4">
+		                                                   <i class="fa fa-map-marker text-primary text-xl"></i>
+		                                               </div>
+		                                               <div>
+		                                                   <h5 class="font-medium">沈从文故居、熊希龄故居</h5>
+		                                                   <p class="text-sm text-gray-600">上午 | 约2小时</p>
+		                                                   <p class="text-xs text-gray-500 mt-1">了解凤凰名人的生平与文化</p>
+		                                               </div>
+		                                           </div>
+		                                       </div>
+		                                       
+		                                       <div class="bg-light rounded-lg p-4 shadow-sm hover:shadow-md transition-shadow">
+		                                           <div class="flex items-start">
+		                                               <div class="mr-4">
+		                                                   <i class="fa fa-home text-primary text-xl"></i>
+		                                               </div>
+		                                               <div>
+		                                                   <h5 class="font-medium">返回温馨的家</h5>
+		                                                   <p class="text-sm text-gray-600">下午 | 返程</p>
+		                                                   <p class="text-xs text-gray-500 mt-1">结束愉快的湖南之旅</p>
+		                                               </div>
+		                                           </div>
+		                                       </div>
+		                                   </div>
+		                               </div>
+		                           </div>
+		                           
+		                           <div class="mt-8 flex justify-between items-center">
+		                               <div class="flex items-center">
+		                                   <i class="fa fa-calculator text-primary mr-2"></i>
+		                                   <span class="font-medium">预计总预算：约 ¥3,000/人</span>
+		                               </div>
+		                               <div class="flex space-x-3">
+		                                   <button class="px-4 py-2 bg-white border border-gray-300 rounded-lg hover:bg-gray-50 transition-colors">
+		                                       <i class="fa fa-download mr-1"></i> 导出
+		                                   </button>
+		                                   <button class="px-4 py-2 bg-primary text-white rounded-lg hover:bg-primary/90 transition-colors">
+		                                       <i class="fa fa-share-alt mr-1"></i> 分享
+		                                   </button>
+		                               </div>
+		                           </div>
+		                       </div>
+		                   </div>
+		               </div>
+		           </div>
+		       </section>
+		   
+		       <!-- 经典路线推荐 -->
+		       <section id="classic-routes" class="py-20 bg-white">
+		           <div class="container mx-auto px-4">
+		               <div class="text-center mb-16">
+		                   <h2 class="text-[clamp(1.75rem,3vw,2.5rem)] font-bold text-dark mb-4">经典路线推荐</h2>
+		                   <p class="text-gray-600 max-w-2xl mx-auto">精选湖南经典旅游路线，满足不同天数和预算需求，让您的旅行更加省心。</p>
+		               </div>
+		               
+		               <div class="grid md:grid-cols-2 gap-8">
+		                   <!-- 3日游 -->
+		                   <div class="bg-white rounded-2xl shadow-xl overflow-hidden group hover:shadow-2xl transition-all duration-300">
+		                       <div class="relative h-64 overflow-hidden">
+		                           <img src="img/imgxcgh/back.jpg" alt="张家界3日游" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+		                           <div class="absolute top-4 left-4 bg-secondary text-white text-sm font-medium px-3 py-1 rounded-full">
+		                               3日游
+		                           </div>
+		                       </div>
+		                       
+		                       <div class="p-6">
+		                           <div class="flex justify-between items-start mb-4">
+		                               <h3 class="text-xl font-bold">张家界精华3日游</h3>
+		                               <div class="flex items-center">
+		                                   <i class="fa fa-star text-warning"></i>
+		                                   <span class="ml-1 font-medium">4.8</span>
+		                               </div>
+		                           </div>
+		                           
+		                           <p class="text-gray-600 mb-6">探索张家界国家森林公园的奇峰异石，感受大自然的鬼斧神工。</p>
+		                           
+		                           <div class="space-y-4 mb-6">
+		                               <div class="flex items-center">
+		                                   <i class="fa fa-map-marker text-primary mr-3"></i>
+		                                   <span>张家界国家森林公园、天门山</span>
+		                               </div>
+		                               <div class="flex items-center">
+		                                   <i class="fa fa-money text-primary mr-3"></i>
+		                                   <span>人均预算：约 ¥1,800 - 2,500</span>
+		                               </div>
+		                               <div class="flex items-center">
+		                                   <i class="fa fa-calendar text-primary mr-3"></i>
+		                                   <span>最佳季节：4-10月</span>
+		                               </div>
+		                           </div>
+		                           
+		                           <div class="border-t pt-4">
+		                               <div class="flex justify-between items-center">
+		                                   <div>
+		                                       <span class="text-2xl font-bold text-primary">¥1,800</span>
+		                                       <span class="text-gray-500 text-sm">起/人</span>
+		                                   </div>
+		                                   <button class="px-5 py-2 bg-primary text-white rounded-lg hover:bg-primary/90 transition-colors">
+		                                       查看详情
+		                                   </button>
+		                               </div>
+		                           </div>
+		                       </div>
+		                   </div>
+		                   
+		                   <!-- 5日游 -->
+		                   <div class="bg-white rounded-2xl shadow-xl overflow-hidden group hover:shadow-2xl transition-all duration-300">
+		                       <div class="relative h-64 overflow-hidden">
+		                           <img src="img/imgxcgh/jjz.jpg" alt="湖南全景5日游" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+		                           <div class="absolute top-4 left-4 bg-primary text-white text-sm font-medium px-3 py-1 rounded-full">
+		                               5日游
+		                           </div>
+		                       </div>
+		                       
+		                       <div class="p-6">
+		                           <div class="flex justify-between items-start mb-4">
+		                               <h3 class="text-xl font-bold">湖南全景5日游</h3>
+		                               <div class="flex items-center">
+		                                   <i class="fa fa-star text-warning"></i>
+		                                   <span class="ml-1 font-medium">4.9</span>
+		                               </div>
+		                           </div>
+		                           
+		                           <p class="text-gray-600 mb-6">长沙、韶山、张家界、凤凰古城一网打尽，领略湖南自然风光与人文风情。</p>
+		                           
+		                           <div class="space-y-4 mb-6">
+		                               <div class="flex items-center">
+		                                   <i class="fa fa-map-marker text-primary mr-3"></i>
+		                                   <span>长沙、韶山、张家界、凤凰古城</span>
+		                               </div>
+		                               <div class="flex items-center">
+		                                   <i class="fa fa-money text-primary mr-3"></i>
+		                                   <span>人均预算：约 ¥3,000 - 4,000</span>
+		                               </div>
+		                               <div class="flex items-center">
+		                                   <i class="fa fa-calendar text-primary mr-3"></i>
+		                                   <span>最佳季节：春秋季</span>
+		                               </div>
+		                           </div>
+		                           
+		                           <div class="border-t pt-4">
+		                               <div class="flex justify-between items-center">
+		                                   <div>
+		                                       <span class="text-2xl font-bold text-primary">¥3,000</span>
+		                                       <span class="text-gray-500 text-sm">起/人</span>
+		                                   </div>
+		                                   <button class="px-5 py-2 bg-primary text-white rounded-lg hover:bg-primary/90 transition-colors">
+		                                       查看详情
+		                                   </button>
+		                               </div>
+		                           </div>
+		                       </div>
+		                   </div>
+		               </div>
+		               
+		               <div class="mt-12 text-center">
+		                   <button class="px-8 py-3 bg-white border border-primary text-primary font-medium rounded-lg hover:bg-primary/5 transition-colors">
+		                       查看更多路线 <i class="fa fa-long-arrow-right ml-2"></i>
+		                   </button>
+		               </div>
+		           </div>
+		       </section>
+		   
+		       <!-- 定制旅行表单 -->
+		       <section id="custom-trip" class="py-20 bg-light">
+		           <div class="container mx-auto px-4">
+		               <div class="text-center mb-16">
+		                   <h2 class="text-[clamp(1.75rem,3vw,2.5rem)] font-bold text-dark mb-4">定制您的专属旅行</h2>
+		                   <p class="text-gray-600 max-w-2xl mx-auto">告诉我们您的需求，我们将为您量身定制完美的湖南之旅。</p>
+		               </div>
+		               
+		               <div class="bg-white rounded-2xl shadow-xl p-8 max-w-4xl mx-auto">
+		                   <form id="custom-trip-form" class="space-y-6">
+		                       <div class="grid md:grid-cols-2 gap-6">
+		                           <div>
+		                               <label for="name" class="block text-gray-700 mb-2 font-medium">姓名</label>
+		                               <input type="text" id="name" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary/50 focus:border-primary transition-colors" placeholder="请输入您的姓名">
+		                           </div>
+		                           
+		                           <div>
+		                               <label for="phone" class="block text-gray-700 mb-2 font-medium">手机号码</label>
+		                               <input type="tel" id="phone" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary/50 focus:border-primary transition-colors" placeholder="请输入您的手机号码">
+		                           </div>
+		                           
+		                           <div>
+		                               <label for="email" class="block text-gray-700 mb-2 font-medium">电子邮箱</label>
+		                               <input type="email" id="email" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary/50 focus:border-primary transition-colors" placeholder="请输入您的电子邮箱">
+		                           </div>
+		                           
+		                           <div>
+		                               <label for="travelers" class="block text-gray-700 mb-2 font-medium">出行人数</label>
+		                               <select id="travelers" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary/50 focus:border-primary transition-colors">
+		                                   <option value="">请选择出行人数</option>
+		                                   <option value="1">1人</option>
+		                                   <option value="2">2人</option>
+		                                   <option value="3-5">3-5人</option>
+		                                   <option value="6-10">6-10人</option>
+		                                   <option value="10+">10人以上</option>
+		                               </select>
+		                           </div>
+		                           
+		                           <div>
+		                               <label for="trip-days" class="block text-gray-700 mb-2 font-medium">旅行天数</label>
+		                               <select id="trip-days" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary/50 focus:border-primary transition-colors">
+		                                   <option value="">请选择旅行天数</option>
+		                                   <option value="1-3">1-3天</option>
+		                                   <option value="4-7">4-7天</option>
+		                                   <option value="8-14">8-14天</option>
+		                                   <option value="15+">15天以上</option>
+		                               </select>
+		                           </div>
+		                           
+		                           <div>
+		                               <label for="budget" class="block text-gray-700 mb-2 font-medium">人均预算</label>
+		                               <select id="budget" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary/50 focus:border-primary transition-colors">
+		                                   <option value="">请选择预算范围</option>
+		                                   <option value="1000以下">1000元以下</option>
+		                                   <option value="1000-2000">1000-2000元</option>
+		                                   <option value="2000-3000">2000-3000元</option>
+		                                   <option value="3000-5000">3000-5000元</option>
+		                                   <option value="5000以上">5000元以上</option>
+		                               </select>
+		                           </div>
+		                       </div>
+		                       
+		                       <div>
+		                           <label for="travel-date" class="block text-gray-700 mb-2 font-medium">出行日期</label>
+		                           <input type="date" id="travel-date" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary/50 focus:border-primary transition-colors">
+		                       </div>
+		                       
+		                       <div>
+		                           <label for="accommodation" class="block text-gray-700 mb-2 font-medium">住宿偏好</label>
+		                           <div class="grid md:grid-cols-3 gap-3">
+		                               <label class="flex items-center p-3 bg-light rounded-lg cursor-pointer hover:bg-primary/5 transition-colors border border-gray-200">
+		                                   <input type="radio" name="accommodation" class="form-radio h-5 w-5 text-primary">
+		                                   <span class="ml-3">经济型酒店</span>
+		                               </label>
+		                               <label class="flex items-center p-3 bg-light rounded-lg cursor-pointer hover:bg-primary/5 transition-colors border border-gray-200">
+		                                   <input type="radio" name="accommodation" class="form-radio h-5 w-5 text-primary">
+		                                   <span class="ml-3">舒适型酒店</span>
+		                               </label>
+		                               <label class="flex items-center p-3 bg-light rounded-lg cursor-pointer hover:bg-primary/5 transition-colors border border-gray-200">
+		                                   <input type="radio" name="accommodation" class="form-radio h-5 w-5 text-primary">
+		                                   <span class="ml-3">豪华型酒店</span>
+		                               </label>
+		                               <label class="flex items-center p-3 bg-light rounded-lg cursor-pointer hover:bg-primary/5 transition-colors border border-gray-200">
+		                                   <input type="radio" name="accommodation" class="form-radio h-5 w-5 text-primary">
+		                                   <span class="ml-3">特色民宿</span>
+		                               </label>
+		                               <label class="flex items-center p-3 bg-light rounded-lg cursor-pointer hover:bg-primary/5 transition-colors border border-gray-200">
+		                                   <input type="radio" name="accommodation" class="form-radio h-5 w-5 text-primary">
+		                                   <span class="ml-3">青年旅社</span>
+		                               </label>
+		                               <label class="flex items-center p-3 bg-light rounded-lg cursor-pointer hover:bg-primary/5 transition-colors border border-gray-200">
+		                                   <input type="radio" name="accommodation" class="form-radio h-5 w-5 text-primary">
+		                                   <span class="ml-3">无特殊要求</span>
+		                               </label>
+		                           </div>
+		                       </div>
+		                       
+		                       <div>
+		                           <label for="route-preference" class="block text-gray-700 mb-2 font-medium">路线偏好</label>
+		                           <div class="grid md:grid-cols-3 gap-3">
+		                               <label class="flex items-center p-3 bg-light rounded-lg cursor-pointer hover:bg-primary/5 transition-colors border border-gray-200">
+		                                   <input type="checkbox" class="form-checkbox h-5 w-5 text-primary">
+		                                   <span class="ml-3">自然风光</span>
+		                               </label>
+		                               <label class="flex items-center p-3 bg-light rounded-lg cursor-pointer hover:bg-primary/5 transition-colors border border-gray-200">
+		                                   <input type="checkbox" class="form-checkbox h-5 w-5 text-primary">
+		                                   <span class="ml-3">历史文化</span>
+		                               </label>
+		                               <label class="flex items-center p-3 bg-light rounded-lg cursor-pointer hover:bg-primary/5 transition-colors border border-gray-200">
+		                                   <input type="checkbox" class="form-checkbox h-5 w-5 text-primary">
+		                                   <span class="ml-3">美食探索</span>
+		                               </label>
+		                               <label class="flex items-center p-3 bg-light rounded-lg cursor-pointer hover:bg-primary/5 transition-colors border border-gray-200">
+		                                   <input type="checkbox" class="form-checkbox h-5 w-5 text-primary">
+		                                   <span class="ml-3">休闲度假</span>
+		                               </label>
+		                               <label class="flex items-center p-3 bg-light rounded-lg cursor-pointer hover:bg-primary/5 transition-colors border border-gray-200">
+		                                   <input type="checkbox" class="form-checkbox h-5 w-5 text-primary">
+		                                   <span class="ml-3">红色旅游</span>
+		                               </label>
+		                               <label class="flex items-center p-3 bg-light rounded-lg cursor-pointer hover:bg-primary/5 transition-colors border border-gray-200">
+		                                   <input type="checkbox" class="form-checkbox h-5 w-5 text-primary">
+		                                   <span class="ml-3">探险体验</span>
+		                               </label>
+		                           </div>
+		                       </div>
+		                       
+		                       <div>
+		                           <label for="special-requests" class="block text-gray-700 mb-2 font-medium">特殊要求或补充说明</label>
+		                           <textarea id="special-requests" rows="4" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary/50 focus:border-primary transition-colors" placeholder="请输入您的特殊要求或补充说明..."></textarea>
+		                       </div>
+		                       
+		                       <div class="flex items-center">
+		                           <input type="checkbox" id="privacy-policy" class="form-checkbox h-5 w-5 text-primary">
+		                           <label for="privacy-policy" class="ml-2 text-sm text-gray-600">
+		                               我已阅读并同意<a href="#" class="text-primary hover:underline">隐私政策</a>和<a href="#" class="text-primary hover:underline">服务条款</a>
+		                           </label>
+		                       </div>
+		                       
+		                       <div class="pt-4">
+		                           <button type="submit" class="w-full py-4 bg-primary hover:bg-primary/90 text-white font-bold rounded-lg transition-all transform hover:scale-[1.02] shadow-md hover:shadow-lg">
+		                               提交定制需求
+		                           </button>
+		                       </div>
+		                   </form>
+		               </div>
+		           </div>
+		       </section>
+		   
+		       <!-- 联系我们 -->
+		       <section id="contact" class="py-20 bg-white">
+		           <div class="container mx-auto px-4">
+		               <div class="text-center mb-16">
+		                   <h2 class="text-[clamp(1.75rem,3vw,2.5rem)] font-bold text-dark mb-4">联系我们</h2>
+		                   <p class="text-gray-600 max-w-2xl mx-auto">有任何问题或建议，请随时联系我们，我们将竭诚为您服务。</p>
+		               </div>
+		               
+		               <div class="grid md:grid-cols-3 gap-8">
+		                   <div class="bg-light rounded-2xl p-8 text-center hover:shadow-lg transition-shadow">
+		                       <div class="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-6">
+		                           <i class="fa fa-phone text-primary text-2xl"></i>
+		                       </div>
+		                       <h3 class="text-xl font-bold mb-2">电话咨询</h3>
+		                       <p class="text-gray-600 mb-4">我们的客服团队随时为您提供帮助</p>
+		                       <a href="tel:+8610123456789" class="text-primary font-medium hover:underline">400-123-4567</a>
+		                   </div>
+		                   
+		                   <div class="bg-light rounded-2xl p-8 text-center hover:shadow-lg transition-shadow">
+		                       <div class="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-6">
+		                           <i class="fa fa-envelope text-primary text-2xl"></i>
+		                       </div>
+		                       <h3 class="text-xl font-bold mb-2">邮件咨询</h3>
+		                       <p class="text-gray-600 mb-4">发送邮件，我们将在24小时内回复</p>
+		                       <a href="mailto:info@hunan-travel.com" class="text-primary font-medium hover:underline">info@hunan-travel.com</a>
+		                   </div>
+		                   
+		                   <div class="bg-light rounded-2xl p-8 text-center hover:shadow-lg transition-shadow">
+		                       <div class="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-6">
+		                           <i class="fa fa-map-marker text-primary text-2xl"></i>
+		                       </div>
+		                       <h3 class="text-xl font-bold mb-2">公司地址</h3>
+		                       <p class="text-gray-600 mb-4">欢迎前来我们的办公地点咨询</p>
+		                       <p class="text-gray-700">湖南省长沙市岳麓区潇湘中路123号</p>
+		                   </div>
+		               </div>
+		               
+		               <div class="mt-16 bg-light rounded-2xl p-8">
+		                   <div class="text-center mb-8">
+		                       <h3 class="text-2xl font-bold mb-2">关注我们</h3>
+		                       <p class="text-gray-600">获取更多湖南旅游资讯和优惠信息</p>
+		                   </div>
+		                   
+		                   
+		                   <div class="flex justify-center space-x-6">
+		                       <a href="#" class="w-14 h-14 bg-primary/10 hover:bg-primary/20 text-primary rounded-full flex items-center justify-center transition-colors">
+		                           <i class="fa fa-weixin text-2xl"></i>
+		                       </a>
+		                       <a href="#" class="w-14 h-14 bg-primary/10 hover:bg-primary/20 text-primary rounded-full flex items-center justify-center transition-colors">
+		                           <i class="fa fa-weibo text-2xl"></i>
+		                       </a>
+		                       <a href="#" class="w-14 h-14 bg-primary/10 hover:bg-primary/20 text-primary rounded-full flex items-center justify-center transition-colors">
+		                           <i class="fa fa-instagram text-2xl"></i>
+		                       </a>
+		                       <a href="#" class="w-14 h-14 bg-primary/10 hover:bg-primary/20 text-primary rounded-full flex items-center justify-center transition-colors">
+		                           <i class="fa fa-youtube-play text-2xl"></i>
+		                       </a>
+		                   </div>
+		               </div>
+		           </div>
+		       </section>
+		   <!-- 新闻通讯 -->
+		   <section class="newsletter">
+		       <div class="container">
+		           <h2>订阅我们的通讯</h2>
+		           <p>获取湖南旅游最新资讯和特别优惠</p>
+		           
+		           <form class="newsletter-form">
+		               <input type="email" placeholder="输入您的电子邮箱">
+		               <button type="submit">订阅</button>
+		           </form>
+		       </div>
+		   </section>
+		   <!-- 页脚 -->
+		   <footer class="footer">
+		       <div class="container">
+		           <div class="footer-grid">
+		               <div class="footer-col">
+		                   <h3>锦绣湖南</h3>
+		                   <p>湖南旅游官方指南网站，为您提供最全面、最权威的湖南旅游信息。</p>
+		                  
+		               </div>
+		               
+		               <div class="footer-col">
+		                   <h3>快速链接</h3>
+		                   <ul class="nav-links">
+		                       <li><a href="index.html">首页</a></li>
+		                       <li class="dropdown">
+		                           <a href="#">探索湖南</a>
+		                           <ul class="dropdown-content">
+		                               <li><a href="cs.html">长沙</a></li>
+		                               <li><a href="zjj.html">张家界</a></li>
+		                               <li><a href="xx.html">湘西</a></li>
+		                               <li><a href="yy.html">岳阳</a></li>
+		                               <li><a href="ss.html">韶山</a></li>
+		                           </ul>
+		                       </li>
+		                       <li><a href="jqdq.html">景区大全</a></li>
+		                       <li><a href="xcgh.html">行程规划</a></li>
+		                       <li><a href="whty.html">文化体验</a></li>
+		                       <li><a href="meishi.html">美食地图</a></li>
+		                   </ul>
+		               </div>
+		               
+		               <div class="footer-col">
+		                   <h3>实用信息</h3>
+		                   <ul>
+		                       <li><a href="https://www.msn.cn/zh-cn/weather/forecast/in-%E6%B9%96%E5%8D%97%E7%9C%81?loc=eyJsIjoi5rmW5Y2X55yBIiwiYyI6IuS4reWNjuS6uuawkeWFseWSjOWbvSIsImkiOiJDTiIsIngiOiIxMTIuOTM4OTIiLCJ5IjoiMjguMjI4MDYifQ%3D%3D&weadegreetype=C&ocid=ansmsnweather" target="_blank">天气预报</a></li>
+		                       <li><a href="#">交通指南</a></li>
+		                       <li><a href="#">紧急电话</a></li>
+		                       <li><a href="#">旅游贴士</a></li>
+		                       <li><a href="#">无障碍旅游</a></li>
+		                   </ul>
+		               </div>
+		               
+		               <div class="footer-col">
+		                   <h3>联系我们</h3>
+		                   <ul>
+		                       <li><i class="fas fa-map-marker-alt"></i> 湖南省长沙市长沙县</li>
+		                       <li><i class="fas fa-phone"></i> +86 731 8888 8888</li>
+		                       <li><i class="fas fa-envelope"></i> info@hunan-travel.com</li>
+		                   </ul>
+		               </div>
+		           </div>
+		           
+		           <div class="footer-bottom">
+		               <p>&copy; 2025 锦绣湖南旅游网. 保留所有权利.</p>
+		           </div>
+		       </div>
+		   </footer>
+		   
+		       <!-- 返回顶部按钮 -->
+		       <button id="back-to-top" class="fixed bottom-8 right-8 bg-primary text-white w-12 h-12 rounded-full flex items-center justify-center shadow-lg opacity-0 invisible transition-all z-50 hover:bg-primary/90">
+		           <i class="fa fa-chevron-up"></i>
+		       </button>
+		   
+		       <!-- 成功提交模态框 -->
+		       <div id="success-modal" class="fixed inset-0 bg-dark/50 flex items-center justify-center z-50 opacity-0 invisible transition-all">
+		           <div class="bg-white rounded-2xl p-8 max-w-md w-full mx-4 transform scale-95 transition-all">
+		               <div class="text-center">
+		                   <div class="w-16 h-16 bg-success/10 rounded-full flex items-center justify-center mx-auto mb-6">
+		                       <i class="fa fa-check text-success text-2xl"></i>
+		                   </div>
+		                   <h3 class="text-2xl font-bold mb-2">提交成功！</h3>
+		                   <p class="text-gray-600 mb-6">我们已收到您的定制需求，将尽快与您联系。</p>
+		                   <button id="close-modal" class="px-8 py-3 bg-primary hover:bg-primary/90 text-white font-medium rounded-lg transition-colors">
+		                       确定
+		                   </button>
+		               </div>
+		           </div>
+		       </div>
+			   <script type="text/javascript" src="js/xcgh.js"></script>
+	</body>
+</html>

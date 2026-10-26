@@ -1,0 +1,766 @@
+<!DOCTYPE html>
+    <html lang="zh-CN">
+    <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>锦绣湖南 - 发现湖南之美</title>
+	  <link href="css/whty.css" rel="stylesheet" type="text/css">
+	  <link href="css/hunan.css" rel="stylesheet" type="text/css">
+      <script src="https://cdn.tailwindcss.com"></script>
+      <link href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css" rel="stylesheet">
+      <link rel="stylesheet" href="styles.css">
+    </head>
+    <body class="bg-gray-50 font-sans">
+      <!-- 导航栏 -->
+      <header id="navbar" class="fixed w-full z-50 transition-all duration-300">
+        <nav class="navbar">
+            <div class="container">
+                <a href="#" class="logo">
+                    <i class="fas fa-mountain"></i>
+                    锦绣<span>湖南</span>
+                </a>
+                
+                <ul class="nav-links">
+                    <li><a href="index.html">首页</a></li>
+                    <li class="dropdown">
+                        <a href="#">探索湖南</a>
+                        <ul class="dropdown-content">
+                            <li><a href="cs.html">长沙</a></li>
+                            <li><a href="zjj.html">张家界</a></li>
+                            <li><a href="xx.html">湘西</a></li>
+                            <li><a href="yy.html">岳阳</a></li>
+                            <li><a href="ss.html">韶山</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="jqdq.html">景区大全</a></li>
+                    <li><a href="xcgh.html">行程规划</a></li>
+                    <li><a href="whty.html">文化体验</a></li>
+                    <li><a href="meishi.html">美食地图</a></li>
+                </ul>
+                
+                <div class="mobile-menu">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </div>
+        </nav>
+      </header>
+
+      <!-- 英雄区 -->
+      <section class="relative h-screen flex items-center justify-center overflow-hidden hero">
+        <div class="absolute inset-0 z-0">
+          <img src="img/imgwhty/hnwh.jpg" alt="湖南自然风光" class="w-full h-full object-cover">
+          <div class="absolute inset-0 bg-gradient-to-r from-black/70 to-black/30"></div>
+        </div>
+        <div class="container mx-auto px-6 z-10 text-center hero-content">
+          <h1 class="text-[clamp(2.5rem,5vw,4rem)] font-bold text-white mb-4 tracking-tight">
+            探索湖南文化瑰宝
+          </h1>
+          <p class="text-[clamp(1rem,2vw,1.25rem)] text-gray-200 max-w-3xl mx-auto mb-8">
+            从千年历史到现代风采，感受湖南独特的文化魅力
+          </p>
+          <div class="flex flex-col sm:flex-row justify-center gap-4 hero-content">
+            <a href="#wh" class="px-8 py-3 bg-orange-500  text-white font-medium rounded-md transition-all transform hover:scale-105 shadow-lg">
+              开始探索
+            </a>
+          </div>
+        </div>
+        <div class="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
+          <a href="#history" class="text-white opacity-80 hover:opacity-100">
+            <i class="fa fa-angle-down text-3xl"></i>
+          </a>
+        </div>
+      </section>
+
+      <!-- 历史文化 -->
+      <section id="history" class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+          <div class="text-center mb-16">
+            <span class="text-[clamp(1.5rem,3vw,2.5rem)] font-bold text-gray-900">悠久传承</span>
+            <h2 id="wh" class="text-[clamp(1.5rem,3vw,2.5rem)] font-bold text-gray-900">历史文化</h2>
+            <div class="w-20 h-1 bg-red-500 mx-auto mt-4"></div>
+          </div>
+          
+          <div class="grid md:grid-cols-2 gap-12 items-center">
+            <div class="relative">
+              <img src="img/imgwhty/hnwh.png" alt="湖南历史建筑" class="rounded-lg shadow-xl w-full h-auto object-cover">
+              <div class="absolute -bottom-6 -right-6 bg-white p-4 rounded-lg shadow-lg max-w-xs">
+                <p class="text-sm text-gray-700 italic">"湖南，楚文化的重要发源地，有着三千年的历史沉淀"</p>
+              </div>
+            </div>
+            <div>
+              <h3 class="text-2xl font-bold text-gray-800 mb-4">楚风湘韵，千年传承</h3>
+              <p class="text-gray-600 mb-6 leading-relaxed">
+                湖南历史悠久，是楚文化和湖湘文化的重要发源地。早在新石器时代，这里就有人类活动的痕迹。春秋战国时期，湖南属楚国管辖，楚文化的浪漫主义精神深深影响了这片土地。
+              </p>
+              <p class="text-gray-600 mb-6 leading-relaxed">
+                宋代以后，湖南逐渐成为中国南方的文化中心之一，岳麓书院的建立更是标志着湖湘文化的兴盛。近代以来，湖南涌现出了一大批影响中国历史进程的杰出人物，如毛泽东、刘少奇等。
+              </p>
+              <div class="grid grid-cols-2 gap-4 mt-8">
+                <div class="bg-gray-50 p-4 rounded-lg">
+                  <div class="text-red-500 text-3xl mb-2"><i class="fa fa-university"></i></div>
+                  <h4 class="font-bold text-gray-800 mb-1">岳麓书院</h4>
+                  <p class="text-gray-600 text-sm">中国古代四大书院之一，始建于北宋</p>
+                </div>
+                <div class="bg-gray-50 p-4 rounded-lg">
+                  <div class="text-red-500 text-3xl mb-2"><i class="fa fa-history"></i></div>
+                  <h4 class="font-bold text-gray-800 mb-1">马王堆汉墓</h4>
+                  <p class="text-gray-600 text-sm">出土了震惊世界的辛追夫人遗体和大量文物</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 思想学术文化 -->
+      <section id="thought" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-6">
+          <div class="text-center mb-16">
+            <span class="text-[clamp(1.5rem,3vw,2.5rem)] font-bold text-gray-900">智慧之光</span>
+            <h2 class="text-[clamp(1.5rem,3vw,2.5rem)] font-bold text-gray-900">思想学术文化</h2>
+            <div class="w-20 h-1 bg-red-500 mx-auto mt-4"></div>
+          </div>
+          
+          <div class="grid md:grid-cols-3 gap-8">
+            <div class="bg-white rounded-xl shadow-lg overflow-hidden transform transition-all hover:-translate-y-2 hover:shadow-xl">
+              <img src="img/imgwhty/hxxp.jpg" alt="岳麓书院" class="w-full h-56 object-cover">
+              <div class="p-6">
+                <h3 class="text-xl font-bold text-gray-800 mb-2">湖湘学派</h3>
+                <p class="text-gray-600 mb-4">
+                  湖湘学派是南宋时期形成于湖南的一个重要学术流派，以岳麓书院为中心，强调经世致用的学术风格，对后世湖湘文化的发展产生了深远影响。
+                </p>
+              </div>
+            </div>
+            
+            <div class="bg-white rounded-xl shadow-lg overflow-hidden transform transition-all hover:-translate-y-2 hover:shadow-xl">
+              <img src="img/imgwhty/wfz.jpg" alt="王夫之画像" class="w-full h-56 object-cover">
+              <div class="p-6">
+                <h3 class="text-xl font-bold text-gray-800 mb-2">王夫之哲学</h3>
+                <p class="text-gray-600 mb-4">
+                  王夫之是明末清初著名的思想家，湖南衡阳人。他的哲学思想博大精深，对传统儒学进行了批判性的总结和发展，提出了"气一元论"等重要哲学观点。
+                </p>
+              </div>
+            </div>
+            
+            <div class="bg-white rounded-xl shadow-lg overflow-hidden transform transition-all hover:-translate-y-2 hover:shadow-xl">
+              <img src="img/imgwhty/sxqm.jpg" alt="现代学术交流" class="w-full h-56 object-cover">
+              <div class="p-6">
+                <h3 class="text-xl font-bold text-gray-800 mb-2">近代思想启蒙</h3>
+                <p class="text-gray-600 mb-4">
+                  近代以来，湖南涌现出了一大批思想启蒙先驱，如魏源、谭嗣同等。他们提出了"师夷长技以制夷"、"冲决网罗"等进步思想，推动了中国社会的近代化进程。
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 民俗艺术文化 -->
+      <section id="folk" class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+          <div class="text-center mb-16">
+            <span class="text-[clamp(1.5rem,3vw,2.5rem)] font-bold text-gray-900">多彩民俗</span>
+            <h2 class="text-[clamp(1.5rem,3vw,2.5rem)] font-bold text-gray-900">民俗艺术文化</h2>
+            <div class="w-20 h-1 bg-red-500 mx-auto mt-4"></div>
+          </div>
+          
+          <div class="grid md:grid-cols-2 gap-12 items-center">
+            <div>
+              <h3 class="text-2xl font-bold text-gray-800 mb-4">湘风楚韵，民俗瑰宝</h3>
+              <p class="text-gray-600 mb-6 leading-relaxed">
+                湖南民俗文化丰富多彩，各具特色。从传统的节庆活动到独特的民间艺术，无不展现出湖南人民的智慧和创造力。
+              </p>
+              
+              <div class="space-y-6">
+                <div class="flex items-start">
+                  <div class="bg-red-50 p-3 rounded-full mr-4">
+                    <i class="fa fa-drum text-red-500"></i>
+                  </div>
+                  <div>
+                    <h4 class="font-bold text-gray-800 mb-1">湘剧</h4>
+                    <p class="text-gray-600 text-sm">湖南地方传统戏剧，是湖南最具代表性的戏曲剧种之一，有着300多年的历史。</p>
+                  </div>
+                </div>
+                
+                <div class="flex items-start">
+                  <div class="bg-red-50 p-3 rounded-full mr-4">
+                    <i class="fa fa-music text-red-500"></i>
+                  </div>
+                  <div>
+                    <h4 class="font-bold text-gray-800 mb-1">湖南花鼓戏</h4>
+                    <p class="text-gray-600 text-sm">流行于湖南各地的民间小戏，以其明快活泼的音乐和表演风格深受群众喜爱。</p>
+                  </div>
+                </div>
+                
+                <div class="flex items-start">
+                  <div class="bg-red-50 p-3 rounded-full mr-4">
+                    <i class="fa fa-paint-brush text-red-500"></i>
+                  </div>
+                  <div>
+                    <h4 class="font-bold text-gray-800 mb-1">醴陵釉下五彩瓷</h4>
+                    <p class="text-gray-600 text-sm">中国国家地理标志产品，以其独特的釉下五彩工艺闻名于世，被誉为"东方陶瓷艺术的精华"。</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <div class="grid grid-cols-2 gap-4">
+              <div class="space-y-4">
+                <img src="img/imgwhty/xj.jpg" alt="湘剧表演" class="rounded-lg shadow-md w-full h-auto transform transition-all hover:scale-105">
+                <img src="img/imgwhty/llyxwcc.jpg" alt="醴陵瓷器" class="rounded-lg shadow-md w-full h-auto transform transition-all hover:scale-105">
+              </div>
+              <div class="space-y-4 mt-8">
+                <img src="img/imgwhty/hgx.jpg" alt="湖南花鼓戏" class="rounded-lg shadow-md w-full h-auto transform transition-all hover:scale-105">
+                <img src="img/imgwhty/wcc.jpg" alt="湖南剪纸" class="rounded-lg shadow-md w-full h-auto transform transition-all hover:scale-105">
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 民间舞蹈 -->
+      <section id="dance" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-6">
+          <div class="text-center mb-16">
+            <span class="text-[clamp(1.5rem,3vw,2.5rem)] font-bold text-gray-900">灵动舞姿</span>
+            <h2 class="text-[clamp(1.5rem,3vw,2.5rem)] font-bold text-gray-900">民间舞蹈</h2>
+            <div class="w-20 h-1 bg-red-500 mx-auto mt-4"></div>
+          </div>
+          
+          <div class="grid md:grid-cols-3 gap-8">
+            <div class="bg-white rounded-xl shadow-lg overflow-hidden group">
+              <div class="relative h-64 overflow-hidden">
+                <img src="img/imgwhty/bsw.jpg" alt="湖南摆手舞" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+                <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent"></div>
+                <div class="absolute bottom-0 left-0 p-6">
+                  <h3 class="text-xl font-bold text-white mb-1">摆手舞</h3>
+                  <p class="text-gray-200 text-sm">土家族传统舞蹈</p>
+                </div>
+              </div>
+              <div class="p-6">
+                <p class="text-gray-600 mb-4">
+                  摆手舞是土家族最具代表性的民间舞蹈，主要流传于湖南湘西土家族苗族自治州。舞蹈动作多模仿生产劳动、狩猎等活动，节奏明快，风格粗犷。
+                </p>
+                <div class="flex items-center text-sm text-gray-500">
+                  <span class="mr-4"><i class="fa fa-map-marker mr-1"></i> 湘西州</span>
+                  <span><i class="fa fa-calendar mr-1"></i> 重大节日表演</span>
+                </div>
+              </div>
+            </div>
+            
+            <div class="bg-white rounded-xl shadow-lg overflow-hidden group">
+              <div class="relative h-64 overflow-hidden">
+                <img src="img/imgwhty/dhg.jpg" alt="湖南地花鼓" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+                <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent"></div>
+                <div class="absolute bottom-0 left-0 p-6">
+                  <h3 class="text-xl font-bold text-white mb-1">地花鼓</h3>
+                  <p class="text-gray-200 text-sm">汉族民间舞蹈</p>
+                </div>
+              </div>
+              <div class="p-6">
+                <p class="text-gray-600 mb-4">
+                  地花鼓是湖南各地广为流传的一种民间舞蹈，以其轻松活泼的表演风格和浓郁的生活气息而深受群众喜爱。舞蹈通常由一男一女或一男两女表演，动作诙谐幽默。
+                </p>
+                <div class="flex items-center text-sm text-gray-500">
+                  <span class="mr-4"><i class="fa fa-map-marker mr-1"></i> 全省各地</span>
+                  <span><i class="fa fa-calendar mr-1"></i> 春节、元宵</span>
+                </div>
+              </div>
+            </div>
+            
+            <div class="bg-white rounded-xl shadow-lg overflow-hidden group">
+              <div class="relative h-64 overflow-hidden">
+                <img src="img/imgwhty/cgw.jpg" alt="湖南瑶族长鼓舞" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+                <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent"></div>
+                <div class="absolute bottom-0 left-0 p-6">
+                  <h3 class="text-xl font-bold text-white mb-1">长鼓舞</h3>
+                  <p class="text-gray-200 text-sm">瑶族传统舞蹈</p>
+                </div>
+              </div>
+              <div class="p-6">
+                <p class="text-gray-600 mb-4">
+                  长鼓舞是湖南瑶族最具代表性的民间舞蹈，主要流传于湖南江华瑶族自治县等地。舞蹈以长鼓为主要伴奏乐器，舞者边敲鼓边跳舞，动作优美舒展。
+                </p>
+                <div class="flex items-center text-sm text-gray-500">
+                  <span class="mr-4"><i class="fa fa-map-marker mr-1"></i> 江华县</span>
+                  <span><i class="fa fa-calendar mr-1"></i> 盘王节</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 民间绘画 -->
+      <section id="painting" class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+          <div class="text-center mb-16">
+            <span class="text-[clamp(1.5rem,3vw,2.5rem)] font-bold text-gray-900">笔墨丹青</span>
+            <h2 class="text-[clamp(1.5rem,3vw,2.5rem)] font-bold text-gray-900">民间绘画</h2>
+            <div class="w-20 h-1 bg-red-500 mx-auto mt-4"></div>
+          </div>
+          
+          <div class="relative overflow-hidden">
+            <div class="flex overflow-x-auto pb-8 snap-x snap-mandatory scrollbar-hide">
+              <div class="flex-shrink-0 w-full md:w-1/2 lg:w-1/3 px-4 snap-start">
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden group">
+                  <div class="relative h-80 overflow-hidden">
+                    <img src="img/imgwhty/ttmbnh.jpg" alt="滩头木版年画" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                    <div class="absolute bottom-0 left-0 p-6 transform translate-y-4 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-300">
+                      <h3 class="text-xl font-bold text-white mb-1">滩头木版年画</h3>
+                      <p class="text-gray-200 text-sm">湖南隆回滩头镇特产，中国国家地理标志产品</p>
+                    </div>
+                  </div>
+                  <div class="p-6">
+                    <p class="text-gray-600">
+                      滩头木版年画是湖南省唯一的手工木版水印年画，以其浓郁的乡土气息和独特的艺术风格闻名于世。它始于唐朝，盛于明清，至今已有300多年的历史。
+                    </p>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="flex-shrink-0 w-full md:w-1/2 lg:w-1/3 px-4 snap-start">
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden group">
+                  <div class="relative h-80 overflow-hidden">
+                    <img src="img/imgwhty/wcjz.jpg" alt="望城剪纸" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                    <div class="absolute bottom-0 left-0 p-6 transform translate-y-4 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-300">
+                      <h3 class="text-xl font-bold text-white mb-1">望城剪纸</h3>
+                      <p class="text-gray-200 text-sm">湖南望城民间传统艺术，国家级非物质文化遗产</p>
+                    </div>
+                  </div>
+                  <div class="p-6">
+                    <p class="text-gray-600">
+                      望城剪纸是湖南民间剪纸艺术的代表，以其精细的刀法和丰富的题材著称。望城剪纸题材广泛，包括人物、动物、花卉、风景等，具有浓郁的地方特色。
+                    </p>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="flex-shrink-0 w-full md:w-1/2 lg:w-1/3 px-4 snap-start">
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden group">
+                  <div class="relative h-80 overflow-hidden">
+                    <img src="img/imgwhty/mzcx.jpg" alt="苗族刺绣" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                    <div class="absolute bottom-0 left-0 p-6 transform translate-y-4 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-300">
+                      <h3 class="text-xl font-bold text-white mb-1">苗族刺绣</h3>
+                      <p class="text-gray-200 text-sm">湖南湘西苗族传统手工艺，国家级非物质文化遗产</p>
+                    </div>
+                  </div>
+                  <div class="p-6">
+                    <p class="text-gray-600">
+                      苗族刺绣是湖南湘西苗族的传统手工艺，以其精美的图案和精湛的技艺闻名。苗族刺绣图案多取材于自然景物、神话传说和生活场景，色彩鲜艳，针法多样。
+                    </p>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="flex-shrink-0 w-full md:w-1/2 lg:w-1/3 px-4 snap-start">
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden group">
+                  <div class="relative h-80 overflow-hidden">
+                    <img src="img/imgwhty/dzzj.jpg" alt="侗族织锦" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                    <div class="absolute bottom-0 left-0 p-6 transform translate-y-4 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-300">
+                      <h3 class="text-xl font-bold text-white mb-1">侗族织锦</h3>
+                      <p class="text-gray-200 text-sm">湖南通道侗族自治县传统手工艺</p>
+                    </div>
+                  </div>
+                  <div class="p-6">
+                    <p class="text-gray-600">
+                      侗族织锦是湖南通道侗族自治县的传统手工艺，以其独特的织造技艺和精美的图案著称。侗族织锦图案多为几何图形和自然纹样，色彩鲜艳，富有民族特色。
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <button class="absolute top-1/2 left-4 -translate-y-1/2 bg-white/80 hover:bg-white text-gray-800 w-10 h-10 rounded-full flex items-center justify-center shadow-md z-10 focus:outline-none">
+              <i class="fa fa-angle-left text-xl"></i>
+            </button>
+            <button class="absolute top-1/2 right-4 -translate-y-1/2 bg-white/80 hover:bg-white text-gray-800 w-10 h-10 rounded-full flex items-center justify-center shadow-md z-10 focus:outline-none">
+              <i class="fa fa-angle-right text-xl"></i>
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <!-- 红色文化 -->
+      <section id="red" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-6">
+          <div class="text-center mb-16">
+            <span class="text-[clamp(1.5rem,3vw,2.5rem)] font-bold text-gray-900">革命精神</span>
+            <h2 class="text-[clamp(1.5rem,3vw,2.5rem)] font-bold text-gray-900">红色文化</h2>
+            <div class="w-20 h-1 bg-red-500 mx-auto mt-4"></div>
+          </div>
+          
+          <div class="grid md:grid-cols-2 gap-12">
+            <div class="bg-white rounded-xl shadow-lg overflow-hidden group">
+              <div class="relative h-64 overflow-hidden">
+                <img src="img/imgwhty/mzdgj.jpg" alt="韶山毛泽东故居" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+                <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent"></div>
+                <div class="absolute bottom-0 left-0 p-6">
+                  <h3 class="text-xl font-bold text-white mb-1">韶山毛泽东故居</h3>
+                  <p class="text-gray-200 text-sm">中国人民伟大领袖毛泽东的诞生地</p>
+                </div>
+              </div>
+              <div class="p-6">
+                <p class="text-gray-600 mb-4">
+                  韶山毛泽东故居位于湖南省韶山市韶山乡韶山村，是一座普通的江南农舍，为毛泽东的出生地。1893年12月26日，毛泽东诞生于此，并在此度过了童年和少年时代。
+                </p>
+                <div class="flex flex-wrap gap-2 mt-4">
+                  <span class="px-3 py-1 bg-red-50 text-red-600 text-xs rounded-full">爱国主义教育基地</span>
+                  <span class="px-3 py-1 bg-red-50 text-red-600 text-xs rounded-full">国家5A级景区</span>
+                  <span class="px-3 py-1 bg-red-50 text-red-600 text-xs rounded-full">全国重点文物保护单位</span>
+                </div>
+              </div>
+            </div>
+            
+            <div class="bg-white rounded-xl shadow-lg overflow-hidden group">
+              <div class="relative h-64 overflow-hidden">
+                <img src="img/imgwhty/awt.jpg" alt="岳麓山爱晚亭" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+                <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent"></div>
+                <div class="absolute bottom-0 left-0 p-6">
+                  <h3 class="text-xl font-bold text-white mb-1">岳麓山爱晚亭</h3>
+                  <p class="text-gray-200 text-sm">毛泽东早期革命活动的重要场所</p>
+                </div>
+              </div>
+              <div class="p-6">
+                <p class="text-gray-600 mb-4">
+                  爱晚亭位于湖南省长沙市岳麓山下清风峡中，始建于1792年，名字来源于杜牧的《山行》。毛泽东青年时代，在第一师范求学，常与罗学瓒、张昆弟等人一起到岳麓书院，与蔡和森聚会爱晚亭下，纵谈时局，探求真理。
+                </p>
+                <div class="flex flex-wrap gap-2 mt-4">
+                  <span class="px-3 py-1 bg-red-50 text-red-600 text-xs rounded-full">革命纪念地</span>
+                  <span class="px-3 py-1 bg-red-50 text-red-600 text-xs rounded-full">中国四大名亭之一</span>
+                  <span class="px-3 py-1 bg-red-50 text-red-600 text-xs rounded-full">全国重点文物保护单位</span>
+                </div>
+              </div>
+            </div>
+            
+            <div class="bg-white rounded-xl shadow-lg overflow-hidden group">
+              <div class="relative h-64 overflow-hidden">
+                <img src="img/imgwhty/pjqyjng.jpg" alt="平江起义纪念馆" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+                <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent"></div>
+                <div class="absolute bottom-0 left-0 p-6">
+                  <h3 class="text-xl font-bold text-white mb-1">平江起义纪念馆</h3>
+                  <p class="text-gray-200 text-sm">纪念彭德怀、滕代远领导的平江起义</p>
+                </div>
+              </div>
+              <div class="p-6">
+                <p class="text-gray-600 mb-4">
+                  平江起义纪念馆位于湖南省平江县，是为纪念彭德怀、滕代远领导的平江起义而建立的。1928年7月22日，彭德怀、滕代远等在平江县城发动起义，成立了中国工农红军第五军，为湘鄂赣革命根据地的建立奠定了基础。
+                </p>
+                <div class="flex flex-wrap gap-2 mt-4">
+                  <span class="px-3 py-1 bg-red-50 text-red-600 text-xs rounded-full">爱国主义教育基地</span>
+                  <span class="px-3 py-1 bg-red-50 text-red-600 text-xs rounded-full">全国重点文物保护单位</span>
+                </div>
+              </div>
+            </div>
+            
+            <div class="bg-white rounded-xl shadow-lg overflow-hidden group">
+              <div class="relative h-64 overflow-hidden">
+                <img src="img/imgwhty/qsqy.jpg" alt="秋收起义文家市会师纪念馆" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+                <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent"></div>
+                <div class="absolute bottom-0 left-0 p-6">
+                  <h3 class="text-xl font-bold text-white mb-1">秋收起义文家市会师纪念馆</h3>
+                  <p class="text-gray-200 text-sm">秋收起义历史事件的重要纪念地</p>
+                </div>
+              </div>
+              <div class="p-6">
+                <p class="text-gray-600 mb-4">
+                  秋收起义文家市会师纪念馆位于湖南省浏阳市文家市镇，是为纪念秋收起义而建立的。1927年9月19日，毛泽东领导的秋收起义部队在此会师，确立了"农村包围城市"的革命路线，为中国革命的胜利奠定了基础。
+                </p>
+                <div class="flex flex-wrap gap-2 mt-4">
+                  <span class="px-3 py-1 bg-red-50 text-red-600 text-xs rounded-full">爱国主义教育基地</span>
+                  <span class="px-3 py-1 bg-red-50 text-red-600 text-xs rounded-full">国家4A级景区</span>
+                  <span class="px-3 py-1 bg-red-50 text-red-600 text-xs rounded-full">全国重点文物保护单位</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 饮食文化 -->
+      <section id="food" class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+          <div class="text-center mb-16">
+            <span class="text-[clamp(1.5rem,3vw,2.5rem)] font-bold text-gray-900">舌尖上的湖南</span>
+            <h2 class="text-[clamp(1.5rem,3vw,2.5rem)] font-bold text-gray-900">饮食文化</h2>
+            <div class="w-20 h-1 bg-red-500 mx-auto mt-4"></div>
+          </div>
+          
+          <div class="grid md:grid-cols-3 gap-8">
+            <div class="bg-white rounded-xl shadow-lg overflow-hidden group">
+              <div class="relative h-64 overflow-hidden">
+                <img src="img/imgwhty/djyt.jpg" alt="湘菜代表菜-剁椒鱼头" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+                <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent"></div>
+                <div class="absolute bottom-0 left-0 p-6">
+                  <h3 class="text-xl font-bold text-white mb-1">剁椒鱼头</h3>
+                  <p class="text-gray-200 text-sm">湘菜经典代表菜品</p>
+                </div>
+              </div>
+              <div class="p-6">
+                <p class="text-gray-600 mb-4">
+                  剁椒鱼头是湖南湘潭的一道传统名菜，以新鲜鳙鱼鱼头为主料，配以剁辣椒、姜、蒜等辅料蒸制而成。成菜色泽红亮，味浓，肉质细嫩。肥而不腻、口感软糯、鲜辣适口。
+                </p>
+                <div class="flex items-center text-sm text-gray-500">
+                  <span class="text-red-500"><i class="fa fa-fire mr-1"></i> 辣度：★★★★</span>
+                </div>
+              </div>
+            </div>
+            
+            <div class="bg-white rounded-xl shadow-lg overflow-hidden group">
+              <div class="relative h-64 overflow-hidden">
+                <img src="img/imgwhty/cdf.jpg" alt="臭豆腐" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+                <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent"></div>
+                <div class="absolute bottom-0 left-0 p-6">
+                  <h3 class="text-xl font-bold text-white mb-1">长沙臭豆腐</h3>
+                  <p class="text-gray-200 text-sm">湖南特色小吃</p>
+                </div>
+              </div>
+              <div class="p-6">
+                <p class="text-gray-600 mb-4">
+                  长沙臭豆腐是湖南长沙传统特色小吃，距今已有近千年的历史。长沙臭豆腐色墨黑，外焦里嫩，鲜而香辣。焦脆而不糊、细嫩而不腻、初闻臭气扑鼻，细嗅浓香诱人。
+                </p>
+                <div class="flex items-center text-sm text-gray-500">
+                  <span class="text-red-500"><i class="fa fa-fire mr-1"></i> 辣度：★★★</span>
+                </div>
+              </div>
+            </div>
+            
+            <div class="bg-white rounded-xl shadow-lg overflow-hidden group">
+              <div class="relative h-64 overflow-hidden">
+                <img src="img/imgwhty/tybb.jpg" alt="糖油粑粑" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+                <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent"></div>
+                <div class="absolute bottom-0 left-0 p-6">
+                  <h3 class="text-xl font-bold text-white mb-1">糖油粑粑</h3>
+                  <p class="text-gray-200 text-sm">湖南经典小吃</p>
+                </div>
+              </div>
+              <div class="p-6">
+                <p class="text-gray-600 mb-4">
+                  糖油粑粑是湖南长沙的传统名吃，用糯米粉和糖制成，油炸后裹上糖浆。糖油粑粑色泽金黄，外脆内软，香甜可口，口感软糯，常作为早餐或小吃食用。
+                </p>
+                <div class="flex items-center text-sm text-gray-500">
+                  <span class="text-yellow-500"><i class="fa fa-star mr-1"></i> 甜度：★★★</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="mt-12 bg-gray-50 rounded-xl p-8">
+            <h3 class="text-xl font-bold text-gray-800 mb-4">湖南茶文化</h3>
+            <p class="text-gray-600 mb-6">
+              湖南是中国重要的产茶大省，茶文化历史悠久。君山银针、安化黑茶、古丈毛尖等都是湖南名茶，深受茶客喜爱。
+            </p>
+            
+            <div class="grid md:grid-cols-3 gap-6">
+              <div class="flex items-center">
+                <div class="w-16 h-16 bg-red-50 rounded-full flex items-center justify-center mr-4">
+                  <i class="fa fa-leaf text-red-500 text-2xl"></i>
+                </div>
+                <div>
+                  <h4 class="font-bold text-gray-800 mb-1">君山银针</h4>
+                  <p class="text-gray-600 text-sm">中国十大名茶之一，产于岳阳君山岛</p>
+                </div>
+              </div>
+              
+              <div class="flex items-center">
+                <div class="w-16 h-16 bg-red-50 rounded-full flex items-center justify-center mr-4">
+                  <i class="fa fa-coffee text-red-500 text-2xl"></i>
+                </div>
+                <div>
+                  <h4 class="font-bold text-gray-800 mb-1">安化黑茶</h4>
+                  <p class="text-gray-600 text-sm">中国黑茶的代表，具有降脂减肥等功效</p>
+                </div>
+              </div>
+              
+              <div class="flex items-center">
+                <div class="w-16 h-16 bg-red-50 rounded-full flex items-center justify-center mr-4">
+                  <i class="fa fa-tint text-red-500 text-2xl"></i>
+                </div>
+                <div>
+                  <h4 class="font-bold text-gray-800 mb-1">古丈毛尖</h4>
+                  <p class="text-gray-600 text-sm">历史悠久的绿茶，产于湘西古丈县</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 联系我们 -->
+      <section id="contact" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-6">
+          <div class="text-center mb-16">
+            <span class="text-[clamp(1.5rem,3vw,2.5rem)] font-bold text-gray-900">与我们交流</span>
+            <h2 class="text-[clamp(1.5rem,3vw,2.5rem)] font-bold text-gray-900">联系我们</h2>
+            <div class="w-20 h-1 bg-red-500 mx-auto mt-4"></div>
+          </div>
+          
+          <div class="grid md:grid-cols-2 gap-12 items-center">
+            <div>
+              <h3 class="text-2xl font-bold text-gray-800 mb-6">了解更多湖南文化</h3>
+              <p class="text-gray-600 mb-8 leading-relaxed">
+                如果您对湖南文化有更多的兴趣，或者有任何问题和建议，欢迎通过以下方式与我们联系。我们将竭诚为您提供更多关于湖南文化的信息和体验。
+              </p>
+              
+              <div class="space-y-6">
+                <div class="flex items-start">
+                  <div class="bg-red-50 p-3 rounded-full mr-4">
+                    <i class="fa fa-map-marker text-red-500"></i>
+                  </div>
+                  <div>
+                    <h4 class="font-bold text-gray-800 mb-1">地址</h4>
+                    <p class="text-gray-600">湖南省长沙市长沙县</p>
+                  </div>
+                </div>
+                
+                <div class="flex items-start">
+                  <div class="bg-red-50 p-3 rounded-full mr-4">
+                    <i class="fa fa-phone text-red-500"></i>
+                  </div>
+                  <div>
+                    <h4 class="font-bold text-gray-800 mb-1">电话</h4>
+                    <p class="text-gray-600">+86 731-88888888</p>
+                  </div>
+                </div>
+                
+                <div class="flex items-start">
+                  <div class="bg-red-50 p-3 rounded-full mr-4">
+                    <i class="fa fa-envelope text-red-500"></i>
+                  </div>
+                  <div>
+                    <h4 class="font-bold text-gray-800 mb-1">邮箱</h4>
+                    <p class="text-gray-600">culture@hunan.gov.cn</p>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="mt-8 flex space-x-4">
+                <a href="#" class="w-10 h-10 rounded-full bg-red-500 text-white flex items-center justify-center hover:bg-red-600 transition-colors">
+                  <i class="fa fa-weixin"></i>
+                </a>
+                <a href="#" class="w-10 h-10 rounded-full bg-red-500 text-white flex items-center justify-center hover:bg-red-600 transition-colors">
+                  <i class="fa fa-weibo"></i>
+                </a>
+                <a href="#" class="w-10 h-10 rounded-full bg-red-500 text-white flex items-center justify-center hover:bg-red-600 transition-colors">
+                  <i class="fa fa-instagram"></i>
+                </a>
+                <a href="#" class="w-10 h-10 rounded-full bg-red-500 text-white flex items-center justify-center hover:bg-red-600 transition-colors">
+                  <i class="fa fa-youtube-play"></i>
+                </a>
+              </div>
+            </div>
+            
+            <div class="bg-white p-8 rounded-xl shadow-lg">
+              <h3 class="text-xl font-bold text-gray-800 mb-6">发送消息</h3>
+              <form id="contact-form">
+                <div class="mb-6">
+                  <label for="name" class="block text-sm font-medium text-gray-700 mb-2">姓名</label>
+                  <input type="text" id="name" class="w-full px-4 py-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-red-500 focus:border-transparent" placeholder="请输入您的姓名">
+                </div>
+                
+                <div class="mb-6">
+                  <label for="email" class="block text-sm font-medium text-gray-700 mb-2">邮箱</label>
+                  <input type="email" id="email" class="w-full px-4 py-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-red-500 focus:border-transparent" placeholder="请输入您的邮箱">
+                </div>
+                
+                <div class="mb-6">
+                  <label for="subject" class="block text-sm font-medium text-gray-700 mb-2">主题</label>
+                  <input type="text" id="subject" class="w-full px-4 py-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-red-500 focus:border-transparent" placeholder="请输入消息主题">
+                </div>
+                
+                <div class="mb-6">
+                  <label for="message" class="block text-sm font-medium text-gray-700 mb-2">消息</label>
+                  <textarea id="message" rows="4" class="w-full px-4 py-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-red-500 focus:border-transparent" placeholder="请输入您的消息内容"></textarea>
+                </div>
+                
+                <button type="submit" class="w-full bg-red-600 hover:bg-red-700 text-white font-medium py-3 px-4 rounded-md transition-colors">
+                  发送消息
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+	<!-- 新闻通讯 -->
+	<section class="newsletter">
+	    <div class="container">
+	        <h2>订阅我们的通讯</h2>
+	        <p>获取湖南旅游最新资讯和特别优惠</p>
+	        
+	        <form class="newsletter-form">
+	            <input type="email" placeholder="输入您的电子邮箱">
+	            <button type="submit">订阅</button>
+	        </form>
+	    </div>
+	</section>
+     <!-- 页脚 -->
+     <footer class="footer">
+         <div class="container">
+             <div class="footer-grid">
+                 <div class="footer-col">
+                     <h3>锦绣湖南</h3>
+                     <p>湖南旅游官方指南网站，为您提供最全面、最权威的湖南旅游信息。</p>
+                     
+                 </div>
+                 
+                 <div class="footer-col">
+                     <h3>快速链接</h3>
+                     <ul class="nav-links">
+                         <li><a href="index.html">首页</a></li>
+                         <li class="dropdown">
+                             <a href="#">探索湖南</a>
+                             <ul class="dropdown-content">
+                                 <li><a href="cs.html">长沙</a></li>
+                                 <li><a href="zjj.html">张家界</a></li>
+                                 <li><a href="xx.html">湘西</a></li>
+                                 <li><a href="yy.html">岳阳</a></li>
+                                 <li><a href="ss.html">韶山</a></li>
+                             </ul>
+                         </li>
+                         <li><a href="jqdq.html">景区大全</a></li>
+                         <li><a href="xcgh.html">行程规划</a></li>
+                         <li><a href="whty.html">文化体验</a></li>
+                         <li><a href="meishi.html">美食地图</a></li>
+                     </ul>
+                 </div>
+                 
+                 <div class="footer-col">
+                     <h3>实用信息</h3>
+                     <ul>
+                         <li><a href="https://www.msn.cn/zh-cn/weather/forecast/in-%E6%B9%96%E5%8D%97%E7%9C%81?loc=eyJsIjoi5rmW5Y2X55yBIiwiYyI6IuS4reWNjuS6uuawkeWFseWSjOWbvSIsImkiOiJDTiIsIngiOiIxMTIuOTM4OTIiLCJ5IjoiMjguMjI4MDYifQ%3D%3D&weadegreetype=C&ocid=ansmsnweather" target="_blank">天气预报</a></li>
+                         <li><a href="#">交通指南</a></li>
+                         <li><a href="#">紧急电话</a></li>
+                         <li><a href="#">旅游贴士</a></li>
+                         <li><a href="#">无障碍旅游</a></li>
+                     </ul>
+                 </div>
+                 
+                 <div class="footer-col">
+                     <h3>联系我们</h3>
+                     <ul>
+                         <li><i class="fas fa-map-marker-alt"></i> 湖南省长沙市长沙县</li>
+                         <li><i class="fas fa-phone"></i> +86 731 8888 8888</li>
+                         <li><i class="fas fa-envelope"></i> info@hunan-travel.com</li>
+                     </ul>
+                 </div>
+             </div>
+             
+             <div class="footer-bottom">
+                 <p>&copy; 2025 锦绣湖南旅游网. 保留所有权利.</p>
+             </div>
+         </div>
+     </footer>
+
+      <!-- 返回顶部按钮 -->
+      <button id="back-to-top" class="fixed bottom-8 right-8 bg-red-600 hover:bg-red-700 text-white w-12 h-12 rounded-full flex items-center justify-center shadow-lg transform transition-transform duration-300 translate-y-20 opacity-0">
+        <i class="fa fa-angle-up text-xl"></i>
+      </button>
+
+      <script src="script.js"></script>
+    </body>
+    </html>
+  

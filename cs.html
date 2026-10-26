@@ -1,0 +1,849 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>锦绣湖南 - 发现湖南之美</title>
+	<link href="css/cs.css"xcgh rel="stylesheet" type="text/css">
+	<link href="css/hunan.css" rel="stylesheet" type="text/css">
+	<script type="text/javascript" src="js/hunan.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="font-inter bg-light text-dark antialiased">
+    <!-- 导航栏 -->
+    <header id="navbar" class="fixed w-full z-50">
+       <nav class="navbar">
+           <div class="container">
+               <a href="#" class="logo">
+                   <i class="fas fa-mountain"></i>
+                   锦绣<span>湖南</span>
+               </a>
+               
+               <ul class="nav-links">
+                   <li><a href="index.html">首页</a></li>
+                   <li class="dropdown">
+                       <a href="#">探索湖南</a>
+                       <ul class="dropdown-content">
+                           <li><a href="cs.html">长沙</a></li>
+                           <li><a href="zjj.html">张家界</a></li>
+                           <li><a href="xx.html">湘西</a></li>
+                           <li><a href="yy.html">岳阳</a></li>
+                           <li><a href="ss.html">韶山</a></li>
+                       </ul>
+                   </li>
+                   <li><a href="jqdq.html">景区大全</a></li>
+                   <li><a href="xcgh.html">行程规划</a></li>
+                   <li><a href="whty.html">文化体验</a></li>
+                   <li><a href="meishi.html">美食地图</a></li>
+               </ul>
+               
+               <div class="mobile-menu">
+                   <i class="fas fa-bars"></i>
+               </div>
+           </div>
+       </nav>
+    </header>
+
+    <!-- 英雄区域 -->
+    <section id="home" class="relative h-screen flex items-center justify-center overflow-hidden hero">
+        <div class="absolute inset-0 z-0">
+            <img src="img/imgcs/cs.png" alt="长沙城市风光" class="w-full h-full object-cover">
+            <div class="absolute inset-0 bg-dark/40"></div>
+        </div>
+        
+        <div class="container mx-auto px-4 z-10 text-center hero-content">
+            <h1 class="text-[clamp(2.5rem,5vw,4rem)] font-bold text-white ">
+                探索星城长沙
+            </h1>
+            <p class="text-[clamp(1rem,2vw,1.25rem)] text-white/90 ">
+                体验千年古城的独特魅力，品味火辣湘味，感受现代与传统的完美融合
+            </p>
+            <div class="btn">
+                <a href="#cs" class="px-8 py-3 text-white font-medium ">
+                    探索景点
+                </a>
+                
+            </div>
+        </div>
+        
+        <div class="absolute bottom-10 transform -translate-x-1/2 text-white animate-bounce">
+            <a href="#about" class="flex flex-col items-center">
+                <span class="mb-2">向下滚动探索</span>
+                <i class="fa fa-chevron-down"></i>
+            </a>
+        </div>
+    </section>
+
+    <!-- 城市简介 -->
+    <section id="about" class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 id="cs" class="text-[clamp(1.75rem,3vw,2.5rem)] font-bold text-dark mb-4">长沙城市简介</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">长沙，湖南省省会，是一座拥有3000多年历史的文化名城，也是中国首批历史文化名城之一。</p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div class="order-2 md:order-1">
+                    <h3 class="text-2xl font-bold mb-4">千年古城的现代魅力</h3>
+                    <p class="text-gray-600 mb-6">长沙是楚文化和湖湘文化的重要发祥地，有着深厚的历史文化底蕴。这里既有岳麓书院、橘子洲头等历史遗迹，也有现代的商业中心和文化创意产业。</p>
+                    
+                    <div class="space-y-4 mb-6">
+                        <div class="flex items-start">
+                            <div class="mr-4 mt-1">
+                                <div class="w-6 h-6 rounded-full bg-primary/20 flex items-center justify-center">
+                                    <i class="fa fa-map-marker text-primary text-xs"></i>
+                                </div>
+                            </div>
+                            <div>
+                                <h4 class="font-medium">地理位置</h4>
+                                <p class="text-gray-600 text-sm">位于湖南省东部偏北，湘江下游和长浏盆地西缘</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <div class="mr-4 mt-1">
+                                <div class="w-6 h-6 rounded-full bg-primary/20 flex items-center justify-center">
+                                    <i class="fa fa-users text-primary text-xs"></i>
+                                </div>
+                            </div>
+                            <div>
+                                <h4 class="font-medium">人口</h4>
+                                <p class="text-gray-600 text-sm">约800万，是湖南省人口最多的城市</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <div class="mr-4 mt-1">
+                                <div class="w-6 h-6 rounded-full bg-primary/20 flex items-center justify-center">
+                                    <i class="fa fa-trophy text-primary text-xs"></i>
+                                </div>
+                            </div>
+                            <div>
+                                <h4 class="font-medium">城市荣誉</h4>
+                                <p class="text-gray-600 text-sm">中国历史文化名城、中国优秀旅游城市、国际美食之都</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <div class="mr-4 mt-1">
+                                <div class="w-6 h-6 rounded-full bg-primary/20 flex items-center justify-center">
+                                    <i class="fa fa-cutlery text-primary text-xs"></i>
+                                </div>
+                            </div>
+                            <div>
+                                <h4 class="font-medium">特色美食</h4>
+                                <p class="text-gray-600 text-sm">臭豆腐、糖油粑粑、口味虾、剁椒鱼头、米粉等</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <a href="#attractions" class="inline-flex items-center text-primary font-medium hover:underline">
+                        探索更多景点 <i class="fa fa-long-arrow-right ml-2"></i>
+                    </a>
+                </div>
+                
+                <div class="order-1 md:order-2">
+                    <div class="relative">
+                        <img src="img/imgcs/dfjg.jpg" alt="长沙城市风光" class="rounded-xl shadow-xl w-full h-auto">
+                        <div class="absolute -bottom-6 -left-6 bg-white p-4 rounded-lg shadow-lg hidden md:block">
+                            <div class="flex items-center">
+                                <div class="mr-3">
+                                    <i class="fa fa-star text-warning"></i>
+                                    <i class="fa fa-star text-warning"></i>
+                                    <i class="fa fa-star text-warning"></i>
+                                    <i class="fa fa-star text-warning"></i>
+                                    <i class="fa fa-star text-warning"></i>
+                                </div>
+                                <div>
+                                    <p class="font-medium">游客满意度</p>
+                                    <p class="text-sm text-gray-500">98% 好评率</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 热门景点 -->
+    <section id="attractions" class="py-20 bg-light">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-[clamp(1.75rem,3vw,2.5rem)] font-bold text-dark mb-4">热门景点</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">探索长沙的历史文化遗迹、自然风光和现代地标，感受这座城市的独特魅力。</p>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- 橘子洲头 -->
+                <div class="bg-white rounded-2xl shadow-lg overflow-hidden card-hover">
+                    <div class="relative h-64 overflow-hidden">
+                        <img src="img/imgcs/jjz.jpg" alt="橘子洲头" class="w-full h-full object-cover">
+                        <div class="absolute top-4 right-4 bg-primary text-white text-sm font-medium px-3 py-1 rounded-full">
+                            必游景点
+                        </div>
+                    </div>
+                    
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">橘子洲头</h3>
+                        <p class="text-gray-600 mb-4">位于湘江江心，是长沙重要的名胜之一，也是毛泽东青年艺术雕塑的所在地。</p>
+                        
+                        <div class="flex justify-between items-center">
+                            <div class="flex items-center">
+                                <i class="fa fa-map-marker text-primary mr-2"></i>
+                                <span class="text-sm">岳麓区</span>
+                            </div>
+                            <div class="flex items-center">
+                                <i class="fa fa-star text-warning mr-1"></i>
+                                <span class="text-sm font-medium">4.8</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- 岳麓山 -->
+                <div class="bg-white rounded-2xl shadow-lg overflow-hidden card-hover">
+                    <div class="relative h-64 overflow-hidden">
+                        <img src="img/imgcs/yls.jpg" alt="岳麓山" class="w-full h-full object-cover">
+                    </div>
+                    
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">岳麓山</h3>
+                        <p class="text-gray-600 mb-4">南岳衡山72峰的最后一峰，山上有岳麓书院、爱晚亭等著名景点。</p>
+                        
+                        <div class="flex justify-between items-center">
+                            <div class="flex items-center">
+                                <i class="fa fa-map-marker text-primary mr-2"></i>
+                                <span class="text-sm">岳麓区</span>
+                            </div>
+                            <div class="flex items-center">
+                                <i class="fa fa-star text-warning mr-1"></i>
+                                <span class="text-sm font-medium">4.7</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- 岳麓书院 -->
+                <div class="bg-white rounded-2xl shadow-lg overflow-hidden card-hover">
+                    <div class="relative h-64 overflow-hidden">
+                        <img src="img/imgcs/ylsy.jpg" alt="岳麓书院" class="w-full h-full object-cover">
+                    </div>
+                    
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">岳麓书院</h3>
+                        <p class="text-gray-600 mb-4">中国古代四大书院之一，始建于北宋，是湖湘文化的重要发源地。</p>
+                        
+                        <div class="flex justify-between items-center">
+                            <div class="flex items-center">
+                                <i class="fa fa-map-marker text-primary mr-2"></i>
+                                <span class="text-sm">岳麓区</span>
+                            </div>
+                            <div class="flex items-center">
+                                <i class="fa fa-star text-warning mr-1"></i>
+                                <span class="text-sm font-medium">4.6</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- 湖南省博物馆 -->
+                <div class="bg-white rounded-2xl shadow-lg overflow-hidden card-hover">
+                    <div class="relative h-64 overflow-hidden">
+                        <img src="img/imgcs/hnsbwg.jpg" alt="湖南省博物馆" class="w-full h-full object-cover">
+                    </div>
+                    
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">湖南省博物馆</h3>
+                        <p class="text-gray-600 mb-4">中国首批国家一级博物馆，馆藏文物丰富，马王堆汉墓出土文物是其特色。</p>
+                        
+                        <div class="flex justify-between items-center">
+                            <div class="flex items-center">
+                                <i class="fa fa-map-marker text-primary mr-2"></i>
+                                <span class="text-sm">开福区</span>
+                            </div>
+                            <div class="flex items-center">
+                                <i class="fa fa-star text-warning mr-1"></i>
+                                <span class="text-sm font-medium">4.9</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- 太平街 -->
+                <div class="bg-white rounded-2xl shadow-lg overflow-hidden card-hover">
+                    <div class="relative h-64 overflow-hidden">
+                        <img src="img/imgcs/tpj.jpg" alt="太平街" class="w-full h-full object-cover">
+                    </div>
+                    
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">太平街</h3>
+                        <p class="text-gray-600 mb-4">长沙保存最完好的一条古街，这里有众多的老字号、小吃店和特色商店。</p>
+                        
+                        <div class="flex justify-between items-center">
+                            <div class="flex items-center">
+                                <i class="fa fa-map-marker text-primary mr-2"></i>
+                                <span class="text-sm">天心区</span>
+                            </div>
+                            <div class="flex items-center">
+                                <i class="fa fa-star text-warning mr-1"></i>
+                                <span class="text-sm font-medium">4.5</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- 世界之窗 -->
+                <div class="bg-white rounded-2xl shadow-lg overflow-hidden card-hover">
+                    <div class="relative h-64 overflow-hidden">
+                        <img src="img/imgcs/sjzc.jpg" alt="长沙世界之窗" class="w-full h-full object-cover">
+                    </div>
+                    
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">长沙世界之窗</h3>
+                        <p class="text-gray-600 mb-4">集世界奇观、历史遗迹、民间歌舞表演为一体的主题公园。</p>
+                        
+                        <div class="flex justify-between items-center">
+                            <div class="flex items-center">
+                                <i class="fa fa-map-marker text-primary mr-2"></i>
+                                <span class="text-sm">开福区</span>
+                            </div>
+                            <div class="flex items-center">
+                                <i class="fa fa-star text-warning mr-1"></i>
+                                <span class="text-sm font-medium">4.4</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 特色美食 -->
+    <section id="food" class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-[clamp(1.75rem,3vw,2.5rem)] font-bold text-dark mb-4">特色美食</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">长沙美食以湘菜为代表，以辣、鲜、香、酸为特色，让您的味蕾体验一场盛宴。</p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <div class="relative">
+                        <img src="img/imgcs/tybb.jpg" alt="长沙美食" class="rounded-xl shadow-xl w-full h-auto">
+                        <div class="absolute -bottom-6 -right-6 bg-white p-4 rounded-lg shadow-lg hidden md:block">
+                            <div class="flex items-center">
+                                <div class="mr-3">
+                                    <i class="fa fa-certificate text-primary"></i>
+                                </div>
+                                <div>
+                                    <p class="font-medium">国际美食之都</p>
+                                    <p class="text-sm text-gray-500">2017年获此殊荣</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div>
+                    <h3 class="text-2xl font-bold mb-4">舌尖上的长沙</h3>
+                    <p class="text-gray-600 mb-6">长沙美食以湘菜为代表，以辣、鲜、香、酸为特色，讲究原料的新鲜和烹饪的精细。无论是街边小吃还是高档餐厅，都能让您的味蕾得到极大的满足。</p>
+                    
+                    <div class="space-y-6">
+                        <!-- 臭豆腐 -->
+                        <div class="flex items-start">
+                            <div class="mr-4">
+                                <div class="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center">
+                                    <i class="fa fa-cutlery text-primary"></i>
+                                </div>
+                            </div>
+                            <div>
+                                <h4 class="font-medium text-lg">长沙臭豆腐</h4>
+                                <p class="text-gray-600">长沙最具代表性的小吃之一，外焦里嫩，闻起来臭，吃起来香。</p>
+                            </div>
+                        </div>
+                        
+                        <!-- 糖油粑粑 -->
+                        <div class="flex items-start">
+                            <div class="mr-4">
+                                <div class="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center">
+                                    <i class="fa fa-cutlery text-primary"></i>
+                                </div>
+                            </div>
+                            <div>
+                                <h4 class="font-medium text-lg">糖油粑粑</h4>
+                                <p class="text-gray-600">长沙传统小吃，香甜软糯，是很多长沙人童年的味道。</p>
+                            </div>
+                        </div>
+                        
+                        <!-- 口味虾 -->
+                        <div class="flex items-start">
+                            <div class="mr-4">
+                                <div class="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center">
+                                    <i class="fa fa-cutlery text-primary"></i>
+                                </div>
+                            </div>
+                            <div>
+                                <h4 class="font-medium text-lg">口味虾</h4>
+                                <p class="text-gray-600">夏季长沙街头的热门美食，麻辣鲜香，让人欲罢不能。</p>
+                            </div>
+                        </div>
+                        
+                        <!-- 剁椒鱼头 -->
+                        <div class="flex items-start">
+                            <div class="mr-4">
+                                <div class="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center">
+                                    <i class="fa fa-cutlery text-primary"></i>
+                                </div>
+                            </div>
+                            <div>
+                                <h4 class="font-medium text-lg">剁椒鱼头</h4>
+                                <p class="text-gray-600">湘菜中的经典菜品，鱼头鲜嫩，剁椒香辣，回味无穷。</p>
+                            </div>
+                        </div>
+                        
+                        <!-- 米粉 -->
+                        <div class="flex items-start">
+                            <div class="mr-4">
+                                <div class="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center">
+                                    <i class="fa fa-cutlery text-primary"></i>
+                                </div>
+                            </div>
+                            <div>
+                                <h4 class="font-medium text-lg">长沙米粉</h4>
+                                <p class="text-gray-600">长沙人早餐的首选，口感爽滑，汤汁浓郁，配上各种码子，美味可口。</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <a href="#form" class="inline-flex items-center text-primary font-medium hover:underline mt-6">
+                        定制美食之旅 <i class="fa fa-long-arrow-right ml-2"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 天气指南 -->
+    <section id="weather" class="py-20 bg-light">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-[clamp(1.75rem,3vw,2.5rem)] font-bold text-dark mb-4">天气指南</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">了解长沙的四季气候，为您的旅行做好准备。</p>
+            </div>
+            
+            <div class="bg-white rounded-2xl shadow-xl p-8 max-w-5xl mx-auto">
+                <div class="grid md:grid-cols-4 gap-6">
+                    <!-- 春季 -->
+                    <div class="text-center p-4 rounded-xl bg-primary/5 hover:bg-primary/10 transition-colors">
+                        <div class="w-16 h-16 bg-primary/20 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <i class="fa fa-leaf text-primary text-2xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold mb-2">春季</h3>
+                        <p class="text-gray-600 mb-4">3月-5月</p>
+                        <div class="space-y-2">
+                            <p class="text-sm">气温：10℃-25℃</p>
+                            <p class="text-sm">特点：温暖湿润，适合户外活动</p>
+                            <p class="text-sm">建议：带轻便外套和雨具</p>
+                        </div>
+                    </div>
+                    
+                    <!-- 夏季 -->
+                    <div class="text-center p-4 rounded-xl bg-primary/5 hover:bg-primary/10 transition-colors">
+                        <div class="w-16 h-16 bg-primary/20 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <i class="fa fa-sun-o text-primary text-2xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold mb-2">夏季</h3>
+                        <p class="text-gray-600 mb-4">6月-8月</p>
+                        <div class="space-y-2">
+                            <p class="text-sm">气温：25℃-35℃</p>
+                            <p class="text-sm">特点：炎热多雨，是旅游旺季</p>
+                            <p class="text-sm">建议：注意防晒和防暑降温</p>
+                        </div>
+                    </div>
+                    
+                    <!-- 秋季 -->
+                    <div class="text-center p-4 rounded-xl bg-primary/5 hover:bg-primary/10 transition-colors">
+                        <div class="w-16 h-16 bg-primary/20 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <i class="fa fa-bolt text-primary text-2xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold mb-2">秋季</h3>
+                        <p class="text-gray-600 mb-4">9月-11月</p>
+                        <div class="space-y-2">
+                            <p class="text-sm">气温：15℃-28℃</p>
+                            <p class="text-sm">特点：秋高气爽，景色宜人</p>
+                            <p class="text-sm">建议：带长袖衣物</p>
+                        </div>
+                    </div>
+                    
+                    <!-- 冬季 -->
+                    <div class="text-center p-4 rounded-xl bg-primary/5 hover:bg-primary/10 transition-colors">
+                        <div class="w-16 h-16 bg-primary/20 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <i class="fa fa-snowflake-o text-primary text-2xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold mb-2">冬季</h3>
+                        <p class="text-gray-600 mb-4">12月-2月</p>
+                        <div class="space-y-2">
+                            <p class="text-sm">气温：0℃-10℃</p>
+                            <p class="text-sm">特点：湿冷，偶有降雪</p>
+                            <p class="text-sm">建议：穿保暖衣物和防滑鞋</p>
+                        </div>
+                    </div>
+                </div>
+                
+               
+            </div>
+        </div>
+    </section>
+
+    <!-- 交通出行 -->
+    <section id="transportation" class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-[clamp(1.75rem,3vw,2.5rem)] font-bold text-dark mb-4">交通出行</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">了解长沙的交通方式，让您的出行更加便捷。</p>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- 地铁 -->
+                <div class="bg-light rounded-2xl p-8 text-center hover:shadow-lg transition-shadow">
+                    <div class="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="fa fa-subway text-primary text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4">地铁</h3>
+                    <p class="text-gray-600 mb-6">长沙地铁目前有6条线路，覆盖了市区主要区域，是市内出行的首选方式。</p>
+                    <div class="space-y-3 text-left">
+                        <div class="flex items-center">
+                            <i class="fa fa-check text-success mr-3"></i>
+                            <span>票价：2-7元，按里程计费</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fa fa-check text-success mr-3"></i>
+                            <span>运营时间：6:30-23:00</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fa fa-check text-success mr-3"></i>
+                            <span>可使用长沙地铁APP扫码乘车</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- 公交 -->
+                <div class="bg-light rounded-2xl p-8 text-center hover:shadow-lg transition-shadow">
+                    <div class="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="fa fa-bus text-primary text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4">公交</h3>
+                    <p class="text-gray-600 mb-6">长沙公交线路覆盖广泛，票价实惠，是经济实惠的出行方式。</p>
+                    <div class="space-y-3 text-left">
+                        <div class="flex items-center">
+                            <i class="fa fa-check text-success mr-3"></i>
+                            <span>普通线路票价：2元</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fa fa-check text-success mr-3"></i>
+                            <span>部分空调线路票价：3元</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fa fa-check text-success mr-3"></i>
+                            <span>可使用长沙公交APP或支付宝乘车码</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- 出租车/网约车 -->
+                <div class="bg-light rounded-2xl p-8 text-center hover:shadow-lg transition-shadow">
+                    <div class="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="fa fa-taxi text-primary text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4">出租车/网约车</h3>
+                    <p class="text-gray-600 mb-6">出租车和网约车是长沙便捷的出行方式，适合短途和多人出行。</p>
+                    <div class="space-y-3 text-left">
+                        <div class="flex items-center">
+                            <i class="fa fa-check text-success mr-3"></i>
+                            <span>出租车起步价：白天8元/2公里</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fa fa-check text-success mr-3"></i>
+                            <span>夜间起步价：9元/2公里</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fa fa-check text-success mr-3"></i>
+                            <span>网约车：可通过滴滴、曹操等平台预约</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="mt-12 bg-light rounded-2xl p-8">
+                <h3 class="text-xl font-bold mb-6 text-center">机场与火车站</h3>
+                <div class="grid md:grid-cols-2 gap-8">
+                    <!-- 长沙黄花国际机场 -->
+                    <div class="bg-white rounded-xl p-6">
+                        <div class="flex items-center mb-4">
+                            <div class="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center mr-4">
+                                <i class="fa fa-plane text-primary"></i>
+                            </div>
+                            <h4 class="text-lg font-bold">长沙黄花国际机场</h4>
+                        </div>
+                        <p class="text-gray-600 mb-4">位于长沙市长沙县黄花镇，距离市区约20公里，是湖南省最大的机场。</p>
+                        <div class="space-y-3">
+                            <div class="flex items-center">
+                                <i class="fa fa-map-marker text-primary mr-3"></i>
+                                <span>地址：长沙县黄花镇黄花路</span>
+                            </div>
+                            <div class="flex items-center">
+                                <i class="fa fa-subway text-primary mr-3"></i>
+                                <span>地铁：地铁6号线直达机场</span>
+                            </div>
+                            <div class="flex items-center">
+                                <i class="fa fa-bus text-primary mr-3"></i>
+                                <span>机场大巴：多条线路连接市区主要地点</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- 长沙火车站 -->
+                    <div class="bg-white rounded-xl p-6">
+                        <div class="flex items-center mb-4">
+                            <div class="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center mr-4">
+                                <i class="fa fa-train text-primary"></i>
+                            </div>
+                            <h4 class="text-lg font-bold">长沙火车站</h4>
+                        </div>
+                        <p class="text-gray-600 mb-4">位于长沙市芙蓉区，是长沙最主要的火车站之一，主要承担普速列车的运营。</p>
+                        <div class="space-y-3">
+                            <div class="flex items-center">
+                                <i class="fa fa-map-marker text-primary mr-3"></i>
+                                <span>地址：芙蓉区车站中路</span>
+                            </div>
+                            <div class="flex items-center">
+                                <i class="fa fa-subway text-primary mr-3"></i>
+                                <span>地铁：地铁2号线直达火车站</span>
+                            </div>
+                            <div class="flex items-center">
+                                <i class="fa fa-bus text-primary mr-3"></i>
+                                <span>公交线路：多条线路经过火车站</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- 长沙南站 -->
+                    <div class="bg-white rounded-xl p-6">
+                        <div class="flex items-center mb-4">
+                            <div class="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center mr-4">
+                                <i class="fa fa-train text-primary"></i>
+                            </div>
+                            <h4 class="text-lg font-bold">长沙南站</h4>
+                        </div>
+                        <p class="text-gray-600 mb-4">位于长沙市雨花区，是长沙最重要的高铁站，主要承担高铁和动车的运营。</p>
+                        <div class="space-y-3">
+                            <div class="flex items-center">
+                                <i class="fa fa-map-marker text-primary mr-3"></i>
+                                <span>地址：雨花区花侯路</span>
+                            </div>
+                            <div class="flex items-center">
+                                <i class="fa fa-subway text-primary mr-3"></i>
+                                <span>地铁：地铁2号线、4号线直达长沙南站</span>
+                            </div>
+                            <div class="flex items-center">
+                                <i class="fa fa-bus text-primary mr-3"></i>
+                                <span>公交线路：多条线路经过长沙南站</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- 长沙西站 -->
+                    <div class="bg-white rounded-xl p-6">
+                        <div class="flex items-center mb-4">
+                            <div class="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center mr-4">
+                                <i class="fa fa-train text-primary"></i>
+                            </div>
+                            <h4 class="text-lg font-bold">长沙西站</h4>
+                        </div>
+                        <p class="text-gray-600 mb-4">位于长沙市望城区，是长沙新建的高铁站，主要服务长株潭城际铁路和渝长厦高铁。</p>
+                        <div class="space-y-3">
+                            <div class="flex items-center">
+                                <i class="fa fa-map-marker text-primary mr-3"></i>
+                                <span>地址：望城区金山桥街道</span>
+                            </div>
+                            <div class="flex items-center">
+                                <i class="fa fa-subway text-primary mr-3"></i>
+                                <span>地铁：地铁2号线西延线可到达</span>
+                            </div>
+                            <div class="flex items-center">
+                                <i class="fa fa-bus text-primary mr-3"></i>
+                                <span>公交线路：多条线路经过长沙西站</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 定制旅行表单 -->
+    <section id="form" class="py-20 bg-light">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-[clamp(1.75rem,3vw,2.5rem)] font-bold text-dark mb-4">定制您的专属旅行</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">告诉我们您的需求，我们将为您量身定制完美的长沙之旅。</p>
+            </div>
+            
+            <div class="bg-white rounded-2xl shadow-xl p-8 max-w-4xl mx-auto">
+                <form id="custom-trip-form" class="space-y-6">
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <div>
+                            <label for="name" class="block text-gray-700 mb-2 font-medium">姓名</label>
+                            <input type="text" id="name" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary/50 focus:border-primary transition-colors" placeholder="请输入您的姓名">
+                        </div>
+                        
+                        <div>
+                            <label for="phone" class="block text-gray-700 mb-2 font-medium">手机号码</label>
+                            <input type="tel" id="phone" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary/50 focus:border-primary transition-colors" placeholder="请输入您的手机号码">
+                        </div>
+                        
+                        <div>
+                            <label for="email" class="block text-gray-700 mb-2 font-medium">电子邮箱</label>
+                            <input type="email" id="email" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary/50 focus:border-primary transition-colors" placeholder="请输入您的电子邮箱">
+                        </div>
+                        
+                        <div>
+                            <label for="travelers" class="block text-gray-700 mb-2 font-medium">出行人数</label>
+                            <select id="travelers" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary/50 focus:border-primary transition-colors">
+                                <option value="">请选择出行人数</option>
+                                <option value="1">1人</option>
+                                <option value="2">2人</option>
+                                <option value="3-5">3-5人</option>
+                                <option value="6-10">6-10人</option>
+                                <option value="10+">10人以上</option>
+                            </select>
+                        </div>
+                        
+                        <div>
+                            <label for="trip-days" class="block text-gray-700 mb-2 font-medium">旅行天数</label>
+                            <select id="trip-days" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary/50 focus:border-primary transition-colors">
+                                <option value="">请选择旅行天数</option>
+                                <option value="1-3">1-3天</option>
+                                <option value="4-7">4-7天</option>
+                                <option value="8-14">8-14天</option>
+                                <option value="15+">15天以上</option>
+                            </select>
+                        </div>
+                        
+                        <div>
+                            <label for="budget" class="block text-gray-700 mb-2 font-medium">人均预算</label>
+                            <select id="budget" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary/50 focus:border-primary transition-colors">
+                                <option value="">请选择预算范围</option>
+                                <option value="1000以下">1000元以下</option>
+                                <option value="1000-2000">1000-2000元</option>
+                                <option value="2000-3000">2000-3000元</option>
+                                <option value="3000-5000">3000-5000元</option>
+                                <option value="5000以上">5000元以上</option>
+                            </select>
+                        </div>
+                    </div>
+                    
+                    <div>
+                        <label for="travel-date" class="block text-gray-700 mb-2 font-medium">出行日期</label>
+                        <input type="date" id="travel-date" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary/50 focus:border-primary transition-colors">
+                    </div>
+                    
+                    <div>
+                        <label for="interests" class="block text-gray-700 mb-2 font-medium">旅行兴趣</label>
+                        <div class="grid md:grid-cols-3 gap-3">
+                            <label class="flex items-center p-3 bg-light rounded-lg cursor-pointer hover:bg-primary/5 transition-colors border border-gray-200">
+                                <input type="checkbox" class="form-checkbox h-5 w-5 text-primary">
+                                <span class="ml-3">历史文化</span>
+                            </label>
+                            <label class="flex items-center p-3 bg-light rounded-lg cursor-pointer hover:bg-primary/5 transition-colors border border-gray-200">
+                                <input type="checkbox" class="form-checkbox h-5 w-5 text-primary">
+                                <span class="ml-3">自然风光</span>
+                            </label>
+						</div>
+					</div>
+					<div class="an">
+						<button type="submit">提交定制需求</button>
+					</div>
+				</form>
+			</div>
+		</section>
+		
+		<!-- 新闻通讯 -->
+		<section class="newsletter">
+		    <div class="container">
+		        <h2>订阅我们的通讯</h2>
+		        <p>获取湖南旅游最新资讯和特别优惠</p>
+		        
+		        <form class="newsletter-form">
+		            <input type="email" placeholder="输入您的电子邮箱">
+		            <button type="submit">订阅</button>
+		        </form>
+		    </div>
+		</section>
+		<!-- 页脚 -->
+		
+		
+		
+		<footer class="footer">
+		    <div class="container">
+		        <div class="footer-grid">
+		            <div class="footer-col">
+		                <h3>锦绣湖南</h3>
+		                <p>湖南旅游官方指南网站，为您提供最全面、最权威的湖南旅游信息。</p>
+		                
+		            </div>
+		            
+		            <div class="footer-col">
+		                <h3>快速链接</h3>
+		                <ul class="nav-links">
+		                    <li><a href="index.html">首页</a></li>
+		                    <li class="dropdown">
+		                        <a href="#">探索湖南</a>
+		                        <ul class="dropdown-content">
+		                            <li><a href="cs.html">长沙</a></li>
+		                            <li><a href="zjj.html">张家界</a></li>
+		                            <li><a href="xx.html">湘西</a></li>
+		                            <li><a href="yy.html">岳阳</a></li>
+		                            <li><a href="ss.html">韶山</a></li>
+		                        </ul>
+		                    </li>
+		                    <li><a href="jqdq.html">景区大全</a></li>
+		                    <li><a href="xcgh.html">行程规划</a></li>
+		                    <li><a href="whty.html">文化体验</a></li>
+		                    <li><a href="meishi.html">美食地图</a></li>
+		                </ul>
+		            </div>
+		            
+		            <div class="footer-col">
+		                <h3>实用信息</h3>
+		                <ul>
+		                    <li><a href="https://www.msn.cn/zh-cn/weather/forecast/in-%E6%B9%96%E5%8D%97%E7%9C%81?loc=eyJsIjoi5rmW5Y2X55yBIiwiYyI6IuS4reWNjuS6uuawkeWFseWSjOWbvSIsImkiOiJDTiIsIngiOiIxMTIuOTM4OTIiLCJ5IjoiMjguMjI4MDYifQ%3D%3D&weadegreetype=C&ocid=ansmsnweather" target="_blank">天气预报</a></li>
+		                    <li><a href="#">交通指南</a></li>
+		                    <li><a href="#">紧急电话</a></li>
+		                    <li><a href="#">旅游贴士</a></li>
+		                    <li><a href="#">无障碍旅游</a></li>
+		                </ul>
+		            </div>
+		            
+		            <div class="footer-col">
+		                <h3>联系我们</h3>
+		                <ul>
+		                    <li><i class="fas fa-map-marker-alt"></i> 湖南省长沙市</li>
+		                    <li><i class="fas fa-phone"></i> +86 731 8888 8888</li>
+		                    <li><i class="fas fa-envelope"></i> info@hunan-travel.com</li>
+		                </ul>
+		            </div>
+		        </div>
+		        
+		        <div class="footer-bottom">
+		            <p>&copy; 2025 锦绣湖南旅游网. 保留所有权利.</p>
+		        </div>
+		    </div>
+		</footer>
+		
+	</body>
+</html>

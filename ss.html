@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>锦绣湖南 - 韶山之美</title>
+    <link href="css/ss.css" rel="stylesheet" type="text/css">
+	<link href="css/hunan.css" rel="stylesheet" type="text/css">
+    <script type="text/javascript" src="js/ss.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body class="font-inter bg-light text-dark antialiased">
+    <!-- 导航栏 -->
+    <header id="navbar" class="fixed w-full z-50">
+      <nav class="navbar">
+          <div class="container">
+              <a href="#" class="logo">
+                  <i class="fas fa-mountain"></i>
+                  锦绣<span>湖南</span>
+              </a>
+              
+              <ul class="nav-links">
+                  <li><a href="index.html">首页</a></li>
+                  <li class="dropdown">
+                      <a href="#">探索湖南</a>
+                      <ul class="dropdown-content">
+                          <li><a href="cs.html">长沙</a></li>
+                          <li><a href="zjj.html">张家界</a></li>
+                          <li><a href="xx.html">湘西</a></li>
+                          <li><a href="yy.html">岳阳</a></li>
+                          <li><a href="ss.html">韶山</a></li>
+                      </ul>
+                  </li>
+                  <li><a href="jqdq.html">景区大全</a></li>
+                  <li><a href="xcgh.html">行程规划</a></li>
+                  <li><a href="whty.html">文化体验</a></li>
+                  <li><a href="meishi.html">美食地图</a></li>
+              </ul>
+              
+              <div class="mobile-menu">
+                  <i class="fas fa-bars"></i>
+              </div>
+          </div>
+      </nav>
+    </header>
+
+    <!-- 英雄区域 -->
+    <section id="home" class="relative h-screen flex items-center justify-center overflow-hidden hero">
+        <div class="absolute inset-0 z-0">
+            <img src="img/imgss/ss.jpg" alt="韶山风光" class="w-full h-full object-cover">
+            <div class="absolute inset-0 bg-dark/40"></div>
+        </div>
+
+        <div class="container mx-auto px-4 z-10 text-center hero-content">
+            <h1 class="text-[clamp(2.5rem,5vw,4rem)] font-bold text-white">
+                探索红色圣地韶山
+            </h1>
+            <p class="text-[clamp(1rem,2vw,1.25rem)] text-white/90">
+                感受伟人故里的独特魅力，领略红色文化的深厚底蕴
+            </p>
+            <div class="btn">
+                <a href="#ss" class="px-8 py-3 text-white font-medium">
+                    探索景点
+                </a>
+            </div>
+        </div>
+
+        <div class="absolute bottom-10 transform -translate-x-1/2 text-white animate-bounce">
+            <a href="#about" class="flex flex-col items-center">
+                <span class="mb-2">向下滚动探索</span>
+                <i class="fa fa-chevron-down"></i>
+            </a>
+        </div>
+    </section>
+
+    <!-- 韶山简介 -->
+    <section id="about" class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 id="ss" class="text-[clamp(1.75rem,3vw,2.5rem)] font-bold text-dark mb-4">韶山简介</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">韶山是伟大领袖毛泽东同志的故乡，是全国著名革命纪念地、全国爱国主义教育基地。</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div class="order-2 md:order-1">
+                    <h3 class="text-2xl font-bold mb-4">红色圣地的独特魅力</h3>
+                    <p class="text-gray-600 mb-6">韶山以其丰富的红色文化资源和秀丽的自然风光吸引着众多游客。这里有毛泽东故居、韶山毛泽东纪念馆等重要的红色景点。</p>
+
+                    <div class="space-y-4 mb-6">
+                        <div class="flex items-start">
+                            <div class="mr-4 mt-1">
+                                <div class="w-6 h-6 rounded-full bg-primary/20 flex items-center justify-center">
+                                    <i class="fa fa-map-marker text-primary text-xs"></i>
+                                </div>
+                            </div>
+                            <div>
+                                <h4 class="font-medium">地理位置</h4>
+                                <p class="text-gray-600 text-sm">位于湖南省湘潭市韶山市</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start">
+                            <div class="mr-4 mt-1">
+                                <div class="w-6 h-6 rounded-full bg-primary/20 flex items-center justify-center">
+                                    <i class="fa fa-users text-primary text-xs"></i>
+                                </div>
+                            </div>
+                            <div>
+                                <h4 class="font-medium">特色</h4>
+                                <p class="text-gray-600 text-sm">红色文化、自然风光</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start">
+                            <div class="mr-4 mt-1">
+                                <div class="w-6 h-6 rounded-full bg-primary/20 flex items-center justify-center">
+                                    <i class="fa fa-trophy text-primary text-xs"></i>
+                                </div>
+                            </div>
+                            <div>
+                                <h4 class="font-medium">荣誉</h4>
+                                <p class="text-gray-600 text-sm">全国著名革命纪念地、全国爱国主义教育基地</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start">
+                            <div class="mr-4 mt-1">
+                                <div class="w-6 h-6 rounded-full bg-primary/20 flex items-center justify-center">
+                                    <i class="fa fa-cutlery text-primary text-xs"></i>
+                                </div>
+                            </div>
+                            <div>
+                                <h4 class="font-medium">特色美食</h4>
+                                <p class="text-gray-600 text-sm">毛氏红烧肉、火焙鱼、乡里腊肉等</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <a href="#attractions" class="inline-flex items-center text-primary font-medium hover:underline">
+                        探索更多景点 <i class="fa fa-long-arrow-right ml-2"></i>
+                    </a>
+                </div>
+
+                <div class="order-1 md:order-2">
+                    <div class="relative">
+                        <img src="img/imgss/ss1.jpg" alt="韶山风光" class="rounded-xl shadow-xl w-full h-auto">
+                        <div class="absolute -bottom-6 -left-6 bg-white p-4 rounded-lg shadow-lg hidden md:block">
+                            <div class="flex items-center">
+                                <div class="mr-3">
+                                    <i class="fa fa-star text-warning"></i>
+                                    <i class="fa fa-star text-warning"></i>
+                                    <i class="fa fa-star text-warning"></i>
+                                    <i class="fa fa-star text-warning"></i>
+                                    <i class="fa fa-star text-warning"></i>
+                                </div>
+                                <div>
+                                    <p class="font-medium">游客满意度</p>
+                                    <p class="text-sm text-gray-500">98% 好评率</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 热门景点 -->
+    <section id="attractions" class="py-20 bg-light">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-[clamp(1.75rem,3vw,2.5rem)] font-bold text-dark mb-4">热门景点</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">探索韶山的红色文化遗迹和自然风光，感受这座城市的独特魅力。</p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- 毛泽东故居 -->
+                <div class="bg-white rounded-2xl shadow-lg overflow-hidden card-hover">
+                    <div class="relative h-64 overflow-hidden">
+                        <img src="img/imgss/gg.jpg" alt="毛泽东故居" class="w-full h-full object-cover">
+                        <div class="absolute top-4 right-4 bg-primary text-white text-sm font-medium px-3 py-1 rounded-full">
+                            必游景点
+                        </div>
+                    </div>
+
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">毛泽东故居</h3>
+                        <p class="text-gray-600 mb-4">毛泽东出生和早年生活的地方，具有重要的历史意义。</p>
+
+                        <div class="flex justify-between items-center">
+                            <div class="flex items-center">
+                                <i class="fa fa-map-marker text-primary mr-2"></i>
+                                <span class="text-sm">韶山市韶山乡韶源村</span>
+                            </div>
+                            <div class="flex items-center">
+                                <i class="fa fa-star text-warning mr-1"></i>
+                                <span class="text-sm font-medium">4.9</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 韶山毛泽东纪念馆 -->
+                <div class="bg-white rounded-2xl shadow-lg overflow-hidden card-hover">
+                    <div class="relative h-64 overflow-hidden">
+                        <img src="img/imgss/jjg.jpg" alt="韶山毛泽东纪念馆" class="w-full h-full object-cover">
+                    </div>
+
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">韶山毛泽东纪念馆</h3>
+                        <p class="text-gray-600 mb-4">系统展示毛泽东生平业绩、思想和人格风范的纪念性专题博物馆。</p>
+
+                        <div class="flex justify-between items-center">
+                            <div class="flex items-center">
+                                <i class="fa fa-map-marker text-primary mr-2"></i>
+                                <span class="text-sm">韶山市韶山冲引凤山下</span>
+                            </div>
+                            <div class="flex items-center">
+                                <i class="fa fa-star text-warning mr-1"></i>
+                                <span class="text-sm font-medium">4.8</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 滴水洞 -->
+                <div class="bg-white rounded-2xl shadow-lg overflow-hidden card-hover">
+                    <div class="relative h-64 overflow-hidden">
+                        <img src="img/imgss/dsd.jpg" alt="滴水洞" class="w-full h-full object-cover">
+                    </div>
+
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">滴水洞</h3>
+                        <p class="text-gray-600 mb-4">毛泽东曾在此居住，洞内景观秀丽，空气清新。</p>
+
+                        <div class="flex justify-between items-center">
+                            <div class="flex items-center">
+                                <i class="fa fa-map-marker text-primary mr-2"></i>
+                                <span class="text-sm">韶山市韶山冲西南约5公里处</span>
+                            </div>
+                            <div class="flex items-center">
+                                <i class="fa fa-star text-warning mr-1"></i>
+                                <span class="text-sm font-medium">4.7</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 特色美食 -->
+    <section id="food" class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-[clamp(1.75rem,3vw,2.5rem)] font-bold text-dark mb-4">特色美食</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">韶山美食以湘菜为基础，独具地方特色，让您的味蕾体验一场盛宴。</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <div class="relative">
+                        <img src="img/imgss/hsr.jpg" alt="韶山美食" class="rounded-xl shadow-xl w-full h-auto">
+                        <div class="absolute -bottom-6 -right-6 bg-white p-4 rounded-lg shadow-lg hidden md:block">
+                            <div class="flex items-center">
+                                <div class="mr-3">
+                                    <i class="fa fa-certificate text-primary"></i>
+                                </div>
+                                <div>
+                                    <p class="font-medium">特色认证</p>
+                                    <p class="text-sm text-gray-500">地道韶山风味</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="text-2xl font-bold mb-4">品尝韶山美味</h3>
+                    <p class="text-gray-600 mb-6">韶山的美食融合了当地的特色和湘菜的风味，其中毛氏红烧肉、火焙鱼、乡里腊肉等都是不容错过的佳肴。</p>
+                    <ul class="list-disc list-inside text-gray-600">
+                        <li>毛氏红烧肉：色泽红亮，肥而不腻，是韶山的招牌菜。</li>
+                        <li>火焙鱼：鲜香可口，是当地的传统小吃。</li>
+                        <li>乡里腊肉：肉质紧实，香味浓郁，是韶山的特色美食之一。</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 天气指南 -->
+    <section id="weather" class="py-20 bg-light">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-[clamp(1.75rem,3vw,2.5rem)] font-bold text-dark mb-4">天气指南</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">了解韶山的日常天气，为您的旅行做好准备。</p>
+            </div>
+
+            <div class="text-center">
+                <p class="text-gray-600 mb-4">韶山属亚热带季风性湿润气候，四季分明，雨量充沛。春季温暖湿润，夏季炎热多雨，秋季凉爽干燥，冬季寒冷少雨。</p>
+                <p class="text-gray-600">最佳旅游时间为春秋两季，此时天气宜人，景色优美。</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 交通出行 -->
+    <section id="transportation" class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-[clamp(1.75rem,3vw,2.5rem)] font-bold text-dark mb-4">交通出行</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">了解前往韶山的交通方式，让您的旅途更加便捷。</p>
+            </div>
+
+            <div class="space-y-8">
+                <div class="flex items-start">
+                    <div class="mr-4 mt-1">
+                        <div class="w-6 h-6 rounded-full bg-primary/20 flex items-center justify-center">
+                            <i class="fa fa-train text-primary text-xs"></i>
+                        </div>
+                    </div>
+                    <div>
+                        <h4 class="font-medium">火车</h4>
+                        <p class="text-gray-600 text-sm">可先到达湘潭站或湘潭北站，再转乘汽车前往韶山。</p>
+                    </div>
+                </div>
+
+                <div class="flex items-start">
+                    <div class="mr-4 mt-1">
+                        <div class="w-6 h-6 rounded-full bg-primary/20 flex items-center justify-center">
+                            <i class="fa fa-bus text-primary text-xs"></i>
+                        </div>
+                    </div>
+                    <div>
+                        <h4 class="font-medium">汽车</h4>
+                        <p class="text-gray-600 text-sm">在湘潭长途汽车站有直达韶山的班车，方便快捷。</p>
+                    </div>
+                </div>
+
+                <div class="flex items-start">
+                    <div class="mr-4 mt-1">
+                        <div class="w-6 h-6 rounded-full bg-primary/20 flex items-center justify-center">
+                            <i class="fa fa-car text-primary text-xs"></i>
+                        </div>
+                    </div>
+                    <div>
+                        <h4 class="font-medium">自驾</h4>
+                        <p class="text-gray-600 text-sm">从长沙、湘潭等地自驾前往韶山，路况良好，沿途风景优美。</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 定制旅行表单 -->
+    <section id="form" class="py-20 bg-light">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-[clamp(1.75rem,3vw,2.5rem)] font-bold text-dark mb-4">定制旅行</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">填写以下表单，我们将为您定制专属的韶山之旅。</p>
+            </div>
+
+            <form id="custom-trip-form" class="max-w-lg mx-auto">
+                <div class="mb-4">
+                    <label for="name" class="block text-gray-700 font-medium mb-2">姓名</label>
+                    <input type="text" id="name" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:border-primary">
+                </div>
+                <div class="mb-4">
+                    <label for="phone" class="block text-gray-700 font-medium mb-2">手机号码</label>
+                    <input type="tel" id="phone" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:border-primary">
+                </div>
+                <div class="mb-4">
+                    <label for="email" class="block text-gray-700 font-medium mb-2">电子邮箱</label>
+                    <input type="email" id="email" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:border-primary">
+                </div>
+                <div class="mb-4">
+                    <label for="travelers" class="block text-gray-700 font-medium mb-2">出行人数</label>
+                    <select id="travelers" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:border-primary">
+                        <option value="">请选择</option>
+                        <option value="1">1人</option>
+                        <option value="2">2人</option>
+                        <option value="3">3人</option>
+                        <option value="4">4人</option>
+                        <option value="5">5人及以上</option>
+                    </select>
+                </div>
+                <div class="mb-4">
+                    <label for="trip-days" class="block text-gray-700 font-medium mb-2">旅行天数</label>
+                    <select id="trip-days" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:border-primary">
+                        <option value="">请选择</option>
+                        <option value="1">1天</option>
+                        <option value="2">2天</option>
+                        <option value="3">3天</option>
+                        <option value="4">4天</option>
+                        <option value="5">5天及以上</option>
+                    </select>
+                </div>
+                <div class="mb-4">
+                    <label for="budget" class="block text-gray-700 font-medium mb-2">预算范围</label>
+                    <select id="budget" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:border-primary">
+                        <option value="">请选择</option>
+                        <option value="1000以下">1000以下</option>
+                        <option value="1000-2000">1000 - 2000</option>
+                        <option value="2000-3000">2000 - 3000</option>
+                        <option value="3000以上">3000以上</option>
+                    </select>
+                </div>
+                <div class="mb-4">
+                    <label for="travel-date" class="block text-gray-700 font-medium mb-2">出行日期</label>
+                    <input type="date" id="travel-date" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:border-primary">
+                </div>
+				<div class="mb-4">
+					<button type="submit">
+                    提交表单
+					</button>
+				</div>
+            </form>
+        </div>
+    </section>
+	<!-- 新闻通讯 -->
+	<section class="newsletter">
+	    <div class="container">
+	        <h2>订阅我们的通讯</h2>
+	        <p>获取湖南旅游最新资讯和特别优惠</p>
+	        
+	        <form class="newsletter-form">
+	            <input type="email" placeholder="输入您的电子邮箱">
+	            <button type="submit">订阅</button>
+	        </form>
+	    </div>
+	</section>
+	<!-- 页脚 -->
+	<footer class="footer">
+	    <div class="container">
+	        <div class="footer-grid">
+	            <div class="footer-col">
+	                <h3>锦绣湖南</h3>
+	                <p>湖南旅游官方指南网站，为您提供最全面、最权威的湖南旅游信息。</p>
+	                
+	            </div>
+	            
+	            <div class="footer-col">
+	                <h3>快速链接</h3>
+	                <ul class="nav-links">
+	                    <li><a href="index.html">首页</a></li>
+	                    <li class="dropdown">
+	                        <a href="#">探索湖南</a>
+	                        <ul class="dropdown-content">
+	                            <li><a href="cs.html">长沙</a></li>
+	                            <li><a href="zjj.html">张家界</a></li>
+	                            <li><a href="xx.html">湘西</a></li>
+	                            <li><a href="yy.html">岳阳</a></li>
+	                            <li><a href="ss.html">韶山</a></li>
+	                        </ul>
+	                    </li>
+	                    <li><a href="jqdq.html">景区大全</a></li>
+	                    <li><a href="xcgh.html">行程规划</a></li>
+	                    <li><a href="whty.html">文化体验</a></li>
+	                    <li><a href="meishi.html">美食地图</a></li>
+	                </ul>
+	            </div>
+	            
+	            <div class="footer-col">
+	                <h3>实用信息</h3>
+	                <ul>
+	                    <li><a href="https://www.msn.cn/zh-cn/weather/forecast/in-%E6%B9%96%E5%8D%97%E7%9C%81?loc=eyJsIjoi5rmW5Y2X55yBIiwiYyI6IuS4reWNjuS6uuawkeWFseWSjOWbvSIsImkiOiJDTiIsIngiOiIxMTIuOTM4OTIiLCJ5IjoiMjguMjI4MDYifQ%3D%3D&weadegreetype=C&ocid=ansmsnweather" target="_blank">天气预报</a></li>
+	                    <li><a href="#">交通指南</a></li>
+	                    <li><a href="#">紧急电话</a></li>
+	                    <li><a href="#">旅游贴士</a></li>
+	                    <li><a href="#">无障碍旅游</a></li>
+	                </ul>
+	            </div>
+	            
+	            <div class="footer-col">
+	                <h3>联系我们</h3>
+	                <ul>
+	                    <li><i class="fas fa-map-marker-alt"></i> 湖南省长沙市长沙县</li>
+	                    <li><i class="fas fa-phone"></i> +86 731 8888 8888</li>
+	                    <li><i class="fas fa-envelope"></i> info@hunan-travel.com</li>
+	                </ul>
+	            </div>
+	        </div>
+	        
+	        <div class="footer-bottom">
+	            <p>&copy; 2025 锦绣湖南旅游网. 保留所有权利.</p>
+	        </div>
+	    </div>
+	</footer>
+
+    <!-- 返回顶部按钮 -->
+    <a id="back-to-top" href="#" class="bg-primary text-white p-3 rounded-full opacity-0 invisible">
+        <i class="fa fa-arrow-up"></i>
+    </a>
+
+
+</body>
+
+</html>

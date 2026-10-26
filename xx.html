@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>锦绣湖南 - 发现湖南之美</title>
+    <link href="css/xx.css" rel="stylesheet" type="text/css">
+	<link href="css/hunan.css" rel="stylesheet" type="text/css">
+    <script type="text/javascript" src="js/js.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body class="font-inter bg-light text-dark antialiased">
+    <!-- 导航栏 -->
+    <header id="navbar" class="fixed w-full z-50">
+     <nav class="navbar">
+         <div class="container">
+             <a href="#" class="logo">
+                 <i class="fas fa-mountain"></i>
+                 锦绣<span>湖南</span>
+             </a>
+             
+             <ul class="nav-links">
+                 <li><a href="index.html">首页</a></li>
+                 <li class="dropdown">
+                     <a href="#">探索湖南</a>
+                     <ul class="dropdown-content">
+                         <li><a href="cs.html">长沙</a></li>
+                         <li><a href="zjj.html">张家界</a></li>
+                         <li><a href="xx.html">湘西</a></li>
+                         <li><a href="yy.html">岳阳</a></li>
+                         <li><a href="ss.html">韶山</a></li>
+                     </ul>
+                 </li>
+                 <li><a href="jqdq.html">景区大全</a></li>
+                 <li><a href="xcgh.html">行程规划</a></li>
+                 <li><a href="whty.html">文化体验</a></li>
+                 <li><a href="meishi.html">美食地图</a></li>
+             </ul>
+             
+             <div class="mobile-menu">
+                 <i class="fas fa-bars"></i>
+             </div>
+         </div>
+     </nav>
+    </header>
+
+    <!-- 英雄区域 -->
+    <section id="home" class="relative h-screen flex items-center justify-center overflow-hidden hero">
+        <div class="absolute inset-0 z-0">
+            <img src="img/imgxx/xx.jpg" alt="湘西风光" class="w-full h-full object-cover">
+            <div class="absolute inset-0 bg-dark/40"></div>
+        </div>
+
+        <div class="container mx-auto px-4 z-10 text-center hero-content">
+            <h1 class="text-[clamp(2.5rem,5vw,4rem)] font-bold text-white">
+                探索神秘湘西
+            </h1>
+            <p class="text-[clamp(1rem,2vw,1.25rem)] text-white/90">
+                感受湘西的独特风情，领略自然与人文的完美融合
+            </p>
+            <div class="btn">
+                <a href="#xx" class="px-8 py-3 text-white font-medium">
+                    探索景点
+                </a>
+            </div>
+        </div>
+
+        <div class="absolute bottom-10  transform -translate-x-1/2 text-white animate-bounce">
+            <a href="#about" class="flex flex-col items-center">
+                <span class="mb-2">向下滚动探索</span>
+                <i class="fa fa-chevron-down"></i>
+            </a>
+        </div>
+    </section>
+
+    <!-- 城市简介 -->
+    <section id="about" class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 id="xx" class="text-[clamp(1.75rem,3vw,2.5rem)] font-bold text-dark mb-4">湘西城市简介</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">湘西土家族苗族自治州，地处湖南省西北部，是一个充满神秘色彩的地方。</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div class="order-2 md:order-1">
+                    <h3 class="text-2xl font-bold mb-4">神秘湘西的独特魅力</h3>
+                    <p class="text-gray-600 mb-6">湘西有着丰富的历史文化和独特的民俗风情，这里有美丽的自然风光和众多的历史遗迹。</p>
+
+                    <div class="space-y-4 mb-6">
+                        <div class="flex items-start">
+                            <div class="mr-4 mt-1">
+                                <div class="w-6 h-6 rounded-full bg-primary/20 flex items-center justify-center">
+                                    <i class="fa fa-map-marker text-primary text-xs"></i>
+                                </div>
+                            </div>
+                            <div>
+                                <h4 class="font-medium">地理位置</h4>
+                                <p class="text-gray-600 text-sm">位于湖南省西北部，与湖北、贵州、重庆接壤</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start">
+                            <div class="mr-4 mt-1">
+                                <div class="w-6 h-6 rounded-full bg-primary/20 flex items-center justify-center">
+                                    <i class="fa fa-users text-primary text-xs"></i>
+                                </div>
+                            </div>
+                            <div>
+                                <h4 class="font-medium">人口</h4>
+                                <p class="text-gray-600 text-sm">约290万，以土家族、苗族为主</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start">
+                            <div class="mr-4 mt-1">
+                                <div class="w-6 h-6 rounded-full bg-primary/20 flex items-center justify-center">
+                                    <i class="fa fa-trophy text-primary text-xs"></i>
+                                </div>
+                            </div>
+                            <div>
+                                <h4 class="font-medium">城市荣誉</h4>
+                                <p class="text-gray-600 text-sm">中国优秀旅游城市、国家生态保护与建设示范区</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start">
+                            <div class="mr-4 mt-1">
+                                <div class="w-6 h-6 rounded-full bg-primary/20 flex items-center justify-center">
+                                    <i class="fa fa-cutlery text-primary text-xs"></i>
+                                </div>
+                            </div>
+                            <div>
+                                <h4 class="font-medium">特色美食</h4>
+                                <p class="text-gray-600 text-sm">酸鱼、血粑鸭、米豆腐、社饭等</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <a href="#attractions" class="inline-flex items-center text-primary font-medium hover:underline">
+                        探索更多景点 <i class="fa fa-long-arrow-right ml-2"></i>
+                    </a>
+                </div>
+
+                <div class="order-1 md:order-2">
+                    <div class="relative">
+                        <img src="img/imgxx/xx1.jpg" alt="湘西风光" class="rounded-xl shadow-xl w-full h-auto">
+                        <div class="absolute -bottom-6 -left-6 bg-white p-4 rounded-lg shadow-lg hidden md:block">
+                            <div class="flex items-center">
+                                <div class="mr-3">
+                                    <i class="fa fa-star text-warning"></i>
+                                    <i class="fa fa-star text-warning"></i>
+                                    <i class="fa fa-star text-warning"></i>
+                                    <i class="fa fa-star text-warning"></i>
+                                    <i class="fa fa-star text-warning"></i>
+                                </div>
+                                <div>
+                                    <p class="font-medium">游客满意度</p>
+                                    <p class="text-sm text-gray-500">95% 好评率</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 热门景点 -->
+    <section id="attractions" class="py-20 bg-light">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-[clamp(1.75rem,3vw,2.5rem)] font-bold text-dark mb-4">热门景点</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">探索湘西的自然风光和历史文化遗迹，感受这座城市的独特魅力。</p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- 凤凰古城 -->
+                <div class="bg-white rounded-2xl shadow-lg overflow-hidden card-hover">
+                    <div class="relative h-64 overflow-hidden">
+                        <img src="img/imgxx/fhgc.jpg" alt="凤凰古城" class="w-full h-full object-cover">
+                        <div class="absolute top-4 right-4 bg-primary text-white text-sm font-medium px-3 py-1 rounded-full">
+                            必游景点
+                        </div>
+                    </div>
+
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">凤凰古城</h3>
+                        <p class="text-gray-600 mb-4">中国历史文化名城，保存了大量明清时期的建筑和传统的苗族、土家族文化。</p>
+
+                        <div class="flex justify-between items-center">
+                            <div class="flex items-center">
+                                <i class="fa fa-map-marker text-primary mr-2"></i>
+                                <span class="text-sm">凤凰县</span>
+                            </div>
+                            <div class="flex items-center">
+                                <i class="fa fa-star text-warning mr-1"></i>
+                                <span class="text-sm font-medium">4.9</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 张家界国家森林公园 -->
+                <div class="bg-white rounded-2xl shadow-lg overflow-hidden card-hover">
+                    <div class="relative h-64 overflow-hidden">
+                        <img src="img/imgxx/gjslgy.jpg" alt="张家界国家森林公园" class="w-full h-full object-cover">
+                    </div>
+
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">张家界国家森林公园</h3>
+                        <p class="text-gray-600 mb-4">中国第一个国家森林公园，拥有奇特的砂岩峰林地貌和丰富的生物资源。</p>
+
+                        <div class="flex justify-between items-center">
+                            <div class="flex items-center">
+                                <i class="fa fa-map-marker text-primary mr-2"></i>
+                                <span class="text-sm">张家界市</span>
+                            </div>
+                            <div class="flex items-center">
+                                <i class="fa fa-star text-warning mr-1"></i>
+                                <span class="text-sm font-medium">4.8</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 芙蓉镇 -->
+                <div class="bg-white rounded-2xl shadow-lg overflow-hidden card-hover">
+                    <div class="relative h-64 overflow-hidden">
+                        <img src="img/imgxx/frz.jpg" alt="芙蓉镇" class="w-full h-full object-cover">
+                    </div>
+
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">芙蓉镇</h3>
+                        <p class="text-gray-600 mb-4">一座具有两千多年历史的古镇，因电影《芙蓉镇》而闻名。</p>
+
+                        <div class="flex justify-between items-center">
+                            <div class="flex items-center">
+                                <i class="fa fa-map-marker text-primary mr-2"></i>
+                                <span class="text-sm">永顺县</span>
+                            </div>
+                            <div class="flex items-center">
+                                <i class="fa fa-star text-warning mr-1"></i>
+                                <span class="text-sm font-medium">4.7</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 猛洞河漂流 -->
+                <div class="bg-white rounded-2xl shadow-lg overflow-hidden card-hover">
+                    <div class="relative h-64 overflow-hidden">
+                        <img src="img/imgxx/mdh.jpg" alt="猛洞河漂流" class="w-full h-full object-cover">
+                    </div>
+
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">猛洞河漂流</h3>
+                        <p class="text-gray-600 mb-4">被誉为“天下第一漂”，沿途风景秀丽，水流湍急，是一项刺激的水上活动。</p>
+
+                        <div class="flex justify-between items-center">
+                            <div class="flex items-center">
+                                <i class="fa fa-map-marker text-primary mr-2"></i>
+                                <span class="text-sm">永顺县</span>
+                            </div>
+                            <div class="flex items-center">
+                                <i class="fa fa-star text-warning mr-1"></i>
+                                <span class="text-sm font-medium">4.6</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 乾州古城 -->
+                <div class="bg-white rounded-2xl shadow-lg overflow-hidden card-hover">
+                    <div class="relative h-64 overflow-hidden">
+                        <img src="img/imgxx/qzgc.jpg" alt="乾州古城" class="w-full h-full object-cover">
+                    </div>
+
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">乾州古城</h3>
+                        <p class="text-gray-600 mb-4">具有4200多年历史的古城，融合了苗族、土家族等多民族文化。</p>
+
+                        <div class="flex justify-between items-center">
+                            <div class="flex items-center">
+                                <i class="fa fa-map-marker text-primary mr-2"></i>
+                                <span class="text-sm">吉首市</span>
+                            </div>
+                            <div class="flex items-center">
+                                <i class="fa fa-star text-warning mr-1"></i>
+                                <span class="text-sm font-medium">4.5</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 矮寨大桥 -->
+                <div class="bg-white rounded-2xl shadow-lg overflow-hidden card-hover">
+                    <div class="relative h-64 overflow-hidden">
+                        <img src="img/imgxx/azdq.jpg" alt="矮寨大桥" class="w-full h-full object-cover">
+                    </div>
+
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">矮寨大桥</h3>
+                        <p class="text-gray-600 mb-4">世界上跨峡谷长度最大的钢桁梁悬索桥，桥身雄伟壮观，景色美不胜收。</p>
+
+                        <div class="flex justify-between items-center">
+                            <div class="flex items-center">
+                                <i class="fa fa-map-marker text-primary mr-2"></i>
+                                <span class="text-sm">吉首市</span>
+                            </div>
+                            <div class="flex items-center">
+                                <i class="fa fa-star text-warning mr-1"></i>
+                                <span class="text-sm font-medium">4.4</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 特色美食 -->
+    <section id="food" class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-[clamp(1.75rem,3vw,2.5rem)] font-bold text-dark mb-4">特色美食</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">湘西美食以酸辣为特色，口味独特，让人回味无穷。</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <div class="relative">
+                        <img src="img/imgxx/sy.jpg" alt="湘西美食" class="rounded-xl shadow-xl w-full h-auto">
+                        <div class="absolute -bottom-6 -right-6 bg-white p-4 rounded-lg shadow-lg hidden md:block">
+                            <div class="flex items-center">
+                                <div class="mr-3">
+                                    <i class="fa fa-star text-warning"></i>
+                                    <i class="fa fa-star text-warning"></i>
+                                    <i class="fa fa-star text-warning"></i>
+                                    <i class="fa fa-star text-warning"></i>
+                                    <i class="fa fa-star text-warning"></i>
+                                </div>
+                                <div>
+                                    <p class="font-medium">美食好评率</p>
+                                    <p class="text-sm text-gray-500">90% 好评</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="text-2xl font-bold mb-4">舌尖上的湘西</h3>
+                    <p class="text-gray-600 mb-6">湘西美食融合了土家族、苗族等民族的特色，具有独特的风味。以下是一些值得一试的美食：</p>
+                    <ul class="list-disc list-inside space-y-2">
+                        <li>酸鱼：以鲜鱼腌制发酵而成，酸辣可口，具有浓郁的地方特色。</li>
+                        <li>血粑鸭：将鸭血与糯米制成血粑，与鸭肉一起炒制，口感软糯，味道鲜美。</li>
+                        <li>米豆腐：用大米磨成浆，经过发酵、凝固而成，口感爽滑，常搭配辣椒、酸菜等调料食用。</li>
+                        <li>社饭：以糯米、青蒿、腊肉等为原料，蒸熟后香气扑鼻，是湘西传统的美食之一。</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 天气指南 -->
+    <section id="weather" class="py-20 bg-light">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-[clamp(1.75rem,3vw,2.5rem)] font-bold text-dark mb-4">天气指南</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">了解湘西的天气情况，合理安排您的旅行计划。</p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-white rounded-2xl shadow-lg p-6 text-center">
+                    <i class="fa fa-sun-o fa-3x text-warning mb-4"></i>
+                    <h3 class="text-xl font-bold mb-2">春季</h3>
+                    <p class="text-gray-600">气温逐渐回暖，万物复苏，是观赏花卉和自然风光的好时节。平均气温在10℃ - 20℃之间。</p>
+                </div>
+                <div class="bg-white rounded-2xl shadow-lg p-6 text-center">
+                    <i class="fa fa-cloud fa-3x text-gray-500 mb-4"></i>
+                    <h3 class="text-xl font-bold mb-2">夏季</h3>
+                    <p class="text-gray-600">气温较高，雨水较多，适合进行水上活动和避暑。平均气温在25℃ - 35℃之间。</p>
+                </div>
+                <div class="bg-white rounded-2xl shadow-lg p-6 text-center">
+                    <i class="fa fa-cloud-rain fa-3x text-blue-500 mb-4"></i>
+                    <h3 class="text-xl font-bold mb-2">秋季</h3>
+                    <p class="text-gray-600">天气凉爽，秋高气爽，是观赏红叶和品尝美食的好时候。平均气温在15℃ - 25℃之间。</p>
+                </div>
+                <div class="bg-white rounded-2xl shadow-lg p-6 text-center">
+                    <i class="fa fa-snowflake-o fa-3x text-blue-500 mb-4"></i>
+                    <h3 class="text-xl font-bold mb-2">冬季</h3>
+                    <p class="text-gray-600">气温较低，有时会下雪，适合体验冬季的宁静和民俗文化。平均气温在0℃ - 10℃之间。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 交通出行 -->
+    <section id="transportation" class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-[clamp(1.75rem,3vw,2.5rem)] font-bold text-dark mb-4">交通出行</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">湘西的交通十分便利，您可以选择多种方式到达和在当地出行。</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h3 class="text-2xl font-bold mb-4">到达湘西</h3>
+                    <p class="text-gray-600 mb-6">您可以选择飞机、火车、汽车等方式到达湘西：</p>
+                    <ul class="list-disc list-inside space-y-2">
+                        <li>飞机：湘西附近有张家界荷花国际机场和铜仁凤凰机场，可选择合适的航班到达。</li>
+                        <li>火车：湘西有吉首站、张家界站等火车站，可通过铁路网络到达。</li>
+                        <li>汽车：湘西的公路交通发达，可通过长途客车或自驾的方式到达。</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-2xl font-bold mb-4">当地交通</h3>
+                    <p class="text-gray-600 mb-6">在湘西当地，您可以选择以下交通方式出行：</p>
+                    <ul class="list-disc list-inside space-y-2">
+                        <li>公交车：湘西的主要城市和景区都有公交车线路，方便快捷。</li>
+                        <li>出租车：出租车是一种方便的出行方式，但在旅游旺季可能会比较紧张。</li>
+                        <li>租车：如果您想自由出行，可以选择租车服务。</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 定制旅行表单 -->
+    <section id="form" class="py-20 bg-light">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-[clamp(1.75rem,3vw,2.5rem)] font-bold text-dark mb-4">定制旅行</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">填写以下表单，我们将为您定制专属的湘西之旅。</p>
+            </div>
+
+            <form id="custom-trip-form" class="max-w-xl mx-auto bg-white p-8 rounded-lg shadow-lg">
+                <div class="mb-4">
+                    <label for="name" class="block text-gray-700 font-medium mb-2">姓名</label>
+                    <input type="text" id="name" class="w-full border border-gray-300 rounded-md px-3 py-2 focus:outline-none focus:border-primary">
+                </div>
+                <div class="mb-4">
+                    <label for="phone" class="block text-gray-700 font-medium mb-2">手机号码</label>
+                    <input type="tel" id="phone" class="w-full border border-gray-300 rounded-md px-3 py-2 focus:outline-none focus:border-primary">
+                </div>
+                <div class="mb-4">
+                    <label for="email" class="block text-gray-700 font-medium mb-2">电子邮箱</label>
+                    <input type="email" id="email" class="w-full border border-gray-300 rounded-md px-3 py-2 focus:outline-none focus:border-primary">
+                </div>
+                <div class="mb-4">
+                    <label for="travelers" class="block text-gray-700 font-medium mb-2">出行人数</label>
+                    <select id="travelers" class="w-full border border-gray-300 rounded-md px-3 py-2 focus:outline-none focus:border-primary">
+                        <option value="">请选择</option>
+                        <option value="1">1人</option>
+                        <option value="2">2人</option>
+                        <option value="3">3人</option>
+                        <option value="4">4人</option>
+                        <option value="5">5人以上</option>
+                    </select>
+                </div>
+                <div class="mb-4">
+                    <label for="trip-days" class="block text-gray-700 font-medium mb-2">旅行天数</label>
+                    <select id="trip-days" class="w-full border border-gray-300 rounded-md px-3 py-2 focus:outline-none focus:border-primary">
+                        <option value="">请选择</option>
+                        <option value="1">1天</option>
+                        <option value="2">2天</option>
+                        <option value="3">3天</option>
+                        <option value="4">4天</option>
+                        <option value="5">5天以上</option>
+                    </select>
+                </div>
+                <div class="mb-4">
+                    <label for="budget" class="block text-gray-700 font-medium mb-2">预算范围</label>
+                    <select id="budget" class="w-full border border-gray-300 rounded-md px-3 py-2 focus:outline-none focus:border-primary">
+                        <option value="">请选择</option>
+                        <option value="1000">1000元以下</option>
+                        <option value="2000">1000 - 2000元</option>
+                        <option value="3000">2000 - 3000元</option>
+                        <option value="5000">3000 - 5000元</option>
+                        <option value="5000+">5000元以上</option>
+                    </select>
+                </div>
+                <div class="mb-4">
+                    <label for="travel-date" class="block text-gray-700 font-medium mb-2">出行日期</label>
+                    <input type="date" id="travel-date" class="w-full border border-gray-300 rounded-md px-3 py-2 focus:outline-none focus:border-primary">
+                </div>
+                <div class="text-center">
+                    <button type="submit" class="px-8 py-3 bg-primary hover:bg-primary/90 text-white font-medium rounded-full transition-all transform hover:scale-105 shadow-lg hover:shadow-xl">
+                        提交表单
+                    </button>
+                </div>
+            </form>
+        </div>
+    </section>
+	<!-- 新闻通讯 -->
+	<section class="newsletter">
+	    <div class="container">
+	        <h2>订阅我们的通讯</h2>
+	        <p>获取湖南旅游最新资讯和特别优惠</p>
+	        
+	        <form class="newsletter-form">
+	            <input type="email" placeholder="输入您的电子邮箱">
+	            <button type="submit">订阅</button>
+	        </form>
+	    </div>
+	</section>
+	<!-- 页脚 -->
+	<footer class="footer">
+	    <div class="container">
+	        <div class="footer-grid">
+	            <div class="footer-col">
+	                <h3>锦绣湖南</h3>
+	                <p>湖南旅游官方指南网站，为您提供最全面、最权威的湖南旅游信息。</p>
+	            </div>
+	            
+	            <div class="footer-col">
+	                <h3>快速链接</h3>
+	                <ul class="nav-links">
+	                    <li><a href="index.html">首页</a></li>
+	                    <li class="dropdown">
+	                        <a href="#">探索湖南</a>
+	                        <ul class="dropdown-content">
+	                            <li><a href="cs.html">长沙</a></li>
+	                            <li><a href="zjj.html">张家界</a></li>
+	                            <li><a href="xx.html">湘西</a></li>
+	                            <li><a href="yy.html">岳阳</a></li>
+	                            <li><a href="ss.html">韶山</a></li>
+	                        </ul>
+	                    </li>
+	                    <li><a href="jqdq.html">景区大全</a></li>
+	                    <li><a href="xcgh.html">行程规划</a></li>
+	                    <li><a href="whty.html">文化体验</a></li>
+	                    <li><a href="meishi.html">美食地图</a></li>
+	                </ul>
+	            </div>
+	            
+	            <div class="footer-col">
+	                <h3>实用信息</h3>
+	                <ul>
+	                    <li><a href="https://www.msn.cn/zh-cn/weather/forecast/in-%E6%B9%96%E5%8D%97%E7%9C%81?loc=eyJsIjoi5rmW5Y2X55yBIiwiYyI6IuS4reWNjuS6uuawkeWFseWSjOWbvSIsImkiOiJDTiIsIngiOiIxMTIuOTM4OTIiLCJ5IjoiMjguMjI4MDYifQ%3D%3D&weadegreetype=C&ocid=ansmsnweather" target="_blank">天气预报</a></li>
+	                    <li><a href="#">交通指南</a></li>
+	                    <li><a href="#">紧急电话</a></li>
+	                    <li><a href="#">旅游贴士</a></li>
+	                    <li><a href="#">无障碍旅游</a></li>
+	                </ul>
+	            </div>
+	            
+	            <div class="footer-col">
+	                <h3>联系我们</h3>
+	                <ul>
+	                    <li><i class="fas fa-map-marker-alt"></i> 湖南省长沙长沙县</li>
+	                    <li><i class="fas fa-phone"></i> +86 731 8888 8888</li>
+	                    <li><i class="fas fa-envelope"></i> info@hunan-travel.com</li>
+	                </ul>
+	            </div>
+	        </div>
+	        
+	        <div class="footer-bottom">
+	            <p>&copy; 2025 锦绣湖南旅游网. 保留所有权利.</p>
+	        </div>
+	    </div>
+	</footer>
+
+    <!-- 返回顶部按钮 -->
+    <a id="back-to-top" href="#" class="bg-primary text-white p-3 rounded-full">
+        <i class="fa fa-arrow-up"></i>
+    </a>
+
+  
+</body>
+</html>

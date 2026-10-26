@@ -1,0 +1,629 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>锦绣湖南 - 发现湖南之美</title>
+    <link href="css/yy.css" rel="stylesheet" type="text/css">
+	<link href="css/hunan.css" rel="stylesheet" type="text/css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body class="font-inter bg-light text-dark antialiased">
+    <!-- 导航栏 -->
+    <header id="navbar" class="fixed w-full z-50">
+      <nav class="navbar">
+          <div class="container">
+              <a href="#" class="logo">
+                  <i class="fas fa-mountain"></i>
+                  锦绣<span>湖南</span>
+              </a>
+              
+              <ul class="nav-links">
+                  <li><a href="index.html">首页</a></li>
+                  <li class="dropdown">
+                      <a href="#">探索湖南</a>
+                      <ul class="dropdown-content">
+                          <li><a href="cs.html">长沙</a></li>
+                          <li><a href="zjj.html">张家界</a></li>
+                          <li><a href="xx.html">湘西</a></li>
+                          <li><a href="yy.html">岳阳</a></li>
+                          <li><a href="ss.html">韶山</a></li>
+                      </ul>
+                  </li>
+                  <li><a href="jqdq.html">景区大全</a></li>
+                  <li><a href="xcgh.html">行程规划</a></li>
+                  <li><a href="whty.html">文化体验</a></li>
+                  <li><a href="meishi.html">美食地图</a></li>
+              </ul>
+              
+              <div class="mobile-menu">
+                  <i class="fas fa-bars"></i>
+              </div>
+          </div>
+      </nav>
+    </header>
+
+    <!-- 英雄区域 -->
+    <section id="home" class="relative h-screen flex items-center justify-center overflow-hidden hero">
+        <div class="absolute inset-0 z-0">
+            <img src="img/imgyy/yy.jpg" alt="岳阳城市风光" class="w-full h-full object-cover">
+            <div class="absolute inset-0 bg-dark/40"></div>
+        </div>
+        <div class="container mx-auto px-4 z-10 text-center hero-content">
+            <h1 class="text-[clamp(2.5rem,5vw,4rem)] font-bold text-white">
+                探索岳阳古城
+            </h1>
+            <p class="text-[clamp(1rem,2vw,1.25rem)] text-white/90 ">
+                体验千年古城的独特魅力，品味洞庭风味，感受历史与现代的完美融合
+            </p>
+            <div class="btn">
+                <a href="#yy" class="px-8 py-3 text-white font-medium  ">
+                    探索景点
+                </a>
+            </div>
+        </div>
+        <div class="absolute bottom-10 transform -translate-x-1/2 text-white animate-bounce">
+            <a href="#about" class="flex flex-col items-center">
+                <span class="mb-2">向下滚动探索</span>
+                <i class="fa fa-angle-down text-3xl"></i>
+            </a>
+        </div>
+    </section>
+
+    <!-- 城市简介 -->
+    <section id="about" class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 id="yy" class="text-[clamp(1.75rem,3vw,2.5rem)] font-bold text-dark mb-4">岳阳城市简介</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">岳阳，湖南省辖地级市，是一座有着2500多年历史的文化名城，素称“湘北门户”。</p>
+            </div>
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div class="order-2 md:order-1">
+                    <h3 class="text-2xl font-bold mb-4">千年古城的魅力</h3>
+                    <p class="text-gray-600 mb-6">岳阳是中华文化重要的始源地之一，有着深厚的历史文化底蕴。这里既有岳阳楼、君山岛等历史遗迹，也有现代的商业中心和文化创意产业。</p>
+                    <div class="space-y-4 mb-6">
+                        <div class="flex items-start">
+                            <div class="mr-4 mt-1">
+                                <div class="w-6 h-6 rounded-full bg-primary/20 flex items-center justify-center">
+                                    <i class="fa fa-map-marker text-primary text-xs"></i>
+                                </div>
+                            </div>
+                            <div>
+                                <h4 class="font-medium">地理位置</h4>
+                                <p class="text-gray-600 text-sm">位于湖南省东北部，东倚幕阜山，西抱洞庭湖，北枕长江。</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="mr-4 mt-1">
+                                <div class="w-6 h-6 rounded-full bg-primary/20 flex items-center justify-center">
+                                    <i class="fa fa-users text-primary text-xs"></i>
+                                </div>
+                            </div>
+                            <div>
+                                <h4 class="font-medium">人口</h4>
+                                <p class="text-gray-600 text-sm">约500万。</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="mr-4 mt-1">
+                                <div class="w-6 h-6 rounded-full bg-primary/20 flex items-center justify-center">
+                                    <i class="fa fa-trophy text-primary text-xs"></i>
+                                </div>
+                            </div>
+                            <div>
+                                <h4 class="font-medium">城市荣誉</h4>
+                                <p class="text-gray-600 text-sm">国家历史文化名城、中国优秀旅游城市等。</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="order-1 md:order-2">
+                    <div class="relative">
+                        <img src="img/imgyy/yy1.jpeg" alt="岳阳城市风光" class="rounded-xl shadow-xl w-full h-auto">
+                        <div class="absolute -bottom-6 -left-6 bg-white p-4 rounded-lg shadow-lg hidden md:block">
+                            <div class="flex items-center">
+                                <div class="mr-3">
+                                    <i class="fa fa-star text-warning"></i>
+                                    <i class="fa fa-star text-warning"></i>
+                                    <i class="fa fa-star text-warning"></i>
+                                    <i class="fa fa-star text-warning"></i>
+                                    <i class="fa fa-star text-warning"></i>
+                                </div>
+                                <div>
+                                    <p class="font-medium">游客满意度</p>
+                                    <p class="text-sm text-gray-500">95% 好评率</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 热门景点 -->
+    <section id="attractions" class="py-20 bg-light">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-[clamp(1.75rem,3vw,2.5rem)] font-bold text-dark mb-4">热门景点</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">探索岳阳的历史文化遗迹、自然风光和现代地标，感受这座城市的独特魅力。</p>
+            </div>
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- 岳阳楼 -->
+                <div class="bg-white rounded-2xl shadow-lg overflow-hidden card-hover">
+                    <div class="relative h-64 overflow-hidden">
+                        <img src="img/imgyy/yyl.jpg" alt="岳阳楼" class="w-full h-full object-cover">
+                        <div class="absolute top-4 right-4 bg-primary text-white text-sm font-medium px-3 py-1 rounded-full">
+                            必游景点
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">岳阳楼</h3>
+                        <p class="text-gray-600 mb-4">江南三大名楼之一，因范仲淹的《岳阳楼记》而闻名于世。</p>
+                        <div class="flex justify-between items-center">
+                            <div class="flex items-center">
+                                <i class="fa fa-map-marker text-primary mr-2"></i>
+                                <span class="text-sm">岳阳楼区</span>
+                            </div>
+                            <div class="flex items-center">
+                                <i class="fa fa-star text-warning mr-1"></i>
+                                <span class="text-sm font-medium">4.9</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- 君山岛 -->
+                <div class="bg-white rounded-2xl shadow-lg overflow-hidden card-hover">
+                    <div class="relative h-64 overflow-hidden">
+                        <img src="img/imgyy/jsd.jpg" alt="君山岛" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">君山岛</h3>
+                        <p class="text-gray-600 mb-4">八百里洞庭湖中的一个小岛，与千古名楼岳阳楼遥遥相对，是一个充满神话传说的地方。</p>
+                        <div class="flex justify-between items-center">
+                            <div class="flex items-center">
+                                <i class="fa fa-map-marker text-primary mr-2"></i>
+                                <span class="text-sm">君山区</span>
+                            </div>
+                            <div class="flex items-center">
+                                <i class="fa fa-star text-warning mr-1"></i>
+                                <span class="text-sm font-medium">4.8</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- 石牛寨国家地质公园 -->
+                <div class="bg-white rounded-2xl shadow-lg overflow-hidden card-hover">
+                    <div class="relative h-64 overflow-hidden">
+                        <img src="img/imgyy/snz.jpg" alt="石牛寨国家地质公园" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">石牛寨国家地质公园</h3>
+                        <p class="text-gray-600 mb-4">以丹霞地貌为主，有玻璃桥、悬崖秋千等刺激的游乐项目。</p>
+                        <div class="flex justify-between items-center">
+                            <div class="flex items-center">
+                                <i class="fa fa-map-marker text-primary mr-2"></i>
+                                <span class="text-sm">平江县</span>
+                            </div>
+                            <div class="flex items-center">
+                                <i class="fa fa-star text-warning mr-1"></i>
+                                <span class="text-sm font-medium">4.7</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 特色美食 -->
+    <section id="food" class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-[clamp(1.75rem,3vw,2.5rem)] font-bold text-dark mb-4">特色美食</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">岳阳美食以湘菜为基础，融入了洞庭湖的湖鲜特色，让您的味蕾体验一场盛宴。</p>
+            </div>
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <div class="relative">
+                        <img src="img/imgyy/qyy.jpg" alt="岳阳美食" class="rounded-xl shadow-xl w-full h-auto">
+                        <div class="absolute -bottom-6 -right-6 bg-white p-4 rounded-lg shadow-lg hidden md:block">
+                            <div class="flex items-center">
+                                <div class="mr-3">
+                                    <i class="fa fa-certificate text-primary"></i>
+                                </div>
+                                <div>
+                                    <p class="font-medium">美食之城</p>
+                                    <p class="text-sm text-gray-500">独特的湖鲜美食吸引众多游客</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="text-2xl font-bold mb-4">舌尖上的岳阳</h3>
+                    <p class="text-gray-600 mb-6">岳阳美食以辣、鲜、香为特色，讲究原料的新鲜和烹饪的精细。无论是街边小吃还是高档餐厅，都能让您的味蕾得到极大的满足。</p>
+                    <div class="space-y-6">
+                        <!-- 洞庭银鱼 -->
+                        <div class="flex items-start">
+                            <div class="mr-4">
+                                <div class="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center">
+                                    <i class="fa fa-cutlery text-primary"></i>
+                                </div>
+                            </div>
+                            <div>
+                                <h4 class="font-medium text-lg">洞庭银鱼</h4>
+                                <p class="text-gray-600">银鱼通体透明，肉质细嫩，营养丰富，是洞庭湖的名贵特产。</p>
+                            </div>
+                        </div>
+                        <!-- 君山银针鸡片 -->
+                        <div class="flex items-start">
+                            <div class="mr-4">
+                                <div class="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center">
+                                    <i class="fa fa-cutlery text-primary"></i>
+                                </div>
+                            </div>
+                            <div>
+                                <h4 class="font-medium text-lg">君山银针鸡片</h4>
+                                <p class="text-gray-600">以君山银针茶和鸡片为主要原料，茶香融入鸡肉中，味道鲜美。</p>
+                            </div>
+                        </div>
+                        <!-- 巴陵全鱼席 -->
+                        <div class="flex items-start">
+                            <div class="mr-4">
+                                <div class="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center">
+                                    <i class="fa fa-cutlery text-primary"></i>
+                                </div>
+                            </div>
+                            <div>
+                                <h4 class="font-medium text-lg">巴陵全鱼席</h4>
+                                <p class="text-gray-600">以洞庭湖产的鲜鱼为主料，精心烹制而成，是岳阳的传统名菜。</p>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="#form" class="inline-flex items-center text-primary font-medium hover:underline mt-6">
+                        定制美食之旅 <i class="fa fa-long-arrow-right ml-2"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 天气指南 -->
+    <section id="weather" class="py-20 bg-light">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-[clamp(1.75rem,3vw,2.5rem)] font-bold text-dark mb-4">天气指南</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">了解岳阳的四季气候，为您的旅行做好准备。</p>
+            </div>
+            <div class="bg-white rounded-2xl shadow-xl p-8 max-w-5xl mx-auto">
+                <div class="grid md:grid-cols-4 gap-6">
+                    <!-- 春季 -->
+                    <div class="text-center p-4 rounded-xl bg-primary/5 hover:bg-primary/10 transition-colors">
+                        <div class="w-16 h-16 bg-primary/20 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <i class="fa fa-leaf text-primary text-2xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold mb-2">春季</h3>
+                        <p class="text-gray-600 mb-4">3月-5月</p>
+                        <div class="space-y-2">
+                            <p class="text-sm">气温：10℃-25℃</p>
+                            <p class="text-sm">特点：温暖湿润，适合户外活动</p>
+                            <p class="text-sm">建议：带轻便外套和雨具</p>
+                        </div>
+                    </div>
+                    <!-- 夏季 -->
+                    <div class="text-center p-4 rounded-xl bg-primary/5 hover:bg-primary/10 transition-colors">
+                        <div class="w-16 h-16 bg-primary/20 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <i class="fa fa-sun-o text-primary text-2xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold mb-2">夏季</h3>
+                        <p class="text-gray-600 mb-4">6月-8月</p>
+                        <div class="space-y-2">
+                            <p class="text-sm">气温：25℃-35℃</p>
+                            <p class="text-sm">特点：炎热多雨，是旅游旺季</p>
+                            <p class="text-sm">建议：注意防晒和防暑降温</p>
+                        </div>
+                    </div>
+                    <!-- 秋季 -->
+                    <div class="text-center p-4 rounded-xl bg-primary/5 hover:bg-primary/10 transition-colors">
+                        <div class="w-16 h-16 bg-primary/20 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <i class="fa fa-leaf text-primary text-2xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold mb-2">秋季</h3>
+                        <p class="text-gray-600 mb-4">9月-11月</p>
+                        <div class="space-y-2">
+                            <p class="text-sm">气温：15℃-25℃</p>
+                            <p class="text-sm">特点：秋高气爽，适合出游</p>
+                            <p class="text-sm">建议：带长袖衣物</p>
+                        </div>
+                    </div>
+                    <!-- 冬季 -->
+                    <div class="text-center p-4 rounded-xl bg-primary/5 hover:bg-primary/10 transition-colors">
+                        <div class="w-16 h-16 bg-primary/20 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <i class="fa fa-snowflake-o text-primary text-2xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold mb-2">冬季</h3>
+                        <p class="text-gray-600 mb-4">12月-2月</p>
+                        <div class="space-y-2">
+                            <p class="text-sm">气温：0℃-10℃</p>
+                            <p class="text-sm">特点：寒冷少雨</p>
+                            <p class="text-sm">建议：穿保暖衣物和防滑鞋</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 交通出行 -->
+    <section id="transportation" class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-[clamp(1.75rem,3vw,2.5rem)] font-bold text-dark mb-4">交通出行</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">了解岳阳的交通方式，让您的出行更加便捷。</p>
+            </div>
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- 公交 -->
+                <div class="bg-light rounded-2xl p-8 text-center hover:shadow-lg transition-shadow">
+                    <div class="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="fa fa-bus text-primary text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4">公交</h3>
+                    <p class="text-gray-600 mb-6">岳阳公交覆盖了市区主要区域，是市内出行的常用方式。</p>
+                    <div class="space-y-3 text-left">
+                        <div class="flex items-center">
+                            <i class="fa fa-check text-success mr-3"></i>
+                            <span>普通线路票价：1-2元</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fa fa-check text-success mr-3"></i>
+                            <span>可使用岳阳公交APP或支付宝乘车码</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- 出租车/网约车 -->
+                <div class="bg-light rounded-2xl p-8 text-center hover:shadow-lg transition-shadow">
+                    <div class="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="fa fa-taxi text-primary text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4">出租车/网约车</h3>
+                    <p class="text-gray-600 mb-6">出租车和网约车是岳阳便捷的出行方式，适合短途和多人出行。</p>
+                    <div class="space-y-3 text-left">
+                        <div class="flex items-center">
+                            <i class="fa fa-check text-success mr-3"></i>
+                            <span>出租车起步价：白天7元/2公里</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fa fa-check text-success mr-3"></i>
+                            <span>夜间起步价：8元/2公里</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fa fa-check text-success mr-3"></i>
+                            <span>网约车：可通过滴滴、曹操等平台预约</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- 高铁 -->
+                <div class="bg-light rounded-2xl p-8 text-center hover:shadow-lg transition-shadow">
+                    <div class="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="fa fa-train text-primary text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4">高铁</h3>
+                    <p class="text-gray-600 mb-6">岳阳有岳阳东站和岳阳站，高铁出行方便快捷。</p>
+                    <div class="space-y-3 text-left">
+                        <div class="flex items-center">
+                            <i class="fa fa-check text-success mr-3"></i>
+                            <span>岳阳东站主要承担高铁运营</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fa fa-check text-success mr-3"></i>
+                            <span>岳阳站承担普速列车运营</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-12 bg-light rounded-2xl p-8">
+                <h3 class="text-xl font-bold mb-6 text-center">机场与火车站</h3>
+                <div class="grid md:grid-cols-2 gap-8">
+                    <!-- 岳阳三荷机场 -->
+                    <div class="bg-white rounded-xl p-6">
+                        <div class="flex items-center mb-4">
+                            <div class="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center mr-4">
+                                <i class="fa fa-plane text-primary"></i>
+                            </div>
+                            <h4 class="text-lg font-bold">岳阳三荷机场</h4>
+                        </div>
+                        <p class="text-gray-600 mb-4">位于岳阳市岳阳楼区三荷乡群贤村和西塘镇真力村附近，距离市区约18公里。</p>
+                        <div class="space-y-3">
+                            <div class="flex items-center">
+                                <i class="fa fa-map-marker text-primary mr-3"></i>
+                                <span>地址：岳阳楼区三荷乡</span>
+                            </div>
+                            <div class="flex items-center">
+                                <i class="fa fa-bus text-primary mr-3"></i>
+                                <span>机场大巴：连接市区主要地点</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 岳阳火车站 -->
+                    <div class="bg-white rounded-xl p-6">
+                        <div class="flex items-center mb-4">
+                            <div class="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center mr-4">
+                                <i class="fa fa-train text-primary"></i>
+                            </div>
+                            <h4 class="text-lg font-bold">岳阳火车站</h4>
+                        </div>
+                        <p class="text-gray-600 mb-4">位于岳阳市岳阳楼区站前路，是岳阳重要的交通枢纽之一。</p>
+                        <div class="space-y-3">
+                            <div class="flex items-center">
+                                <i class="fa fa-map-marker text-primary mr-3"></i>
+                                <span>地址：岳阳楼区站前路</span>
+                            </div>
+                            <div class="flex items-center">
+                                <i class="fa fa-subway text-primary mr-3"></i>
+                                <span>公交：多条线路经过火车站</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 定制旅行表单 -->
+    <section id="form" class="py-20 bg-light">
+        <div class="container px-4 mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-[clamp(1.75rem,3vw,2.5rem)] font-bold text-dark mb-4">定制您的专属旅行</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">告诉我们您的需求，我们将为您量身定制完美的岳阳之旅。</p>
+            </div>
+            <div class="bg-white rounded-2xl shadow-xl p-8 max-w-4xl mx-auto">
+                <form id="custom-trip-form" class="space-y-6">
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <div>
+                            <label for="name" class="block text-gray-700 mb-2 font-medium">姓名</label>
+                            <input type="text" id="name" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary/50 focus:border-primary transition-colors" placeholder="请输入您的姓名">
+                        </div>
+                        <div>
+                            <label for="phone" class="block text-gray-700 mb-2 font-medium">手机号码</label>
+                            <input type="tel" id="phone" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary/50 focus:border-primary transition-colors" placeholder="请输入您的手机号码">
+                        </div>
+                        <div>
+                            <label for="email" class="block text-gray-700 mb-2 font-medium">电子邮箱</label>
+                            <input type="email" id="email" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary/50 focus:border-primary transition-colors" placeholder="请输入您的电子邮箱">
+                        </div>
+                        <div>
+                            <label for="travelers" class="block text-gray-700 mb-2 font-medium">出行人数</label>
+                            <select id="travelers" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary/50 focus:border-primary transition-colors">
+                                <option value="">请选择出行人数</option>
+                                <option value="1">1人</option>
+                                <option value="2">2人</option>
+                                <option value="3-5">3-5人</option>
+                                <option value="6-10">6-10人</option>
+                                <option value="10+">10人以上</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label for="trip-days" class="block text-gray-700 mb-2 font-medium">旅行天数</label>
+                            <select id="trip-days" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary/50 focus:border-primary transition-colors">
+                                <option value="">请选择旅行天数</option>
+                                <option value="1-3">1-3天</option>
+                                <option value="4-7">4-7天</option>
+                                <option value="8-14">8-14天</option>
+                                <option value="15+">15天以上</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label for="budget" class="block text-gray-700 mb-2 font-medium">人均预算</label>
+                            <select id="budget" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary/50 focus:border-primary transition-colors">
+                                <option value="">请选择预算范围</option>
+                                <option value="1000以下">1000元以下</option>
+                                <option value="1000-2000">1000-2000元</option>
+                                <option value="2000-3000">2000-3000元</option>
+                                <option value="3000-5000">3000-5000元</option>
+                                <option value="5000以上">5000元以上</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div>
+                        <label for="travel-date" class="block text-gray-700 mb-2 font-medium">出行日期</label>
+                        <input type="date" id="travel-date" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary/50 focus:border-primary transition-colors">
+                    </div>
+                    <div>
+                        <label for="interests" class="block text-gray-700 mb-2 font-medium">旅行兴趣</label>
+                        <div class="grid md:grid-cols-3 gap-3">
+                            <label class="flex items-center p-3 bg-light rounded-lg cursor-pointer hover:bg-primary/5 transition-colors border border-gray-200">
+                                <input type="checkbox" class="form-checkbox h-5 w-5 text-primary">
+                                <span class="ml-3">历史文化</span>
+                            </label>
+                            <label class="flex items-center p-3 bg-light rounded-lg cursor-pointer hover:bg-primary/5 transition-colors border border-gray-200">
+                                <input type="checkbox" class="form-checkbox h-5 w-5 text-primary">
+                                <span class="ml-3">自然风光</span>
+                            </label>
+                            <label class="flex items-center p-3 bg-light rounded-lg cursor-pointer hover:bg-primary/5 transition-colors border border-gray-200">
+                                <input type="checkbox" class="form-checkbox h-5 w-5 text-primary">
+                                <span class="ml-3">美食体验</span>
+                            </label>
+                        </div>
+                    </div>
+                    <button type="submit" class="px-8 py-3 bg-primary hover:bg-primary/90 text-white font-medium rounded-full transition-all transform hover:scale-105 shadow-lg hover:shadow-xl mx-auto">
+                        提交申请
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+	<!-- 新闻通讯 -->
+	<section class="newsletter">
+	    <div class="container">
+	        <h2>订阅我们的通讯</h2>
+	        <p>获取湖南旅游最新资讯和特别优惠</p>
+	        
+	        <form class="newsletter-form">
+	            <input type="email" placeholder="输入您的电子邮箱">
+	            <button type="submit">订阅</button>
+	        </form>
+	    </div>
+	</section>
+	<!-- 页脚 -->
+	<footer class="footer">
+	    <div class="container">
+	        <div class="footer-grid">
+	            <div class="footer-col">
+	                <h3>锦绣湖南</h3>
+	                <p>湖南旅游官方指南网站，为您提供最全面、最权威的湖南旅游信息。</p>
+	                
+	            </div>
+	            
+	            <div class="footer-col">
+	                <h3>快速链接</h3>
+	                <ul class="nav-links">
+	                    <li><a href="index.html">首页</a></li>
+	                    <li class="dropdown">
+	                        <a href="#">探索湖南</a>
+	                        <ul class="dropdown-content">
+	                            <li><a href="cs.html">长沙</a></li>
+	                            <li><a href="zjj.html">张家界</a></li>
+	                            <li><a href="xx.html">湘西</a></li>
+	                            <li><a href="yy.html">岳阳</a></li>
+	                            <li><a href="ss.html">韶山</a></li>
+	                        </ul>
+	                    </li>
+	                    <li><a href="jqdq.html">景区大全</a></li>
+	                    <li><a href="xcgh.html">行程规划</a></li>
+	                    <li><a href="whty.html">文化体验</a></li>
+	                    <li><a href="meishi.html">美食地图</a></li>
+	                </ul>
+	            </div>
+	            
+	            <div class="footer-col">
+	                <h3>实用信息</h3>
+	                <ul>
+	                    <li><a href="https://www.msn.cn/zh-cn/weather/forecast/in-%E6%B9%96%E5%8D%97%E7%9C%81?loc=eyJsIjoi5rmW5Y2X55yBIiwiYyI6IuS4reWNjuS6uuawkeWFseWSjOWbvSIsImkiOiJDTiIsIngiOiIxMTIuOTM4OTIiLCJ5IjoiMjguMjI4MDYifQ%3D%3D&weadegreetype=C&ocid=ansmsnweather" target="_blank">天气预报</a></li>
+	                    <li><a href="#">交通指南</a></li>
+	                    <li><a href="#">紧急电话</a></li>
+	                    <li><a href="#">旅游贴士</a></li>
+	                    <li><a href="#">无障碍旅游</a></li>
+	                </ul>
+	            </div>
+	            
+	            <div class="footer-col">
+	                <h3>联系我们</h3>
+	                <ul>
+	                    <li><i class="fas fa-map-marker-alt"></i> 湖南省长沙市长沙县</li>
+	                    <li><i class="fas fa-phone"></i> +86 731 8888 8888</li>
+	                    <li><i class="fas fa-envelope"></i> info@hunan-travel.com</li>
+	                </ul>
+	            </div>
+	        </div>
+	        
+	        <div class="footer-bottom">
+	            <p>&copy; 2025 锦绣湖南旅游网. 保留所有权利.</p>
+	        </div>
+	    </div>
+	</footer>
+    <script src="js/yy.js"></script>
+</body>
+</html>
